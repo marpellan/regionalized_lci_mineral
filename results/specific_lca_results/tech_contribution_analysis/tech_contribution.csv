@@ -1,0 +1,1105 @@
+Activity,Flow Name,Flow Location,LCIA Method,Unit,Absolute Contribution,Percentage Contribution
+Cobalt oxide,cobalt production,RoW,Total EQ,PDF.m2.yr,27.047300264796057,98.17119760809818
+Cobalt oxide,cobalt production,CN,Total EQ,PDF.m2.yr,0.33254953666589,1.207025690508588
+Cobalt oxide,cobalt production,BE,Total EQ,PDF.m2.yr,0.11444173534919468,0.41537906207232245
+Cobalt oxide,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.018731756735371502,0.06798900348691958
+Cobalt oxide,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.01581790287275142,0.05741284540282723
+Cobalt oxide,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.011947776254306318,0.04336578853178539
+Cobalt oxide,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.010360549243790205,0.03760477079719474
+Cobalt oxide,cobalt production,ZA,Total EQ,PDF.m2.yr,7.125816083663077e-06,2.5863945459235543e-05
+Cobalt oxide,cobalt production,RoW,Total HH,DALY,0.0002710090347578611,98.19141764356942
+Cobalt oxide,cobalt production,CN,Total HH,DALY,3.333706105079108e-06,1.2078613126577498
+Cobalt oxide,cobalt production,BE,Total HH,DALY,1.0618333845362925e-06,0.38472121574117973
+Cobalt oxide,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,1.9612221272248405e-07,0.07105858340044066
+Cobalt oxide,"market group for transport, freight train",GLO,Total HH,DALY,1.5837822325482531e-07,0.05738326133354097
+Cobalt oxide,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,1.2329837891666212e-07,0.0446732066692838
+Cobalt oxide,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,1.1829254705197389e-07,0.04285950430427498
+Cobalt oxide,cobalt production,ZA,Total HH,DALY,7.150321055090817e-11,2.59068913194476e-05
+Copper,"electrorefining of copper, anode",CA,Total EQ,PDF.m2.yr,14.342038764163123,36.44450720828791
+Copper,"electrorefining of copper, anode",US,Total EQ,PDF.m2.yr,5.704526066301517,14.495752295878212
+Copper,"electrorefining of copper, anode",CD,Total EQ,PDF.m2.yr,4.454736711024039,11.319916704005209
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CA,Total EQ,PDF.m2.yr,4.05126931411027,10.294667037836772
+Copper,"electrorefining of copper, anode",RU,Total EQ,PDF.m2.yr,2.3615784161458198,6.000999092626952
+Copper,"copper production, cathode, solvent extraction and electrowinning process",US,Total EQ,PDF.m2.yr,1.6374579496207016,4.160938973148996
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CD,Total EQ,PDF.m2.yr,1.2614390248795921,3.2054385287197014
+Copper,"electrorefining of copper, anode",CL,Total EQ,PDF.m2.yr,1.0944214433397588,2.7810307053669487
+Copper,"copper production, cathode, solvent extraction and electrowinning process",RU,Total EQ,PDF.m2.yr,0.6868960117084462,1.7454691806164162
+Copper,treatment of copper scrap by electrolytic refining,CA,Total EQ,PDF.m2.yr,0.6204496618470601,1.5766225810284522
+Copper,"electrorefining of copper, anode",MX,Total EQ,PDF.m2.yr,0.5048918354302538,1.2829789710038686
+Copper,"electrorefining of copper, anode",RoW,Total EQ,PDF.m2.yr,0.4416449222099666,1.1222624492692952
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CL,Total EQ,PDF.m2.yr,0.31498811248700626,0.8004152495210155
+Copper,treatment of copper scrap by electrolytic refining,US,Total EQ,PDF.m2.yr,0.24565997163656142,0.62424574039414
+Copper,"electrorefining of copper, anode",ZM,Total EQ,PDF.m2.yr,0.2254200017208142,0.5728140198682458
+Copper,treatment of copper scrap by electrolytic refining,CD,Total EQ,PDF.m2.yr,0.2040966989872739,0.5186294459066398
+Copper,"copper production, cathode, solvent extraction and electrowinning process",MX,Total EQ,PDF.m2.yr,0.14535395444930493,0.36935845229462766
+Copper,"copper production, cathode, solvent extraction and electrowinning process",RoW,Total EQ,PDF.m2.yr,0.12781081941798875,0.3247796499626792
+Copper,treatment of copper scrap by electrolytic refining,RU,Total EQ,PDF.m2.yr,0.10834557008206186,0.27531656933658916
+Copper,"electrorefining of copper, anode",BR,Total EQ,PDF.m2.yr,0.09328156368976057,0.237037472579319
+Copper,"electrorefining of copper, anode",DE,Total EQ,PDF.m2.yr,0.08440937951940372,0.21449239476529347
+Copper,"copper production, cathode, solvent extraction and electrowinning process",ZM,Total EQ,PDF.m2.yr,0.06386929223328423,0.1622980469834198
+Copper,gold mine operation and refining,CA,Total EQ,PDF.m2.yr,0.06238476897377845,0.1585257298448608
+Copper,treatment of copper scrap by electrolytic refining,CL,Total EQ,PDF.m2.yr,0.04725234445946572,0.12007277602432193
+Copper,"platinum group metal, extraction and refinery operations",CA,Total EQ,PDF.m2.yr,0.04439969498550908,0.11282391789293074
+Copper,treatment of copper cake,CA,Total EQ,PDF.m2.yr,0.04187446009667595,0.10640705187952548
+Copper,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.03892844671744225,0.09892094703762018
+Copper,"copper production, cathode, solvent extraction and electrowinning process",BR,Total EQ,PDF.m2.yr,0.026350365047422185,0.06695882535971041
+Copper,gold mine operation and refining,US,Total EQ,PDF.m2.yr,0.025598915354353463,0.06504931903316642
+Copper,"copper production, cathode, solvent extraction and electrowinning process",DE,Total EQ,PDF.m2.yr,0.024176236040055327,0.0614341533389712
+Copper,treatment of copper scrap by electrolytic refining,MX,Total EQ,PDF.m2.yr,0.021819748440144004,0.055446090502618894
+Copper,treatment of copper scrap by electrolytic refining,RoW,Total EQ,PDF.m2.yr,0.020936409872233733,0.053201441792980364
+Copper,gold mine operation and refining,CD,Total EQ,PDF.m2.yr,0.01945050148069933,0.049425604900010495
+Copper,"platinum group metal, extraction and refinery operations",US,Total EQ,PDF.m2.yr,0.017301648021442434,0.04396516049087059
+Copper,treatment of copper cake,US,Total EQ,PDF.m2.yr,0.016468199892968594,0.04184728821166599
+Copper,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.014125907564166575,0.03589529693172025
+Copper,"platinum group metal, extraction and refinery operations",CD,Total EQ,PDF.m2.yr,0.013934097694933633,0.03540788950821308
+Copper,treatment of copper cake,CD,Total EQ,PDF.m2.yr,0.013184504947337377,0.03350310185965967
+Copper,gold mine operation and refining,RU,Total EQ,PDF.m2.yr,0.011038902661905672,0.02805091899756032
+Copper,"platinum group metal mine operation, ore with high palladium content",CA,Total EQ,PDF.m2.yr,0.010465496899065608,0.026593839512507204
+Copper,treatment of copper scrap by electrolytic refining,ZM,Total EQ,PDF.m2.yr,0.010423772725952645,0.0264878143543843
+Copper,"electrorefining of copper, anode",ZA,Total EQ,PDF.m2.yr,0.00870285313101386,0.022114791270710456
+Copper,"electrorefining of copper, anode",BE,Total EQ,PDF.m2.yr,0.007715437317333669,0.019605672216509863
+Copper,treatment of copper cake,RU,Total EQ,PDF.m2.yr,0.0073356909285969,0.018640699925665128
+Copper,"platinum group metal, extraction and refinery operations",RU,Total EQ,PDF.m2.yr,0.007228349433447256,0.018367934807814196
+Copper,gold mine operation and refining,CL,Total EQ,PDF.m2.yr,0.004962087313597312,0.01260914364005371
+Copper,"platinum group metal mine operation, ore with high palladium content",US,Total EQ,PDF.m2.yr,0.004734412656887098,0.012030600323858453
+Copper,treatment of copper scrap by electrolytic refining,BR,Total EQ,PDF.m2.yr,0.003927895973449803,0.009981163450449606
+Copper,treatment of copper scrap by electrolytic refining,DE,Total EQ,PDF.m2.yr,0.0036652494340296132,0.009313753198913479
+Copper,"platinum group metal, extraction and refinery operations",CL,Total EQ,PDF.m2.yr,0.003319186276098199,0.008434373254322301
+Copper,treatment of copper cake,CL,Total EQ,PDF.m2.yr,0.0032303336612078,0.008208590168870062
+Copper,cobalt production,CA,Total EQ,PDF.m2.yr,0.0027573147497798015,0.007006603379497435
+Copper,"copper production, cathode, solvent extraction and electrowinning process",ZA,Total EQ,PDF.m2.yr,0.002609440673054687,0.006630841052833424
+Copper,"platinum group metal mine operation, ore with high palladium content",CD,Total EQ,PDF.m2.yr,0.0025865312485265778,0.006572625990032266
+Copper,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.0025548128976822754,0.006492026593740811
+Copper,"platinum group metal mine operation, ore with high palladium content",RU,Total EQ,PDF.m2.yr,0.002384554574040936,0.006059383731366017
+Copper,gold mine operation and refining,MX,Total EQ,PDF.m2.yr,0.00228993072997365,0.005818935394564485
+Copper,"copper production, cathode, solvent extraction and electrowinning process",BE,Total EQ,PDF.m2.yr,0.0021646399861154917,0.005500559500261368
+Copper,"electrorefining of copper, anode",KR,Total EQ,PDF.m2.yr,0.0021371044686351926,0.005430589087979244
+Copper,gold mine operation and refining,RoW,Total EQ,PDF.m2.yr,0.00206489855705875,0.005247106885190608
+Copper,"platinum group metal, extraction and refinery operations",MX,Total EQ,PDF.m2.yr,0.0015318732741437526,0.003892638103950436
+Copper,treatment of copper cake,MX,Total EQ,PDF.m2.yr,0.0014894258574118463,0.003784775113862539
+Copper,"platinum group metal, extraction and refinery operations",RoW,Total EQ,PDF.m2.yr,0.0013395754496824419,0.003403990739028378
+Copper,treatment of copper cake,RoW,Total EQ,PDF.m2.yr,0.001317919130566065,0.0033489599382391685
+Copper,primary zinc production from concentrate,CA,Total EQ,PDF.m2.yr,0.001162839047722612,0.0029548864532913744
+Copper,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.0011494130120708625,0.00292076959855859
+Copper,"platinum group metal mine operation, ore with high palladium content",CL,Total EQ,PDF.m2.yr,0.0010496115881443297,0.0026671645307228837
+Copper,gold mine operation and refining,ZM,Total EQ,PDF.m2.yr,0.0010082157986277048,0.0025619738270691527
+Copper,cobalt production,US,Total EQ,PDF.m2.yr,0.0009717997890000077,0.0024694372256000565
+Copper,cobalt production,CD,Total EQ,PDF.m2.yr,0.0008904248157873834,0.0022626555506521317
+Copper,"platinum group metal, extraction and refinery operations",ZM,Total EQ,PDF.m2.yr,0.0006998062598273843,0.0017782753693576635
+Copper,treatment of copper cake,ZM,Total EQ,PDF.m2.yr,0.0006721965908382194,0.0017081165309219223
+Copper,"copper production, cathode, solvent extraction and electrowinning process",KR,Total EQ,PDF.m2.yr,0.0006206084462209943,0.0015770260674752238
+Copper,primary zinc production from concentrate,US,Total EQ,PDF.m2.yr,0.0005797014913471787,0.0014730775399135025
+Copper,"platinum group metal mine operation, ore with high palladium content",MX,Total EQ,PDF.m2.yr,0.0004795646688169989,0.00121862019179678
+Copper,"platinum group metal mine operation, ore with high palladium content",RoW,Total EQ,PDF.m2.yr,0.0004412670477247245,0.0011213022336662216
+Copper,cobalt production,RU,Total EQ,PDF.m2.yr,0.0004387967203402364,0.001115024892930275
+Copper,gold mine operation and refining,BR,Total EQ,PDF.m2.yr,0.0004073674576919004,0.0010351600976962418
+Copper,treatment of copper scrap by electrolytic refining,ZA,Total EQ,PDF.m2.yr,0.0003913783647117808,0.000994530266474198
+Copper,gold mine operation and refining,DE,Total EQ,PDF.m2.yr,0.00037599557337051454,0.0009554411063388065
+Copper,primary zinc production from concentrate,CD,Total EQ,PDF.m2.yr,0.0003391429704368937,0.0008617950790658571
+Copper,"electrorefining of copper, anode",FI,Total EQ,PDF.m2.yr,0.0003388546139715765,0.0008610623374067655
+Copper,treatment of copper scrap by electrolytic refining,BE,Total EQ,PDF.m2.yr,0.00032477932888680145,0.0008252956770897848
+Copper,"electrorefining of copper, anode",PE,Total EQ,PDF.m2.yr,0.00030048574624573537,0.000763563334691592
+Copper,"platinum group metal, extraction and refinery operations",BR,Total EQ,PDF.m2.yr,0.00029280510263062274,0.0007440460766365727
+Copper,primary zinc production from concentrate,RU,Total EQ,PDF.m2.yr,0.00027426053327328487,0.0006969225328551365
+Copper,treatment of copper cake,BR,Total EQ,PDF.m2.yr,0.00027177568806338186,0.0006906083009211054
+Copper,"platinum group metal, extraction and refinery operations",DE,Total EQ,PDF.m2.yr,0.0002601746254609214,0.0006611288791602593
+Copper,treatment of copper cake,DE,Total EQ,PDF.m2.yr,0.0002451362611408903,0.0006229149413879183
+Copper,"electrorefining of copper, anode",AU,Total EQ,PDF.m2.yr,0.00021354272473229948,0.0005426327106457131
+Copper,cobalt production,CL,Total EQ,PDF.m2.yr,0.00018534363413070463,0.00047097609490256396
+Copper,"platinum group metal mine operation, ore with high palladium content",ZM,Total EQ,PDF.m2.yr,0.00015486892677962056,0.0003935369169732568
+Copper,primary zinc production from concentrate,CL,Total EQ,PDF.m2.yr,0.00012299321411127264,0.00031253764907184233
+Copper,"electrorefining of copper, anode",AT,Total EQ,PDF.m2.yr,0.00012267189864239203,0.0003117211553979433
+Copper,treatment of copper scrap by electrolytic refining,KR,Total EQ,PDF.m2.yr,9.7707563571484e-05,0.0002482843662215538
+Copper,"copper production, cathode, solvent extraction and electrowinning process",FI,Total EQ,PDF.m2.yr,9.561008865574677e-05,0.0002429544796592057
+Copper,"electrorefining of copper, anode",CN,Total EQ,PDF.m2.yr,9.507770745312809e-05,0.00024160164754827355
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CA,Total EQ,PDF.m2.yr,9.484429429687854e-05,0.00024100852214990257
+Copper,cobalt production,MX,Total EQ,PDF.m2.yr,8.680519180984879e-05,0.00022058038544253282
+Copper,"copper production, cathode, solvent extraction and electrowinning process",PE,Total EQ,PDF.m2.yr,8.372534977718277e-05,0.00021275420905257977
+Copper,cobalt production,RoW,Total EQ,PDF.m2.yr,8.335620915362348e-05,0.0002118161870365053
+Copper,"platinum group metal mine operation, ore with high palladium content",DE,Total EQ,PDF.m2.yr,6.708132717635241e-05,0.00017046013834022357
+Copper,"copper production, cathode, solvent extraction and electrowinning process",AU,Total EQ,PDF.m2.yr,6.250715644822158e-05,0.0001588367282508679
+Copper,"platinum group metal mine operation, ore with high palladium content",BR,Total EQ,PDF.m2.yr,6.11392857946543e-05,0.00015536083666295062
+Copper,primary zinc production from concentrate,MX,Total EQ,PDF.m2.yr,5.611510804348696e-05,0.00014259391521760742
+Copper,primary zinc production from concentrate,RoW,Total EQ,PDF.m2.yr,5.174387185390927e-05,0.00013148618141212785
+Copper,cobalt production,ZM,Total EQ,PDF.m2.yr,4.4440489976095384e-05,0.00011292758190841227
+Copper,gold mine operation and refining,ZA,Total EQ,PDF.m2.yr,4.288388129169644e-05,0.00010897208873537654
+Copper,"electrorefining of copper, anode",JP,Total EQ,PDF.m2.yr,4.190787610527712e-05,0.00010649196518832093
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",US,Total EQ,PDF.m2.yr,3.8346387958045506e-05,9.744187945167228e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",AT,Total EQ,PDF.m2.yr,3.4409708436793016e-05,8.743839615698902e-05
+Copper,gold mine operation and refining,BE,Total EQ,PDF.m2.yr,3.306839833605516e-05,8.402999750190823e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CD,Total EQ,PDF.m2.yr,2.940431492770967e-05,7.471920728699925e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CN,Total EQ,PDF.m2.yr,2.8418532415342907e-05,7.221423860935734e-05
+Copper,treatment of copper cake,ZA,Total EQ,PDF.m2.yr,2.6551993480220037e-05,6.747118270257707e-05
+Copper,"platinum group metal, extraction and refinery operations",ZA,Total EQ,PDF.m2.yr,2.625699843643567e-05,6.672157177372697e-05
+Copper,"platinum group metal, extraction and refinery operations",BE,Total EQ,PDF.m2.yr,2.3638720797429318e-05,6.0068275135978394e-05
+Copper,treatment of copper cake,BE,Total EQ,PDF.m2.yr,2.2316113270334448e-05,5.670740152884606e-05
+Copper,primary zinc production from concentrate,ZM,Total EQ,PDF.m2.yr,1.982316869196896e-05,5.0372588316437e-05
+Copper,cobalt production,BR,Total EQ,PDF.m2.yr,1.6373464646661283e-05,4.160655679100125e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RU,Total EQ,PDF.m2.yr,1.6099796706903723e-05,4.0911140095566484e-05
+Copper,cobalt production,DE,Total EQ,PDF.m2.yr,1.5382890430586648e-05,3.9089411930935554e-05
+Copper,treatment of copper scrap by electrolytic refining,FI,Total EQ,PDF.m2.yr,1.4367449789003303e-05,3.6509079079357726e-05
+Copper,treatment of copper scrap by electrolytic refining,PE,Total EQ,PDF.m2.yr,1.2589227272915562e-05,3.199044373251755e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",JP,Total EQ,PDF.m2.yr,1.2316075192314506e-05,3.129633788507705e-05
+Copper,"platinum group metal mine operation, ore with high palladium content",ZA,Total EQ,PDF.m2.yr,1.2007245497013255e-05,3.051157176907244e-05
+Copper,gold mine operation and refining,KR,Total EQ,PDF.m2.yr,9.963922932255458e-06,2.5319291566466377e-05
+Copper,treatment of copper scrap by electrolytic refining,AU,Total EQ,PDF.m2.yr,9.482852883869542e-06,2.4096846059632263e-05
+Copper,primary zinc production from concentrate,BR,Total EQ,PDF.m2.yr,7.575363083932902e-06,1.9249730045887266e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CL,Total EQ,PDF.m2.yr,7.357180044300474e-06,1.869530584641578e-05
+Copper,primary zinc production from concentrate,DE,Total EQ,PDF.m2.yr,6.909085694685197e-06,1.7556654778524877e-05
+Copper,"platinum group metal, extraction and refinery operations",KR,Total EQ,PDF.m2.yr,6.533504785048389e-06,1.6602267372826585e-05
+Copper,treatment of copper cake,KR,Total EQ,PDF.m2.yr,6.304725724733937e-06,1.602091766028996e-05
+Copper,treatment of copper scrap by electrolytic refining,AT,Total EQ,PDF.m2.yr,5.191788499637599e-06,1.3192836563218528e-05
+Copper,"platinum group metal mine operation, ore with high palladium content",BE,Total EQ,PDF.m2.yr,4.8493610346374164e-06,1.2322695265894883e-05
+Copper,treatment of copper scrap by electrolytic refining,CN,Total EQ,PDF.m2.yr,4.471922946953589e-06,1.1363588591211572e-05
+Copper,"electrorefining of copper, anode",SG,Total EQ,PDF.m2.yr,4.2554000952235565e-06,1.0813383089720956e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",MX,Total EQ,PDF.m2.yr,3.3943700384852033e-06,8.625422463944157e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RoW,Total EQ,PDF.m2.yr,2.985589223161906e-06,7.58667088785127e-06
+Copper,"platinum group metal mine operation, ore with high palladium content",KR,Total EQ,PDF.m2.yr,2.1690037114826067e-06,5.511648148340761e-06
+Copper,treatment of copper scrap by electrolytic refining,JP,Total EQ,PDF.m2.yr,1.8256539568996483e-06,4.639163224012593e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZM,Total EQ,PDF.m2.yr,1.4979303427601312e-06,3.806385833417475e-06
+Copper,gold mine operation and refining,FI,Total EQ,PDF.m2.yr,1.4776674907425197e-06,3.75489596725831e-06
+Copper,cobalt production,ZA,Total EQ,PDF.m2.yr,1.4630822597552367e-06,3.717833485097211e-06
+Copper,cobalt production,BE,Total EQ,PDF.m2.yr,1.379248598019635e-06,3.504804044885781e-06
+Copper,primary zinc production from concentrate,ZA,Total EQ,PDF.m2.yr,1.3727035827277623e-06,3.4881725282021815e-06
+Copper,gold mine operation and refining,PE,Total EQ,PDF.m2.yr,1.276206044596578e-06,3.2429629536198336e-06
+Copper,"copper production, cathode, solvent extraction and electrowinning process",SG,Total EQ,PDF.m2.yr,1.2107913431650725e-06,3.0767378724406154e-06
+Copper,"platinum group metal, extraction and refinery operations",FI,Total EQ,PDF.m2.yr,1.0414275883085292e-06,2.646368195842397e-06
+Copper,gold mine operation and refining,AU,Total EQ,PDF.m2.yr,1.0061192873166378e-06,2.5566463891194412e-06
+Copper,treatment of copper cake,FI,Total EQ,PDF.m2.yr,9.167923872598848e-07,2.3296580992016295e-06
+Copper,"platinum group metal, extraction and refinery operations",PE,Total EQ,PDF.m2.yr,9.128048590516426e-07,2.319525404476828e-06
+Copper,treatment of copper cake,PE,Total EQ,PDF.m2.yr,8.965833765398472e-07,2.278305048985428e-06
+Copper,"platinum group metal, extraction and refinery operations",AU,Total EQ,PDF.m2.yr,6.418383164385311e-07,1.6309732203798256e-06
+Copper,treatment of copper cake,AU,Total EQ,PDF.m2.yr,6.287706213362133e-07,1.5977669436305159e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BR,Total EQ,PDF.m2.yr,6.203724689911318e-07,1.576426426517886e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",DE,Total EQ,PDF.m2.yr,5.671309412616644e-07,1.4411345567200388e-06
+Copper,gold mine operation and refining,AT,Total EQ,PDF.m2.yr,5.297528128505776e-07,1.3461531183966392e-06
+Copper,primary zinc production from concentrate,BE,Total EQ,PDF.m2.yr,5.021652565633989e-07,1.276050470474686e-06
+Copper,gold mine operation and refining,CN,Total EQ,PDF.m2.yr,4.640753271222635e-07,1.1792602769110417e-06
+Copper,cobalt production,KR,Total EQ,PDF.m2.yr,3.8027586105798076e-07,9.663177312067572e-07
+Copper,"platinum group metal, extraction and refinery operations",AT,Total EQ,PDF.m2.yr,3.7478475062245005e-07,9.5236428866348e-07
+Copper,treatment of copper cake,AT,Total EQ,PDF.m2.yr,3.538702276635834e-07,8.992184636335756e-07
+Copper,"platinum group metal, extraction and refinery operations",CN,Total EQ,PDF.m2.yr,2.9574107989722184e-07,7.515066787458981e-07
+Copper,treatment of copper cake,CN,Total EQ,PDF.m2.yr,2.7910470293002763e-07,7.092320363278552e-07
+Copper,primary zinc production from concentrate,KR,Total EQ,PDF.m2.yr,2.5233484281566327e-07,6.412072334427446e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",AU,Total EQ,PDF.m2.yr,2.4618322336021536e-07,6.255753736163083e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",FI,Total EQ,PDF.m2.yr,2.2558211282671922e-07,5.732259598626113e-07
+Copper,treatment of copper scrap by electrolytic refining,SG,Total EQ,PDF.m2.yr,1.9919852632926075e-07,5.061827155862303e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",PE,Total EQ,PDF.m2.yr,1.9760308098643691e-07,5.021285347090832e-07
+Copper,gold mine operation and refining,JP,Total EQ,PDF.m2.yr,1.9422429112201198e-07,4.93542702973848e-07
+Copper,"platinum group metal, extraction and refinery operations",JP,Total EQ,PDF.m2.yr,1.3003687752814473e-07,3.304362788545466e-07
+Copper,treatment of copper cake,JP,Total EQ,PDF.m2.yr,1.2062591222648074e-07,3.065221060919928e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",CN,Total EQ,PDF.m2.yr,1.1296044727336797e-07,2.8704341848471536e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",AT,Total EQ,PDF.m2.yr,8.216270497912477e-08,2.0878337753111434e-07
+Copper,cobalt production,FI,Total EQ,PDF.m2.yr,6.242324512507534e-08,1.586235014655031e-07
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZA,Total EQ,PDF.m2.yr,6.10422227677622e-08,1.551141901267506e-07
+Copper,cobalt production,PE,Total EQ,PDF.m2.yr,5.099668688225049e-08,1.2958751215503552e-07
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BE,Total EQ,PDF.m2.yr,5.075144592664716e-08,1.2896433117489579e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",JP,Total EQ,PDF.m2.yr,4.039915775074219e-08,1.0265816597390827e-07
+Copper,cobalt production,AU,Total EQ,PDF.m2.yr,3.5216617977943e-08,8.948883131983057e-08
+Copper,primary zinc production from concentrate,AU,Total EQ,PDF.m2.yr,2.8694176083669758e-08,7.291467582211668e-08
+Copper,primary zinc production from concentrate,PE,Total EQ,PDF.m2.yr,2.343037720764347e-08,5.953885392992757e-08
+Copper,primary zinc production from concentrate,FI,Total EQ,PDF.m2.yr,2.24232282503482e-08,5.69795910498353e-08
+Copper,cobalt production,AT,Total EQ,PDF.m2.yr,2.2365291215047093e-08,5.683236744129688e-08
+Copper,gold mine operation and refining,SG,Total EQ,PDF.m2.yr,1.933220575947946e-08,4.9125004034568704e-08
+Copper,cobalt production,CN,Total EQ,PDF.m2.yr,1.787846450091301e-08,4.543090693665851e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",KR,Total EQ,PDF.m2.yr,1.451298314302312e-08,3.687889340330688e-08
+Copper,"platinum group metal, extraction and refinery operations",SG,Total EQ,PDF.m2.yr,1.2902459286295011e-08,3.278639656441188e-08
+Copper,treatment of copper cake,SG,Total EQ,PDF.m2.yr,1.2788147487904498e-08,3.249591923207854e-08
+Copper,primary zinc production from concentrate,CN,Total EQ,PDF.m2.yr,1.2657318145438473e-08,3.2163469223194686e-08
+Copper,primary zinc production from concentrate,AT,Total EQ,PDF.m2.yr,8.797122221441579e-09,2.235433814421329e-08
+Copper,cobalt production,JP,Total EQ,PDF.m2.yr,7.17613431191057e-09,1.8235251135393765e-08
+Copper,primary zinc production from concentrate,JP,Total EQ,PDF.m2.yr,4.68165185198328e-09,1.1896530017240892e-08
+Copper,"platinum group metal mine operation, ore with high palladium content",SG,Total EQ,PDF.m2.yr,3.606840675903232e-09,9.165330897065919e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",CA,Total EQ,PDF.m2.yr,3.2802661255746154e-09,8.335473388715422e-09
+Copper,"aluminium alloy production, AlLi",CA,Total EQ,PDF.m2.yr,2.2848429261179344e-09,5.806006793035579e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",FI,Total EQ,PDF.m2.yr,2.2394306674259263e-09,5.690609852861286e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",PE,Total EQ,PDF.m2.yr,1.9523261792860926e-09,4.96104958882901e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",US,Total EQ,PDF.m2.yr,1.7872080921294587e-09,4.54146856436301e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",CD,Total EQ,PDF.m2.yr,1.7813502119420986e-09,4.52658312441796e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AU,Total EQ,PDF.m2.yr,1.4612471671258231e-09,3.7131703372937307e-09
+Copper,"aluminium alloy production, AlLi",US,Total EQ,PDF.m2.yr,1.1003812095392824e-09,2.7961750475201004e-09
+Copper,"aluminium alloy production, AlLi",CD,Total EQ,PDF.m2.yr,1.0834157957267598e-09,2.7530642906640373e-09
+Copper,cobalt production,SG,Total EQ,PDF.m2.yr,8.171139232929434e-10,2.076365484512045e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AT,Total EQ,PDF.m2.yr,8.063886386158283e-10,2.0491114991370536e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CN,Total EQ,PDF.m2.yr,6.640627947035665e-10,1.6874477685001662e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",RU,Total EQ,PDF.m2.yr,6.357496636923227e-10,1.6155013650497163e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",CL,Total EQ,PDF.m2.yr,4.719781615165675e-10,1.199342143219254e-09
+Copper,primary zinc production from concentrate,SG,Total EQ,PDF.m2.yr,4.4068221867841383e-10,1.119816126513371e-09
+Copper,"aluminium alloy production, AlLi",RU,Total EQ,PDF.m2.yr,4.004961154716217e-10,1.0176993527355393e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",JP,Total EQ,PDF.m2.yr,2.8788120609474147e-10,7.315339794552999e-10
+Copper,"aluminium alloy production, AlLi",CL,Total EQ,PDF.m2.yr,2.78897876288569e-10,7.087064698341751e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",RoW,Total EQ,PDF.m2.yr,1.9292411168350437e-10,4.902388213083516e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",MX,Total EQ,PDF.m2.yr,1.8727033955021424e-10,4.758720396635711e-10
+Copper,"aluminium alloy production, AlLi",RoW,Total EQ,PDF.m2.yr,1.135590913411113e-10,2.8856463094277857e-10
+Copper,"aluminium alloy production, AlLi",MX,Total EQ,PDF.m2.yr,1.1241436302019693e-10,2.8565576559740383e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",ZM,Total EQ,PDF.m2.yr,9.24084545980019e-11,2.348188179576532e-10
+Copper,"aluminium alloy production, AlLi",ZM,Total EQ,PDF.m2.yr,5.569593420693297e-11,1.415287539696829e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",BR,Total EQ,PDF.m2.yr,3.3764180204730896e-11,8.579804650423767e-11
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",SG,Total EQ,PDF.m2.yr,2.8306886153660427e-11,7.193053466352555e-11
+Copper,"aluminium alloy production, Metallic Matrix Composite",DE,Total EQ,PDF.m2.yr,2.5509016384282313e-11,6.48208770580295e-11
+Copper,"aluminium alloy production, AlLi",BR,Total EQ,PDF.m2.yr,2.160962742152388e-11,5.491215267804345e-11
+Copper,"aluminium alloy production, AlLi",DE,Total EQ,PDF.m2.yr,1.580831296962187e-11,4.017045173604181e-11
+Copper,"aluminium alloy production, Metallic Matrix Composite",ZA,Total EQ,PDF.m2.yr,4.055665667852998e-12,1.0305838597773381e-11
+Copper,"aluminium alloy production, AlLi",ZA,Total EQ,PDF.m2.yr,2.249055932382373e-12,5.715068581766931e-12
+Copper,"aluminium alloy production, Metallic Matrix Composite",BE,Total EQ,PDF.m2.yr,2.0395250775244804e-12,5.182630420373299e-12
+Copper,"aluminium alloy production, AlLi",BE,Total EQ,PDF.m2.yr,1.31600813082153e-12,3.3441039031168283e-12
+Copper,"aluminium alloy production, Metallic Matrix Composite",KR,Total EQ,PDF.m2.yr,1.042931444731058e-12,2.6501896404174897e-12
+Copper,"aluminium alloy production, AlLi",KR,Total EQ,PDF.m2.yr,6.064027919066294e-13,1.5409281263406652e-12
+Copper,"aluminium alloy production, Metallic Matrix Composite",PE,Total EQ,PDF.m2.yr,1.2043789755410048e-13,3.060443426306397e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",AU,Total EQ,PDF.m2.yr,9.881265250434444e-14,2.510925040492151e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",FI,Total EQ,PDF.m2.yr,9.678096392297573e-14,2.459297869232718e-13
+Copper,"aluminium alloy production, AlLi",PE,Total EQ,PDF.m2.yr,7.285916705294367e-14,1.8514218811664185e-13
+Copper,"aluminium alloy production, AlLi",FI,Total EQ,PDF.m2.yr,6.152876258154587e-14,1.5635053483632317e-13
+Copper,"aluminium alloy production, AlLi",AU,Total EQ,PDF.m2.yr,5.734955630391922e-14,1.4573076760417304e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",CN,Total EQ,PDF.m2.yr,4.90924572593332e-14,1.2474868056631795e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",AT,Total EQ,PDF.m2.yr,3.279967103454849e-14,8.33471354459713e-14
+Copper,"aluminium alloy production, AlLi",CN,Total EQ,PDF.m2.yr,2.831093546042152e-14,7.194082434352642e-14
+Copper,"aluminium alloy production, AlLi",AT,Total EQ,PDF.m2.yr,2.056249554970642e-14,5.225128934626691e-14
+Copper,"aluminium alloy production, Metallic Matrix Composite",JP,Total EQ,PDF.m2.yr,1.7400699816932316e-14,4.421686068036841e-14
+Copper,"aluminium alloy production, AlLi",JP,Total EQ,PDF.m2.yr,1.0405822887920775e-14,2.644220208040449e-14
+Copper,"aluminium alloy production, Metallic Matrix Composite",SG,Total EQ,PDF.m2.yr,1.993373007103409e-15,5.065353547064256e-15
+Copper,"aluminium alloy production, AlLi",SG,Total EQ,PDF.m2.yr,1.1851244634510834e-15,3.011515849398251e-15
+Copper,treatment of used cable,AT,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",AT,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",AT,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,AU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",AU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",AU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,BE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",BE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",BE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,BR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",BR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",BR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,CA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,CD,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CD,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CD,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,CL,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CL,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CL,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,CN,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CN,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CN,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,DE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",DE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",DE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,FI,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",FI,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",FI,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,JP,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",JP,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",JP,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,KR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",KR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",KR,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,MX,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",MX,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",MX,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,PE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",PE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",PE,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,RU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",RU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",RU,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,SG,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",SG,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",SG,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,US,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",US,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",US,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,ZA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",ZA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",ZA,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,ZM,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",ZM,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",ZM,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,treatment of used cable,RoW,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",RoW,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",RoW,Total EQ,PDF.m2.yr,0.0,0.0
+Copper,"electrorefining of copper, anode",CA,Total HH,DALY,9.947448704057053e-05,44.02796115381707
+Copper,"electrorefining of copper, anode",US,Total HH,DALY,3.996058310063254e-05,17.6867763059785
+Copper,"electrorefining of copper, anode",CD,Total HH,DALY,3.0279753652296487e-05,13.401987355880857
+Copper,"electrorefining of copper, anode",RU,Total HH,DALY,1.6471176832089453e-05,7.29023446409045
+Copper,"electrorefining of copper, anode",CL,Total HH,DALY,7.711983090353552e-06,3.4133666030617302
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CA,Total HH,DALY,5.0255408050869675e-06,2.2243323079720856
+Copper,treatment of copper scrap by electrolytic refining,CA,Total HH,DALY,4.315491071312326e-06,1.9100603471309319
+Copper,"electrorefining of copper, anode",MX,Total HH,DALY,3.516642434977112e-06,1.556485498195025
+Copper,"electrorefining of copper, anode",RoW,Total HH,DALY,3.0774202672049463e-06,1.3620833241714358
+Copper,"copper production, cathode, solvent extraction and electrowinning process",US,Total HH,DALY,2.5278991684034303e-06,1.1188622298885529
+Copper,treatment of copper scrap by electrolytic refining,US,Total HH,DALY,1.7139420149076155e-06,0.7586002672370719
+Copper,"electrorefining of copper, anode",ZM,Total HH,DALY,1.542624932209731e-06,0.682774373719959
+Copper,treatment of copper scrap by electrolytic refining,CD,Total HH,DALY,1.4275840678739862e-06,0.63185664740879
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CD,Total HH,DALY,1.412991734509333e-06,0.6253979995118626
+Copper,"copper production, cathode, solvent extraction and electrowinning process",RU,Total HH,DALY,1.2018020281095025e-06,0.5319242610077829
+Copper,treatment of copper scrap by electrolytic refining,RU,Total HH,DALY,7.849484331568462e-07,0.34742254170844916
+Copper,"electrorefining of copper, anode",BR,Total HH,DALY,6.390806997635933e-07,0.2828606717204775
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CL,Total HH,DALY,6.205879964577141e-07,0.27467569839713435
+Copper,"electrorefining of copper, anode",DE,Total HH,DALY,5.849436183139866e-07,0.2588992984080201
+Copper,treatment of copper cake,CA,Total HH,DALY,4.5138832974145246e-07,0.1997869849686943
+Copper,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,4.075823328229203e-07,0.1803982071221018
+Copper,treatment of copper scrap by electrolytic refining,CL,Total HH,DALY,3.4211538263673094e-07,0.1514221709000618
+Copper,"copper production, cathode, solvent extraction and electrowinning process",MX,Total HH,DALY,2.535707650593894e-07,0.11223183075299666
+Copper,"copper production, cathode, solvent extraction and electrowinning process",RoW,Total HH,DALY,2.2941591097503147e-07,0.10154075800719313
+Copper,treatment of copper cake,US,Total HH,DALY,1.7417588663256547e-07,0.07709121603675732
+Copper,treatment of copper scrap by electrolytic refining,MX,Total HH,DALY,1.5328727558660277e-07,0.06784580062372032
+Copper,treatment of copper scrap by electrolytic refining,RoW,Total HH,DALY,1.5177942723209755e-07,0.06717841855668913
+Copper,"market group for transport, freight train",GLO,Total HH,DALY,1.414369629066657e-07,0.06260078633055727
+Copper,treatment of copper cake,CD,Total HH,DALY,1.3992544348049307e-07,0.0619317794267908
+Copper,"platinum group metal mine operation, ore with high palladium content",CA,Total HH,DALY,9.679286349733985e-08,0.04284105966075012
+Copper,gold mine operation and refining,CA,Total HH,DALY,7.782015185921678e-08,0.03444363198017141
+Copper,treatment of copper cake,RU,Total HH,DALY,7.726309532436005e-08,0.03419707565998502
+Copper,"copper production, cathode, solvent extraction and electrowinning process",ZM,Total HH,DALY,7.720950846842266e-08,0.034173357819544135
+Copper,treatment of copper scrap by electrolytic refining,ZM,Total HH,DALY,7.364641721437364e-08,0.03259631381572038
+Copper,"electrorefining of copper, anode",ZA,Total HH,DALY,6.124511491308661e-08,0.027107428452027876
+Copper,"electrorefining of copper, anode",BE,Total HH,DALY,5.304516476291566e-08,0.023478084914647094
+Copper,"platinum group metal mine operation, ore with high palladium content",US,Total HH,DALY,4.267296365009996e-08,0.018887291021049264
+Copper,gold mine operation and refining,US,Total HH,DALY,4.215250739114939e-08,0.0186569341865175
+Copper,"platinum group metal, extraction and refinery operations",CA,Total HH,DALY,3.9373884276524555e-08,0.017427100143725144
+Copper,"copper production, cathode, solvent extraction and electrowinning process",DE,Total HH,DALY,3.6298073471987026e-08,0.016065729176680726
+Copper,treatment of copper cake,CL,Total HH,DALY,3.435771278381612e-08,0.015206914745515679
+Copper,"copper production, cathode, solvent extraction and electrowinning process",BR,Total HH,DALY,3.109794545557471e-08,0.01376412359807543
+Copper,treatment of copper scrap by electrolytic refining,BR,Total HH,DALY,2.7491014101282366e-08,0.012167675722083876
+Copper,cobalt production,CA,Total HH,DALY,2.7419422901532693e-08,0.012135989058947347
+Copper,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,2.636509774009253e-08,0.011669338879264114
+Copper,treatment of copper scrap by electrolytic refining,DE,Total HH,DALY,2.5501208499319323e-08,0.01128697669710528
+Copper,gold mine operation and refining,RU,Total HH,DALY,2.337602983356178e-08,0.01034636080126525
+Copper,"platinum group metal mine operation, ore with high palladium content",RU,Total HH,DALY,2.2606874182704224e-08,0.010005928232828039
+Copper,"platinum group metal mine operation, ore with high palladium content",CD,Total HH,DALY,2.226097639242675e-08,0.009852831947271759
+Copper,gold mine operation and refining,CD,Total HH,DALY,2.098673721471878e-08,0.009288846601019939
+Copper,primary zinc production from concentrate,CA,Total HH,DALY,1.6636290517867216e-08,0.007363314699632877
+Copper,treatment of copper cake,MX,Total HH,DALY,1.5815068872801766e-08,0.006999837432613957
+Copper,"platinum group metal, extraction and refinery operations",US,Total HH,DALY,1.5683918496653954e-08,0.006941789546787824
+Copper,"electrorefining of copper, anode",KR,Total HH,DALY,1.4930531648018856e-08,0.006608336337906491
+Copper,treatment of copper cake,RoW,Total HH,DALY,1.39729450818971e-08,0.006184503198486223
+Copper,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,1.3123531350814928e-08,0.005808547957416701
+Copper,"platinum group metal, extraction and refinery operations",CD,Total HH,DALY,1.1507107989191128e-08,0.005093109988436079
+Copper,"platinum group metal mine operation, ore with high palladium content",CL,Total HH,DALY,1.1260291370432503e-08,0.004983867580396426
+Copper,gold mine operation and refining,CL,Total HH,DALY,1.1113709790780084e-08,0.004918989758084361
+Copper,cobalt production,US,Total HH,DALY,9.63055286685596e-09,0.004262536255540403
+Copper,cobalt production,CD,Total HH,DALY,8.898598624593607e-09,0.003938569237428966
+Copper,"platinum group metal, extraction and refinery operations",RU,Total HH,DALY,7.806046135109359e-09,0.0034549994297666253
+Copper,primary zinc production from concentrate,US,Total HH,DALY,7.588388574713515e-09,0.0033586629831153913
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CA,Total HH,DALY,7.370683514616189e-09,0.003262305512832129
+Copper,treatment of copper cake,ZM,Total HH,DALY,7.1247562470177154e-09,0.003153456736561749
+Copper,"copper production, cathode, solvent extraction and electrowinning process",ZA,Total HH,DALY,5.895028222143225e-09,0.0026091722740859344
+Copper,primary zinc production from concentrate,CD,Total HH,DALY,4.898937434839899e-09,0.00216829695224407
+Copper,"platinum group metal mine operation, ore with high palladium content",MX,Total HH,DALY,4.4531197077080415e-09,0.0019709755469691777
+Copper,cobalt production,RU,Total HH,DALY,4.416919311713329e-09,0.001954953050387135
+Copper,gold mine operation and refining,RoW,Total HH,DALY,4.401167285152064e-09,0.001947981115832193
+Copper,gold mine operation and refining,MX,Total HH,DALY,4.351711135968848e-09,0.0019260915491720713
+Copper,"platinum group metal mine operation, ore with high palladium content",RoW,Total HH,DALY,4.071188463801595e-09,0.0018019306544503168
+Copper,"platinum group metal, extraction and refinery operations",CL,Total HH,DALY,3.735921853564379e-09,0.0016535397883011328
+Copper,primary zinc production from concentrate,RU,Total HH,DALY,3.5525030143428958e-09,0.0015723575900473423
+Copper,treatment of copper cake,BR,Total HH,DALY,2.900742307646111e-09,0.0012838846767431811
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",US,Total HH,DALY,2.8756996041591896e-09,0.0012728006369143651
+Copper,treatment of copper scrap by electrolytic refining,ZA,Total HH,DALY,2.8076302297616733e-09,0.0012426727532639959
+Copper,treatment of copper cake,DE,Total HH,DALY,2.6308183128180376e-09,0.0011644148155522754
+Copper,"copper production, cathode, solvent extraction and electrowinning process",BE,Total HH,DALY,2.6306859218327884e-09,0.0011643562185659616
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CD,Total HH,DALY,2.3194378050244296e-09,0.001026596071178138
+Copper,"electrorefining of copper, anode",FI,Total HH,DALY,2.3134054822935054e-09,0.0010239261315909542
+Copper,treatment of copper scrap by electrolytic refining,BE,Total HH,DALY,2.2004216623963833e-09,0.0009739188645877927
+Copper,"electrorefining of copper, anode",PE,Total HH,DALY,2.075377944382356e-09,0.0009185738196115359
+Copper,cobalt production,CL,Total HH,DALY,1.8608194159472324e-09,0.0008236090217402082
+Copper,primary zinc production from concentrate,CL,Total HH,DALY,1.7312356120821662e-09,0.0007662545095183149
+Copper,"platinum group metal, extraction and refinery operations",MX,Total HH,DALY,1.6092580004968918e-09,0.0007122665402984129
+Copper,"electrorefining of copper, anode",AU,Total HH,DALY,1.497455035947894e-09,0.0006627819264392106
+Copper,"platinum group metal, extraction and refinery operations",RoW,Total HH,DALY,1.4315806956859333e-09,0.0006336255771040887
+Copper,gold mine operation and refining,ZM,Total HH,DALY,1.4290862304724025e-09,0.000632521512928557
+Copper,"platinum group metal mine operation, ore with high palladium content",ZM,Total HH,DALY,1.3726174870595133e-09,0.0006075281330644964
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RU,Total HH,DALY,1.1873013060637503e-09,0.0005255061607900627
+Copper,"copper production, cathode, solvent extraction and electrowinning process",KR,Total HH,DALY,1.1036112552581291e-09,0.0004884644788929944
+Copper,cobalt production,MX,Total HH,DALY,8.692561237896984e-10,0.00038473759442781986
+Copper,"electrorefining of copper, anode",AT,Total HH,DALY,8.455130634932647e-10,0.00037422878390258666
+Copper,cobalt production,RoW,Total HH,DALY,8.352140728001965e-10,0.0003696703933479011
+Copper,primary zinc production from concentrate,MX,Total HH,DALY,7.246276190872333e-10,0.0003207242139498916
+Copper,treatment of copper scrap by electrolytic refining,KR,Total HH,DALY,7.013547433704632e-10,0.00031042350973437086
+Copper,"electrorefining of copper, anode",CN,Total HH,DALY,6.612003827449253e-10,0.000292650966418249
+Copper,primary zinc production from concentrate,RoW,Total HH,DALY,6.575022730270134e-10,0.0002910141624914655
+Copper,"platinum group metal, extraction and refinery operations",ZM,Total HH,DALY,6.223952291811269e-10,0.00027547558965075673
+Copper,"platinum group metal mine operation, ore with high palladium content",DE,Total HH,DALY,6.036661259061671e-10,0.0002671859843864497
+Copper,gold mine operation and refining,DE,Total HH,DALY,5.899949702229944e-10,0.00026113505485412625
+Copper,"platinum group metal mine operation, ore with high palladium content",BR,Total HH,DALY,5.560796819491462e-10,0.0002461239596570986
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CL,Total HH,DALY,5.464596533707168e-10,0.0002418660815101427
+Copper,gold mine operation and refining,BR,Total HH,DALY,5.140121327887136e-10,0.0002275046284559594
+Copper,cobalt production,ZM,Total HH,DALY,4.439512877302053e-10,0.00019649530881622567
+Copper,"electrorefining of copper, anode",JP,Total HH,DALY,2.897721731530263e-10,0.00012825477529565174
+Copper,treatment of copper cake,ZA,Total HH,DALY,2.786971544331139e-10,0.00012335291042069916
+Copper,"platinum group metal, extraction and refinery operations",BR,Total HH,DALY,2.7581745582038555e-10,0.0001220783398003531
+Copper,primary zinc production from concentrate,ZM,Total HH,DALY,2.734287104738614e-10,0.00012102106782587958
+Copper,"platinum group metal, extraction and refinery operations",DE,Total HH,DALY,2.6610961514343856e-10,0.00011778159553025955
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",MX,Total HH,DALY,2.513129417349517e-10,0.00011123250559357178
+Copper,treatment of copper cake,BE,Total HH,DALY,2.389078224175309e-10,0.00010574193079731158
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RoW,Total HH,DALY,2.1937436368454746e-10,9.709631333416521e-05
+Copper,cobalt production,BR,Total HH,DALY,1.6748742940069755e-10,7.413086767061249e-05
+Copper,cobalt production,DE,Total HH,DALY,1.4351645366625937e-10,6.352118050505318e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",AU,Total HH,DALY,1.2903596267712386e-10,5.7112034665499026e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",FI,Total HH,DALY,1.1978944716742612e-10,5.301947547991507e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZM,Total HH,DALY,1.1599553890422827e-10,5.134027058424073e-05
+Copper,gold mine operation and refining,ZA,Total HH,DALY,1.1469469755628063e-10,5.0764510969502946e-05
+Copper,"platinum group metal mine operation, ore with high palladium content",ZA,Total HH,DALY,1.1107829877280606e-10,4.916387275670582e-05
+Copper,primary zinc production from concentrate,DE,Total HH,DALY,1.100073230574565e-10,4.868985294926654e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",PE,Total HH,DALY,1.0932799784490237e-10,4.838917983238037e-05
+Copper,primary zinc production from concentrate,BR,Total HH,DALY,1.0813816410357039e-10,4.786255280165741e-05
+Copper,treatment of copper scrap by electrolytic refining,FI,Total HH,DALY,9.70367266810186e-11,4.294899486199902e-05
+Copper,treatment of copper scrap by electrolytic refining,PE,Total HH,DALY,8.642196271741326e-11,3.825084130172032e-05
+Copper,treatment of copper scrap by electrolytic refining,AU,Total HH,DALY,6.743422330448195e-11,2.9846762244440203e-05
+Copper,treatment of copper cake,KR,Total HH,DALY,6.700611611985807e-11,2.9657279623769815e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",CN,Total HH,DALY,5.5505792443956654e-11,2.4567172410124152e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BR,Total HH,DALY,4.822707159355811e-11,2.1345570083890257e-05
+Copper,"copper production, cathode, solvent extraction and electrowinning process",AT,Total HH,DALY,4.387024179323303e-11,1.9417212985408604e-05
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",DE,Total HH,DALY,4.262592840715682e-11,1.886647296095395e-05
+Copper,"platinum group metal mine operation, ore with high palladium content",BE,Total HH,DALY,4.1108356184124907e-11,1.8194787055637242e-05
+Copper,gold mine operation and refining,BE,Total HH,DALY,3.6770030694177296e-11,1.6274620067833366e-05
+Copper,treatment of copper scrap by electrolytic refining,AT,Total HH,DALY,3.543066462315954e-11,1.5681809196424102e-05
+Copper,"platinum group metal, extraction and refinery operations",ZA,Total HH,DALY,3.281988170060467e-11,1.4526262156021534e-05
+Copper,treatment of copper scrap by electrolytic refining,CN,Total HH,DALY,3.231062662637668e-11,1.4300863028139127e-05
+Copper,"electrorefining of copper, anode",SG,Total HH,DALY,2.9544898220681285e-11,1.3076736255227981e-05
+Copper,"platinum group metal, extraction and refinery operations",BE,Total HH,DALY,2.093642574847704e-11,9.266578466273193e-06
+Copper,"copper production, cathode, solvent extraction and electrowinning process",JP,Total HH,DALY,2.0853165735928958e-11,9.229727121700406e-06
+Copper,gold mine operation and refining,KR,Total HH,DALY,2.08490880021713e-11,9.227922294062494e-06
+Copper,"platinum group metal mine operation, ore with high palladium content",KR,Total HH,DALY,1.9767489492447125e-11,8.74920077875837e-06
+Copper,primary zinc production from concentrate,ZA,Total HH,DALY,1.608583778833442e-11,7.119681260407418e-06
+Copper,cobalt production,ZA,Total HH,DALY,1.4681136556978625e-11,6.497952683695803e-06
+Copper,cobalt production,BE,Total HH,DALY,1.2797186301478204e-11,5.664105823735955e-06
+Copper,treatment of copper scrap by electrolytic refining,JP,Total HH,DALY,1.2642007131109658e-11,5.59542265996069e-06
+Copper,treatment of copper cake,FI,Total HH,DALY,9.95759365271241e-12,4.407286326073855e-06
+Copper,treatment of copper cake,PE,Total HH,DALY,9.525369808562417e-12,4.215981649003965e-06
+Copper,primary zinc production from concentrate,BE,Total HH,DALY,8.696730815949906e-12,3.849221422711949e-06
+Copper,"platinum group metal, extraction and refinery operations",KR,Total HH,DALY,7.373357273588316e-12,3.2634889334222897e-06
+Copper,treatment of copper cake,AU,Total HH,DALY,6.697274417216658e-12,2.9642509014136124e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZA,Total HH,DALY,4.240508865887027e-12,1.8768728060245758e-06
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BE,Total HH,DALY,3.915165397270758e-12,1.732873977540614e-06
+Copper,cobalt production,KR,Total HH,DALY,3.8095628494043764e-12,1.686133702586405e-06
+Copper,treatment of copper cake,AT,Total HH,DALY,3.7954925967902604e-12,1.6799061305330198e-06
+Copper,primary zinc production from concentrate,KR,Total HH,DALY,3.1683600645254342e-12,1.402333784192702e-06
+Copper,treatment of copper cake,CN,Total HH,DALY,2.9633469674069256e-12,1.311593847305407e-06
+Copper,gold mine operation and refining,AU,Total HH,DALY,2.3828576450829748e-12,1.0546660450734556e-06
+Copper,"platinum group metal mine operation, ore with high palladium content",AU,Total HH,DALY,2.3190023530948242e-12,1.026403337732494e-06
+Copper,"platinum group metal mine operation, ore with high palladium content",FI,Total HH,DALY,1.941326008672724e-12,8.592416873874156e-07
+Copper,"copper production, cathode, solvent extraction and electrowinning process",SG,Total HH,DALY,1.9046762519254032e-12,8.430203012373189e-07
+Copper,gold mine operation and refining,FI,Total HH,DALY,1.858395035081479e-12,8.225359772867504e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",PE,Total HH,DALY,1.7437181673915153e-12,7.717793579152334e-07
+Copper,gold mine operation and refining,PE,Total HH,DALY,1.5110854342480923e-12,6.688148165271728e-07
+Copper,treatment of copper scrap by electrolytic refining,SG,Total HH,DALY,1.4329402032710985e-12,6.342273027216689e-07
+Copper,treatment of copper cake,JP,Total HH,DALY,1.2842527493938912e-12,5.684174087666923e-07
+Copper,gold mine operation and refining,CN,Total HH,DALY,1.08106477178062e-12,4.784852799221257e-07
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",KR,Total HH,DALY,1.0611933088267136e-12,4.696900599111164e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",CN,Total HH,DALY,1.0193311693029342e-12,4.5116164415746777e-07
+Copper,"platinum group metal, extraction and refinery operations",FI,Total HH,DALY,9.34007831508666e-13,4.1339706035631755e-07
+Copper,"platinum group metal, extraction and refinery operations",PE,Total HH,DALY,8.084368819610074e-13,3.578186597712772e-07
+Copper,"platinum group metal, extraction and refinery operations",AU,Total HH,DALY,7.514029087072158e-13,3.325751060363217e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",AT,Total HH,DALY,7.213004422809543e-13,3.192515869925996e-07
+Copper,gold mine operation and refining,AT,Total HH,DALY,6.647778600691974e-13,2.9423437777675616e-07
+Copper,cobalt production,FI,Total HH,DALY,5.801310359084762e-13,2.5676922267198806e-07
+Copper,cobalt production,PE,Total HH,DALY,5.110670697946392e-13,2.2620112719693036e-07
+Copper,primary zinc production from concentrate,FI,Total HH,DALY,3.8674766245121725e-13,1.7117666615146276e-07
+Copper,"platinum group metal mine operation, ore with high palladium content",JP,Total HH,DALY,3.6623499863282817e-13,1.6209764707203787e-07
+Copper,gold mine operation and refining,JP,Total HH,DALY,3.5702370365452796e-13,1.580206766895161e-07
+Copper,primary zinc production from concentrate,AU,Total HH,DALY,3.548173482849687e-13,1.5704413153313997e-07
+Copper,"platinum group metal, extraction and refinery operations",CN,Total HH,DALY,3.5285849193672146e-13,1.5617713081996853e-07
+Copper,cobalt production,AU,Total HH,DALY,3.514473410352914e-13,1.5555254758341463e-07
+Copper,"platinum group metal, extraction and refinery operations",AT,Total HH,DALY,3.3935128097916797e-13,1.501987641349206e-07
+Copper,primary zinc production from concentrate,PE,Total HH,DALY,3.309123897792242e-13,1.4646366396013027e-07
+Copper,cobalt production,AT,Total HH,DALY,2.082709152750146e-13,9.218186532048567e-08
+Copper,cobalt production,CN,Total HH,DALY,1.7922606936743205e-13,7.93264549998866e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",FI,Total HH,DALY,1.7239658112776604e-13,7.630368552539985e-08
+Copper,primary zinc production from concentrate,CN,Total HH,DALY,1.5334771070875274e-13,6.787254954487092e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",PE,Total HH,DALY,1.5116485715589067e-13,6.690640642326139e-08
+Copper,primary zinc production from concentrate,AT,Total HH,DALY,1.4825894245126498e-13,6.562023241485073e-08
+Copper,"platinum group metal, extraction and refinery operations",JP,Total HH,DALY,1.363931782355306e-13,6.036837918601593e-08
+Copper,treatment of copper cake,SG,Total HH,DALY,1.3560189938140634e-13,6.001815476478306e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AU,Total HH,DALY,1.0446956320668447e-13,4.6238809643162146e-08
+Copper,cobalt production,JP,Total HH,DALY,7.163422682779981e-14,3.1705707160588555e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AT,Total HH,DALY,6.204619568226028e-14,2.7461991255371247e-08
+Copper,primary zinc production from concentrate,JP,Total HH,DALY,5.982247826194822e-14,2.647776155877944e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CN,Total HH,DALY,4.76938459631973e-14,2.11095614545603e-08
+Copper,"aluminium alloy production, Metallic Matrix Composite",CA,Total HH,DALY,4.0655262021622275e-14,1.7994245059602106e-08
+Copper,gold mine operation and refining,SG,Total HH,DALY,3.557042017573527e-14,1.574366578119166e-08
+Copper,"platinum group metal mine operation, ore with high palladium content",SG,Total HH,DALY,3.2831382801139564e-14,1.4531352607077289e-08
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",JP,Total HH,DALY,2.1294254558133505e-14,9.424955487356459e-09
+Copper,"aluminium alloy production, AlLi",CA,Total HH,DALY,2.0691753613861417e-14,9.158285218840967e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",US,Total HH,DALY,2.0503461793824477e-14,9.07494621217902e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",CD,Total HH,DALY,1.992083182203033e-14,8.81707094658715e-09
+Copper,"platinum group metal, extraction and refinery operations",SG,Total HH,DALY,1.2758049173142871e-14,5.64678351308843e-09
+Copper,"aluminium alloy production, AlLi",US,Total HH,DALY,1.0035761488947292e-14,4.441883845092211e-09
+Copper,"aluminium alloy production, AlLi",CD,Total HH,DALY,1.0001830249032666e-14,4.426865689610266e-09
+Copper,cobalt production,SG,Total HH,DALY,8.179778723898379e-15,3.6204155519367996e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",RU,Total HH,DALY,7.342145231852296e-15,3.249674310175986e-09
+Copper,primary zinc production from concentrate,SG,Total HH,DALY,5.780548168917052e-15,2.5585027658906e-09
+Copper,"aluminium alloy production, Metallic Matrix Composite",CL,Total HH,DALY,5.412621043022215e-15,2.3956561738822726e-09
+Copper,"aluminium alloy production, AlLi",RU,Total HH,DALY,3.5309467402289287e-15,1.5628166632474513e-09
+Copper,"aluminium alloy production, AlLi",CL,Total HH,DALY,2.686027575888947e-15,1.1888507424128528e-09
+Copper,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",SG,Total HH,DALY,2.1251686273075834e-15,9.406114527662547e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",RoW,Total HH,DALY,2.12505401360541e-15,9.405607241042922e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",MX,Total HH,DALY,2.109753840472993e-15,9.3378878238977e-10
+Copper,"aluminium alloy production, AlLi",RoW,Total HH,DALY,1.0574159345734863e-15,4.680181730602027e-10
+Copper,"aluminium alloy production, AlLi",MX,Total HH,DALY,1.0407872329182065e-15,4.606582172333536e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",ZM,Total HH,DALY,1.0291960520532262e-15,4.5552789612255384e-10
+Copper,"aluminium alloy production, AlLi",ZM,Total HH,DALY,5.154011286109671e-16,2.2811940573126263e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",BR,Total HH,DALY,3.8211237563275256e-16,1.6912506242821933e-10
+Copper,"aluminium alloy production, Metallic Matrix Composite",DE,Total HH,DALY,2.841011167512195e-16,1.2574473419478113e-10
+Copper,"aluminium alloy production, AlLi",BR,Total HH,DALY,1.9884057946532242e-16,8.800794624787723e-11
+Copper,"aluminium alloy production, AlLi",DE,Total HH,DALY,1.3788251290427295e-16,6.102756699277162e-11
+Copper,"aluminium alloy production, Metallic Matrix Composite",ZA,Total HH,DALY,4.400682315536062e-17,1.947766465583176e-11
+Copper,"aluminium alloy production, Metallic Matrix Composite",BE,Total HH,DALY,2.2798533034994053e-17,1.009075750668959e-11
+Copper,"aluminium alloy production, AlLi",ZA,Total HH,DALY,2.090020015692837e-17,9.250544817998852e-12
+Copper,"aluminium alloy production, Metallic Matrix Composite",KR,Total HH,DALY,1.1427453565321728e-17,5.057854497463592e-12
+Copper,"aluminium alloy production, AlLi",BE,Total HH,DALY,1.1185060622214743e-17,4.9505700328679505e-12
+Copper,"aluminium alloy production, AlLi",KR,Total HH,DALY,5.7100736716184926e-18,2.5273103614690497e-12
+Copper,"aluminium alloy production, Metallic Matrix Composite",PE,Total HH,DALY,1.341620708401012e-18,5.938087864534065e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",AU,Total HH,DALY,1.0889836256250544e-18,4.819902086713769e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",FI,Total HH,DALY,1.0763750172034923e-18,4.764095684659962e-13
+Copper,"aluminium alloy production, AlLi",PE,Total HH,DALY,6.748451652279784e-19,2.986902230255349e-13
+Copper,"aluminium alloy production, AlLi",AU,Total HH,DALY,5.408944581430879e-19,2.3940289515367e-13
+Copper,"aluminium alloy production, AlLi",FI,Total HH,DALY,5.291867939758123e-19,2.3422101788549657e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",CN,Total HH,DALY,5.151999964234271e-19,2.28030383506537e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",AT,Total HH,DALY,3.6799311829663536e-19,1.6287580061235517e-13
+Copper,"aluminium alloy production, AlLi",CN,Total HH,DALY,2.565010580944496e-19,1.135287947460285e-13
+Copper,"aluminium alloy production, Metallic Matrix Composite",JP,Total HH,DALY,1.9092292819061856e-19,8.45035497626764e-14
+Copper,"aluminium alloy production, AlLi",AT,Total HH,DALY,1.7499048798577692e-19,7.74517631257854e-14
+Copper,"aluminium alloy production, AlLi",JP,Total HH,DALY,9.526114558809817e-20,4.21631127960511e-14
+Copper,"aluminium alloy production, Metallic Matrix Composite",SG,Total HH,DALY,2.2001263486426046e-20,9.737881570780946e-15
+Copper,"aluminium alloy production, AlLi",SG,Total HH,DALY,1.1508298661297458e-20,5.093636986531812e-15
+Copper,treatment of used cable,AT,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",AT,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",AT,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,AU,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",AU,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",AU,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,BE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",BE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",BE,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,BR,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",BR,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",BR,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,CA,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CA,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CA,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,CD,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CD,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CD,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,CL,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CL,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CL,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,CN,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",CN,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",CN,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,DE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",DE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",DE,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,FI,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",FI,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",FI,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,JP,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",JP,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",JP,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,KR,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",KR,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",KR,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,MX,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",MX,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",MX,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,PE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",PE,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",PE,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,RU,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",RU,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",RU,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,SG,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",SG,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",SG,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,US,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",US,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",US,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,ZA,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",ZA,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",ZA,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,ZM,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",ZM,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",ZM,Total HH,DALY,0.0,0.0
+Copper,treatment of used cable,RoW,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, hydrometallurgical processing",RoW,Total HH,DALY,0.0,0.0
+Copper,"treatment of non-Fe-Co-metals, from used Li-ion battery, pyrometallurgical processing",RoW,Total HH,DALY,0.0,0.0
+Graphite,"graphite production, battery grade",US,Total EQ,PDF.m2.yr,0.6780138039550572,54.928230521556074
+Graphite,"graphite production, battery grade",CN,Total EQ,PDF.m2.yr,0.3364875911438925,27.260017224103567
+Graphite,"graphite production, battery grade",ES,Total EQ,PDF.m2.yr,0.031392008160239966,2.5431745647386963
+Graphite,"graphite production, battery grade",MX,Total EQ,PDF.m2.yr,0.029557817737609137,2.3945804892685536
+Graphite,"graphite production, battery grade",JP,Total EQ,PDF.m2.yr,0.027052985630317026,2.1916554240197987
+Graphite,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.022491033964034183,1.8220760271224596
+Graphite,"graphite production, battery grade",RoW,Total EQ,PDF.m2.yr,0.020306976368057443,1.6451380084503235
+Graphite,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.012663335348271118,1.025900356488483
+Graphite,"graphite production, battery grade",IN,Total EQ,PDF.m2.yr,0.012436463061696764,1.0075206521473385
+Graphite,"graphite production, battery grade",FR,Total EQ,PDF.m2.yr,0.01060091838173713,0.8588168636325522
+Graphite,"graphite production, battery grade",CH,Total EQ,PDF.m2.yr,0.010055292461510202,0.8146138309657608
+Graphite,"graphite production, battery grade",KR,Total EQ,PDF.m2.yr,0.009174414266993332,0.7432508583425043
+Graphite,"graphite production, battery grade",BR,Total EQ,PDF.m2.yr,0.007751943547483764,0.6280116122746403
+Graphite,"graphite production, battery grade",DE,Total EQ,PDF.m2.yr,0.005313270342606762,0.430446307286978
+Graphite,"graphite production, battery grade",CA,Total EQ,PDF.m2.yr,0.004503139020414397,0.36481478214908447
+Graphite,"graphite production, battery grade",MY,Total EQ,PDF.m2.yr,0.004402622901691836,0.35667162561138815
+Graphite,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.0042123119342664245,0.34125387949981156
+Graphite,"graphite production, battery grade",IT,Total EQ,PDF.m2.yr,0.003077155090254756,0.24929091880155405
+Graphite,"graphite production, battery grade",RU,Total EQ,PDF.m2.yr,0.0010608162689887657,0.08594037499551316
+Graphite,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.000778941049502569,0.06310469385755461
+Graphite,"graphite production, battery grade",PL,Total EQ,PDF.m2.yr,0.0007549523082258644,0.061161283409150016
+Graphite,"graphite production, battery grade",NL,Total EQ,PDF.m2.yr,0.000619621242023626,0.050197648218062885
+Graphite,"graphite production, battery grade",AT,Total EQ,PDF.m2.yr,0.0005437687852079512,0.04405257977064535
+Graphite,"graphite production, battery grade",NO,Total EQ,PDF.m2.yr,0.0005119622954066584,0.04147582662241189
+Graphite,"graphite production, battery grade",ZA,Total EQ,PDF.m2.yr,0.0002914825102107484,0.02361400080715627
+Graphite,"graphite production, battery grade",CZ,Total EQ,PDF.m2.yr,0.00023722600600181555,0.019218494767164807
+Graphite,"graphite production, battery grade",GB,Total EQ,PDF.m2.yr,7.073930397293332e-05,0.0057308343471680545
+Graphite,"graphite production, battery grade",RO,Total EQ,PDF.m2.yr,5.169475267088572e-07,4.1879697358631605e-05
+Graphite,"graphite production, battery grade",DK,Total EQ,PDF.m2.yr,4.831113956960461e-09,3.9138515994199596e-07
+Graphite,"graphite production, battery grade",US,Total HH,DALY,4.681721328836735e-06,50.676074072217226
+Graphite,"graphite production, battery grade",CN,Total HH,DALY,2.723700233994937e-06,29.48198432022826
+Graphite,"graphite production, battery grade",MX,Total HH,DALY,2.408182987361024e-07,2.6066749999680816
+Graphite,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,2.3548198974384467e-07,2.548913512094329
+Graphite,"graphite production, battery grade",ES,Total HH,DALY,2.3264947987011038e-07,2.5182537461472365
+Graphite,"graphite production, battery grade",JP,Total HH,DALY,2.2197577994246446e-07,2.4027190591878993
+Graphite,"graphite production, battery grade",RoW,Total HH,DALY,1.6851431832336312e-07,1.824039381623294
+Graphite,"market group for transport, freight train",GLO,Total HH,DALY,1.2679282260571496e-07,1.3724359095480845
+Graphite,"graphite production, battery grade",IN,Total HH,DALY,1.1222143241681807e-07,1.2147116887578664
+Graphite,"graphite production, battery grade",KR,Total HH,DALY,7.548035517748964e-08,0.8170174603113635
+Graphite,"graphite production, battery grade",CH,Total HH,DALY,7.164593960173747e-08,0.7755128268459706
+Graphite,"graphite production, battery grade",FR,Total HH,DALY,7.130059478392345e-08,0.7717747317440249
+Graphite,"graphite production, battery grade",BR,Total HH,DALY,5.98918003327569e-08,0.6482832054284954
+Graphite,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,4.3470117110698126e-08,0.47053096925293675
+Graphite,"graphite production, battery grade",DE,Total HH,DALY,4.0570945213905345e-08,0.43914963758652037
+Graphite,"graphite production, battery grade",MY,Total HH,DALY,3.803008366194731e-08,0.4116467429949135
+Graphite,"graphite production, battery grade",CA,Total HH,DALY,2.8870331702252235e-08,0.31249939179877145
+Graphite,"graphite production, battery grade",IT,Total HH,DALY,2.306001210659955e-08,0.24960709951325194
+Graphite,"graphite production, battery grade",RU,Total HH,DALY,9.309215302021734e-09,0.10076517824624306
+Graphite,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,8.893632816254748e-09,0.09626681378740058
+Graphite,"graphite production, battery grade",PL,Total HH,DALY,6.425454342847824e-09,0.0695506582632743
+Graphite,"graphite production, battery grade",NL,Total HH,DALY,4.934228281816622e-09,0.05340926986799051
+Graphite,"graphite production, battery grade",AT,Total HH,DALY,4.094142150245357e-09,0.044315976175278174
+Graphite,"graphite production, battery grade",NO,Total HH,DALY,3.6782750233231617e-09,0.039814530692331054
+Graphite,"graphite production, battery grade",ZA,Total HH,DALY,2.4875848442778136e-09,0.026926214734970096
+Graphite,"graphite production, battery grade",CZ,Total HH,DALY,1.9613491405847927e-09,0.02123011331698609
+Graphite,"graphite production, battery grade",GB,Total HH,DALY,5.403063578381669e-10,0.005848405551788813
+Graphite,"graphite production, battery grade",RO,Total HH,DALY,4.212328697918346e-12,4.559525570166216e-05
+Graphite,"graphite production, battery grade",DK,Total HH,DALY,3.607401239797653e-14,3.9047375867973034e-07
+Lithium carbonate,"lithium carbonate production, from spodumene",CL,Total EQ,PDF.m2.yr,2.9430564316866525,57.40309589906041
+Lithium carbonate,"lithium carbonate production, from spodumene",RoW,Total EQ,PDF.m2.yr,0.7730265393073245,15.07756225487886
+Lithium carbonate,"lithium carbonate production, from spodumene",US,Total EQ,PDF.m2.yr,0.2890640962066393,5.638075388862138
+Lithium carbonate,"lithium carbonate production, from spodumene",CN,Total EQ,PDF.m2.yr,0.2850125624247788,5.5590519016756765
+Lithium carbonate,"lithium carbonate production, from concentrated brine",CL,Total EQ,PDF.m2.yr,0.26750847269880174,5.217641886445293
+Lithium carbonate,"lithium carbonate production, from spodumene",AR,Total EQ,PDF.m2.yr,0.15299847800789185,2.984171900660443
+Lithium carbonate,"lithium carbonate production, from spodumene",DE,Total EQ,PDF.m2.yr,0.11718870264864299,2.285717074263274
+Lithium carbonate,"lithium carbonate production, from concentrated brine",RoW,Total EQ,PDF.m2.yr,0.08016225777716565,1.5635316132999548
+Lithium carbonate,"lithium carbonate production, from spodumene",NL,Total EQ,PDF.m2.yr,0.04813057059686998,0.9387668309388315
+Lithium carbonate,"lithium carbonate production, from concentrated brine",CN,Total EQ,PDF.m2.yr,0.02893728747101331,0.5644097985594156
+Lithium carbonate,"lithium carbonate production, from concentrated brine",US,Total EQ,PDF.m2.yr,0.0274159367448775,0.5347364831964375
+Lithium carbonate,"lithium carbonate production, from spodumene",BE,Total EQ,PDF.m2.yr,0.02280097436821109,0.44472355479108
+Lithium carbonate,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.022491033964034183,0.43867829566780714
+Lithium carbonate,"lithium carbonate production, from concentrated brine",AR,Total EQ,PDF.m2.yr,0.015489286812072926,0.3021121194648366
+Lithium carbonate,"lithium carbonate production, from concentrated brine",DE,Total EQ,PDF.m2.yr,0.013461319001999296,0.2625574478559239
+Lithium carbonate,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.012663335348271118,0.24699310742817693
+Lithium carbonate,"lithium carbonate production, from spodumene",GB,Total EQ,PDF.m2.yr,0.012055502179699968,0.23513757340223804
+Lithium carbonate,"lithium carbonate production, from concentrated brine",NL,Total EQ,PDF.m2.yr,0.005433360602906977,0.10597544660878354
+Lithium carbonate,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.0042123119342664245,0.08215939841183331
+Lithium carbonate,"lithium carbonate production, from concentrated brine",BE,Total EQ,PDF.m2.yr,0.0026517616593655148,0.05172151209712753
+Lithium carbonate,"lithium carbonate production, from concentrated brine",GB,Total EQ,PDF.m2.yr,0.001434000141394932,0.027969578411578228
+Lithium carbonate,"lithium carbonate production, from spodumene",IN,Total EQ,PDF.m2.yr,0.0008873357160995582,0.017307115370782503
+Lithium carbonate,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.000778941049502569,0.015192922324865358
+Lithium carbonate,"lithium carbonate production, from concentrated brine",IN,Total EQ,PDF.m2.yr,8.15094772783355e-05,0.0015898085712916902
+Lithium carbonate,"lithium carbonate production, from spodumene",FR,Total EQ,PDF.m2.yr,3.436744798999261e-05,0.0006703228288575203
+Lithium carbonate,"lithium carbonate production, from spodumene",KR,Total EQ,PDF.m2.yr,1.7487036677172262e-05,0.00034107740258137927
+Lithium carbonate,"lithium carbonate production, from concentrated brine",FR,Total EQ,PDF.m2.yr,3.978063651187015e-06,7.75904827386495e-05
+Lithium carbonate,"lithium carbonate production, from concentrated brine",KR,Total EQ,PDF.m2.yr,1.7177861024301901e-06,3.350470596153761e-05
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",AR,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",BE,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",CL,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",CN,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",DE,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",FR,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",GB,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",IN,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",KR,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",NL,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",US,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",RoW,Total EQ,PDF.m2.yr,0.0,0.0
+Lithium carbonate,"lithium carbonate production, from spodumene",CL,Total HH,DALY,3.0042212571681023e-05,57.87234897513748
+Lithium carbonate,"lithium carbonate production, from spodumene",RoW,Total HH,DALY,7.337744954020914e-06,14.135195124407938
+Lithium carbonate,"lithium carbonate production, from concentrated brine",CL,Total HH,DALY,3.451913625048714e-06,6.6496550300413775
+Lithium carbonate,"lithium carbonate production, from spodumene",US,Total HH,DALY,2.689155864032406e-06,5.180303089876996
+Lithium carbonate,"lithium carbonate production, from spodumene",CN,Total HH,DALY,2.589170144337879e-06,4.987693825533183
+Lithium carbonate,"lithium carbonate production, from spodumene",AR,Total HH,DALY,1.4292030313007715e-06,2.7531706057405887
+Lithium carbonate,"lithium carbonate production, from spodumene",DE,Total HH,DALY,1.0893105564336684e-06,2.0984127089113054
+Lithium carbonate,"lithium carbonate production, from concentrated brine",RoW,Total HH,DALY,9.525098260683983e-07,1.8348841958611226
+Lithium carbonate,"lithium carbonate production, from spodumene",NL,Total HH,DALY,4.458310549570715e-07,0.858834559367663
+Lithium carbonate,"lithium carbonate production, from concentrated brine",US,Total HH,DALY,3.373392860449995e-07,0.6498395162619521
+Lithium carbonate,"lithium carbonate production, from concentrated brine",CN,Total HH,DALY,3.3580704781260754e-07,0.6468878619692979
+Lithium carbonate,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,2.3548198974384467e-07,0.453624907130233
+Lithium carbonate,"lithium carbonate production, from spodumene",BE,Total HH,DALY,2.0712469219764004e-07,0.3989983240957753
+Lithium carbonate,"lithium carbonate production, from concentrated brine",AR,Total HH,DALY,1.9319618764679615e-07,0.3721669023373104
+Lithium carbonate,"lithium carbonate production, from concentrated brine",DE,Total HH,DALY,1.6076727938674903e-07,0.30969689979571163
+Lithium carbonate,"market group for transport, freight train",GLO,Total HH,DALY,1.2679282260571496e-07,0.24424960245097044
+Lithium carbonate,"lithium carbonate production, from spodumene",GB,Total HH,DALY,1.1040576024029057e-07,0.2126820942447626
+Lithium carbonate,"lithium carbonate production, from concentrated brine",NL,Total HH,DALY,6.496385900775508e-08,0.1251442819099279
+Lithium carbonate,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,4.3470117110698126e-08,0.08373943102286122
+Lithium carbonate,"lithium carbonate production, from concentrated brine",BE,Total HH,DALY,3.229613970631635e-08,0.062214241483517674
+Lithium carbonate,"lithium carbonate production, from concentrated brine",GB,Total HH,DALY,1.7329625820060414e-08,0.03338323203306497
+Lithium carbonate,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,8.893632816254748e-09,0.01713240730092569
+Lithium carbonate,"lithium carbonate production, from spodumene",IN,Total HH,DALY,8.722790653163377e-09,0.01680330247023119
+Lithium carbonate,"lithium carbonate production, from concentrated brine",IN,Total HH,DALY,9.830419599554935e-10,0.0018937003134507843
+Lithium carbonate,"lithium carbonate production, from spodumene",FR,Total HH,DALY,3.0993417424293687e-10,0.0005970471931223891
+Lithium carbonate,"lithium carbonate production, from spodumene",KR,Total HH,DALY,1.6409742900294605e-10,0.00031611199256786123
+Lithium carbonate,"lithium carbonate production, from concentrated brine",FR,Total HH,DALY,4.8714451585851945e-11,9.38419477454324e-05
+Lithium carbonate,"lithium carbonate production, from concentrated brine",KR,Total HH,DALY,2.05332676318938e-11,3.9554624252708974e-05
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",AR,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",BE,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",CL,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",CN,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",DE,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",FR,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",GB,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",IN,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",KR,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",NL,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",US,Total HH,DALY,0.0,0.0
+Lithium carbonate,"treatment of used Li-ion battery, hydrometallurgical treatment",RoW,Total HH,DALY,0.0,0.0
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",US,Total EQ,PDF.m2.yr,34.7232413484928,78.48507748744326
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",US,Total EQ,PDF.m2.yr,6.593350862157674,14.90297660073741
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",CN,Total EQ,PDF.m2.yr,2.1154204616622176,4.781493098117375
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",CN,Total EQ,PDF.m2.yr,0.28500795761850367,0.6442045952371077
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",MY,Total EQ,PDF.m2.yr,0.24804601523735822,0.5606593730973972
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",MY,Total EQ,PDF.m2.yr,0.04294215736842678,0.09706232533747172
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",EE,Total EQ,PDF.m2.yr,0.03032646560087675,0.06854702816240422
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",ZA,Total EQ,PDF.m2.yr,0.027718862934791436,0.06265305371312507
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",DE,Total EQ,PDF.m2.yr,0.026919398665203452,0.060846021514796664
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",RoW,Total EQ,PDF.m2.yr,0.023992807346574236,0.05423103577336147
+Neodymium,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.022491033964034183,0.05083657155516567
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",JP,Total EQ,PDF.m2.yr,0.018222774174514657,0.041189007350117185
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",FR,Total EQ,PDF.m2.yr,0.016805469055295244,0.03798546707607206
+Neodymium,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.012663335348271118,0.028622986145896735
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",IN,Total EQ,PDF.m2.yr,0.009157337376843247,0.02069836529334838
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",EE,Total EQ,PDF.m2.yr,0.00522001915234557,0.011798829595024637
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",ZA,Total EQ,PDF.m2.yr,0.004818067417876555,0.010890296526081112
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",RoW,Total EQ,PDF.m2.yr,0.004496838843935321,0.010164222330877761
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",KR,Total EQ,PDF.m2.yr,0.004292658445293176,0.009702712581600237
+Neodymium,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.0042123119342664245,0.009521105050192342
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",NL,Total EQ,PDF.m2.yr,0.003998933004874668,0.00903880382608077
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",RU,Total EQ,PDF.m2.yr,0.0039703105814352085,0.008974108451044247
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",DE,Total EQ,PDF.m2.yr,0.003760216280204524,0.008499231484741783
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",FR,Total EQ,PDF.m2.yr,0.0029136247435094585,0.006585677341254255
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",JP,Total EQ,PDF.m2.yr,0.002858779046949234,0.00646170939997884
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",IN,Total EQ,PDF.m2.yr,0.0016071505858270298,0.00363264872068458
+Neodymium,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.000778941049502569,0.0017606434841375535
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",RU,Total EQ,PDF.m2.yr,0.0007422981638253258,0.0016778194271067485
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",NL,Total EQ,PDF.m2.yr,0.0007408487387718345,0.0016745432860203278
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",KR,Total EQ,PDF.m2.yr,0.0006151388308245244,0.001390400692097072
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",HK,Total EQ,PDF.m2.yr,0.0003519982970069652,0.0007956231199377617
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",BE,Total EQ,PDF.m2.yr,7.585728492252206e-05,0.0001714605161821862
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",HK,Total EQ,PDF.m2.yr,6.65442122332983e-05,0.00015041014175648051
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",BE,Total EQ,PDF.m2.yr,1.3338515455237258e-05,3.0149098368006956e-05
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",US,Total HH,DALY,0.00032558965056842367,81.63361583724101
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",US,Total HH,DALY,5.20335813621051e-05,13.04614377064558
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",CN,Total HH,DALY,1.4278076862761074e-05,3.5798774299930907
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",CN,Total HH,DALY,2.3316666783927477e-06,0.5846082071469539
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",MY,Total HH,DALY,2.2140367323563393e-06,0.5551153844822067
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",MY,Total HH,DALY,3.4987207973686024e-07,0.08772183912956766
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",EE,Total HH,DALY,2.6599441702664543e-07,0.06669157332395236
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",ZA,Total HH,DALY,2.449151872638229e-07,0.06140647368519229
+Neodymium,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,2.3548198974384467e-07,0.05904133087086047
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",RoW,Total HH,DALY,2.109940391553514e-07,0.05290157812536497
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",DE,Total HH,DALY,1.9473440025221742e-07,0.04882487263563764
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",JP,Total HH,DALY,1.5186598071915853e-07,0.0380766683066552
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",FR,Total HH,DALY,1.4552876925141152e-07,0.03648776802823956
+Neodymium,"market group for transport, freight train",GLO,Total HH,DALY,1.2679282260571496e-07,0.031790189133604485
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",IN,Total HH,DALY,8.774465171150471e-08,0.021999818412791288
+Neodymium,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,4.3470117110698126e-08,0.010899065232630465
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",EE,Total HH,DALY,4.160338939259456e-08,0.010431029061498018
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",ZA,Total HH,DALY,3.894833654946714e-08,0.009765339708519371
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",RU,Total HH,DALY,3.724012774364639e-08,0.009337048265039172
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",RoW,Total HH,DALY,3.657026116590149e-08,0.009169095657287771
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",NL,Total HH,DALY,3.326713710865612e-08,0.008340918349191024
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",KR,Total HH,DALY,3.155687117930813e-08,0.007912111132462324
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",DE,Total HH,DALY,2.9852332370008305e-08,0.007484739850558485
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",FR,Total HH,DALY,2.2764300134361347e-08,0.0057075896875953495
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",JP,Total HH,DALY,2.2731855313623052e-08,0.005699454944898725
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",IN,Total HH,DALY,1.3565344357883874e-08,0.00340117724282104
+Neodymium,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,8.893632816254748e-09,0.0022298602042543883
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",RU,Total HH,DALY,6.081905601591641e-09,0.0015248885969560565
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",NL,Total HH,DALY,5.762072022696469e-09,0.001444698174853277
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",KR,Total HH,DALY,4.9907716998333155e-09,0.0012513135444087089
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",HK,Total HH,DALY,3.094134805020212e-09,0.0007757783811023657
+Neodymium,"rare earth oxides production, from rare earth carbonate concentrate",BE,Total HH,DALY,6.568699572670485e-10,0.00016469402406663473
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",HK,Total HH,DALY,5.415565339371107e-10,0.00013578201262966487
+Neodymium,"rare earth oxides production, from rare earth oxide concentrate, 50% REO",BE,Total HH,DALY,1.04238203349085e-10,2.6135171781128686e-05
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",US,Total EQ,PDF.m2.yr,11.664795558085972,32.06194581131295
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",DE,Total EQ,PDF.m2.yr,6.40180902422385,17.59606098597742
+Nickel,"platinum group metal, extraction and refinery operations",US,Total EQ,PDF.m2.yr,4.497659997714027,12.362302485829323
+Nickel,cobalt production,US,Total EQ,PDF.m2.yr,2.6275604710215794,7.222132699912074
+Nickel,"platinum group metal, extraction and refinery operations",DE,Total EQ,PDF.m2.yr,2.494996436800264,6.857766186965638
+Nickel,cobalt production,DE,Total EQ,PDF.m2.yr,1.5343332902424613,4.217280154056922
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",RoW,Total EQ,PDF.m2.yr,1.0692560136177662,2.9389652134339324
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",US,Total EQ,PDF.m2.yr,0.684956211112176,1.8826758526922966
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",KR,Total EQ,PDF.m2.yr,0.5873762577491394,1.6144668505355984
+Nickel,"platinum group metal mine operation, ore with high palladium content",US,Total EQ,PDF.m2.yr,0.48124707059202604,1.3227593593338927
+Nickel,"platinum group metal, extraction and refinery operations",RoW,Total EQ,PDF.m2.yr,0.42022876583679886,1.1550439826846952
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",DE,Total EQ,PDF.m2.yr,0.3778944623406944,1.038683594035544
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",FR,Total EQ,PDF.m2.yr,0.33838589212948245,0.9300900373901173
+Nickel,cobalt production,RoW,Total EQ,PDF.m2.yr,0.27197771514697805,0.7475600169333761
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",AT,Total EQ,PDF.m2.yr,0.2650696518265656,0.7285724615375467
+Nickel,processing of nickel-rich materials,US,Total EQ,PDF.m2.yr,0.25984095379699473,0.7142008223559572
+Nickel,"platinum group metal mine operation, ore with high palladium content",DE,Total EQ,PDF.m2.yr,0.2515414020961304,0.6913886114118191
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",JP,Total EQ,PDF.m2.yr,0.24654819902745745,0.67766425547129
+Nickel,"platinum group metal, extraction and refinery operations",KR,Total EQ,PDF.m2.yr,0.23322227214108524,0.6410365114539323
+Nickel,cobalt production,KR,Total EQ,PDF.m2.yr,0.14118850450473536,0.3880717975784155
+Nickel,processing of nickel-rich materials,DE,Total EQ,PDF.m2.yr,0.14091033678195597,0.38730722365941295
+Nickel,"platinum group metal, extraction and refinery operations",FR,Total EQ,PDF.m2.yr,0.12903979863819565,0.35467977221192126
+Nickel,"platinum group metal, extraction and refinery operations",AT,Total EQ,PDF.m2.yr,0.10153610013133409,0.2790828972605716
+Nickel,"platinum group metal, extraction and refinery operations",JP,Total EQ,PDF.m2.yr,0.09708319627524661,0.266843611846101
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",RoW,Total EQ,PDF.m2.yr,0.09126124059612754,0.25084134017573406
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",SE,Total EQ,PDF.m2.yr,0.08834109023902363,0.24281499268904785
+Nickel,cobalt production,FR,Total EQ,PDF.m2.yr,0.07975189269964846,0.21920665898968755
+Nickel,cobalt production,AT,Total EQ,PDF.m2.yr,0.06302166792605397,0.1732218359011903
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",GB,Total EQ,PDF.m2.yr,0.05933191049951875,0.16308014056865133
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CN,Total EQ,PDF.m2.yr,0.05874013260051664,0.16145357533348217
+Nickel,cobalt production,JP,Total EQ,PDF.m2.yr,0.05572433095219691,0.15316431998008948
+Nickel,"platinum group metal mine operation, ore with high palladium content",RoW,Total EQ,PDF.m2.yr,0.054128119426984866,0.14877696083865424
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",KR,Total EQ,PDF.m2.yr,0.046684379206058765,0.12831703983889142
+Nickel,"market group for transport, freight, lorry, unspecified",GLO,Total EQ,PDF.m2.yr,0.03892844671744225,0.10699902479714064
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",IT,Total EQ,PDF.m2.yr,0.0346003847269852,0.09510288068428087
+Nickel,"platinum group metal, extraction and refinery operations",SE,Total EQ,PDF.m2.yr,0.03385969406872713,0.09306701270616154
+Nickel,"platinum group metal mine operation, ore with high palladium content",KR,Total EQ,PDF.m2.yr,0.03027519474799314,0.08321463060398271
+Nickel,processing of nickel-rich materials,RoW,Total EQ,PDF.m2.yr,0.025390845743131003,0.06978947177135536
+Nickel,"platinum group metal, extraction and refinery operations",CN,Total EQ,PDF.m2.yr,0.023529863594277754,0.06467436207952772
+Nickel,"platinum group metal, extraction and refinery operations",GB,Total EQ,PDF.m2.yr,0.022847063791892153,0.06279761334826625
+Nickel,cobalt production,SE,Total EQ,PDF.m2.yr,0.01955510585417255,0.053749312716960006
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",JP,Total EQ,PDF.m2.yr,0.016325024966582842,0.04487108781637272
+Nickel,cobalt production,CN,Total EQ,PDF.m2.yr,0.014794992263691598,0.04066562828942623
+Nickel,"market group for transport, freight train",GLO,Total EQ,PDF.m2.yr,0.014125907564166575,0.03882657699422549
+Nickel,processing of nickel-rich materials,KR,Total EQ,PDF.m2.yr,0.014073090272249589,0.03868140298385298
+Nickel,cobalt production,GB,Total EQ,PDF.m2.yr,0.01387833957985291,0.03814610974915847
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",BE,Total EQ,PDF.m2.yr,0.01345754556776569,0.03698951212632974
+Nickel,"platinum group metal, extraction and refinery operations",IT,Total EQ,PDF.m2.yr,0.013318064723051014,0.03660613401544136
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",FR,Total EQ,PDF.m2.yr,0.013186806521664011,0.0362453567245575
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",AT,Total EQ,PDF.m2.yr,0.012227002830160254,0.03360723299634866
+Nickel,"platinum group metal mine operation, ore with high palladium content",JP,Total EQ,PDF.m2.yr,0.011793770913380075,0.03241644845405904
+Nickel,"platinum group metal mine operation, ore with high palladium content",FR,Total EQ,PDF.m2.yr,0.009172082167097452,0.025210454821433824
+Nickel,"platinum group metal mine operation, ore with high palladium content",AT,Total EQ,PDF.m2.yr,0.008703944948632159,0.02392372930138915
+Nickel,cobalt production,IT,Total EQ,PDF.m2.yr,0.008285963356898664,0.022774861918540255
+Nickel,processing of nickel-rich materials,FR,Total EQ,PDF.m2.yr,0.006654489069881129,0.01829057928174369
+Nickel,processing of nickel-rich materials,JP,Total EQ,PDF.m2.yr,0.005770901908892378,0.01586194488912844
+Nickel,processing of nickel-rich materials,AT,Total EQ,PDF.m2.yr,0.005416967862344732,0.014889119076221405
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CN,Total EQ,PDF.m2.yr,0.005367763572033458,0.014753875789548404
+Nickel,"platinum group metal, extraction and refinery operations",BE,Total EQ,PDF.m2.yr,0.005157862013732948,0.014176938769569858
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",ZA,Total EQ,PDF.m2.yr,0.003845381761921738,0.010569445564700158
+Nickel,"platinum group metal mine operation, ore with high palladium content",CN,Total EQ,PDF.m2.yr,0.0035142851930355158,0.009659391016630258
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",SE,Total EQ,PDF.m2.yr,0.0032464847269342355,0.008923312618202462
+Nickel,cobalt production,BE,Total EQ,PDF.m2.yr,0.00313014941148871,0.008603552485143733
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",GB,Total EQ,PDF.m2.yr,0.002854631718616314,0.007846262458503762
+Nickel,"market for transport, freight, sea, container ship",GLO,Total EQ,PDF.m2.yr,0.0025548128976822754,0.007022178166401844
+Nickel,"platinum group metal mine operation, ore with high palladium content",SE,Total EQ,PDF.m2.yr,0.002360627045645725,0.006488437456218228
+Nickel,"platinum group metal mine operation, ore with high palladium content",GB,Total EQ,PDF.m2.yr,0.0019836461331731257,0.005452264852299994
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",IT,Total EQ,PDF.m2.yr,0.0018391299404056692,0.005055046545447153
+Nickel,processing of nickel-rich materials,SE,Total EQ,PDF.m2.yr,0.001718238534269086,0.004722763506854357
+Nickel,"platinum group metal, extraction and refinery operations",ZA,Total EQ,PDF.m2.yr,0.0015440694021407045,0.004244040905288259
+Nickel,processing of nickel-rich materials,CN,Total EQ,PDF.m2.yr,0.001482148253733189,0.004073843965707966
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",NL,Total EQ,PDF.m2.yr,0.001468310743817119,0.004035810080683295
+Nickel,processing of nickel-rich materials,GB,Total EQ,PDF.m2.yr,0.0012382634176594247,0.003403500249912828
+Nickel,"platinum group metal mine operation, ore with high palladium content",IT,Total EQ,PDF.m2.yr,0.001236917833794086,0.00339980176786398
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CH,Total EQ,PDF.m2.yr,0.001231226956735919,0.003384159779888347
+Nickel,"market group for transport, freight, inland waterways, barge",GLO,Total EQ,PDF.m2.yr,0.0011494130120708625,0.0031592853491794037
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",US,Total EQ,PDF.m2.yr,0.0009142909297803375,0.0025130270050958458
+Nickel,cobalt production,ZA,Total EQ,PDF.m2.yr,0.0008948850543786088,0.002459687868335749
+Nickel,processing of nickel-rich materials,IT,Total EQ,PDF.m2.yr,0.0007333219931344701,0.0020156144091032255
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CZ,Total EQ,PDF.m2.yr,0.0006562230453338169,0.0018036996546452917
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",BE,Total EQ,PDF.m2.yr,0.000594501489981679,0.001634051318055421
+Nickel,"platinum group metal, extraction and refinery operations",NL,Total EQ,PDF.m2.yr,0.000565326379917555,0.001553860388582455
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",DE,Total EQ,PDF.m2.yr,0.0004988260601014316,0.001371077103632249
+Nickel,"platinum group metal, extraction and refinery operations",CH,Total EQ,PDF.m2.yr,0.0004694967487508329,0.001290462335330187
+Nickel,"platinum group metal mine operation, ore with high palladium content",BE,Total EQ,PDF.m2.yr,0.00041374532982816026,0.0011372235611483753
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",ZA,Total EQ,PDF.m2.yr,0.00037061636557668995,0.0010186789619016146
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",IN,Total EQ,PDF.m2.yr,0.00036170739668793913,0.0009941917022386884
+Nickel,cobalt production,NL,Total EQ,PDF.m2.yr,0.00034455970090217796,0.0009470594151502236
+Nickel,cobalt production,CH,Total EQ,PDF.m2.yr,0.0002798502665787042,0.0007691985716893408
+Nickel,"platinum group metal mine operation, ore with high palladium content",ZA,Total EQ,PDF.m2.yr,0.0002761009969336673,0.0007588933006202868
+Nickel,processing of nickel-rich materials,BE,Total EQ,PDF.m2.yr,0.00027325575144494015,0.0007510728372246625
+Nickel,"platinum group metal, extraction and refinery operations",CZ,Total EQ,PDF.m2.yr,0.00025499503893940194,0.0007008813039129035
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",PL,Total EQ,PDF.m2.yr,0.00022866897864580362,0.0006285212943134548
+Nickel,cobalt production,CZ,Total EQ,PDF.m2.yr,0.00016872464912049025,0.0004637578541515044
+Nickel,"platinum group metal, extraction and refinery operations",IN,Total EQ,PDF.m2.yr,0.0001498409232911765,0.0004118539016784192
+Nickel,processing of nickel-rich materials,ZA,Total EQ,PDF.m2.yr,0.000105800258201359,0.0002908033945715802
+Nickel,"platinum group metal, extraction and refinery operations",PL,Total EQ,PDF.m2.yr,9.083616684192967e-05,0.00024967297922118167
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",NL,Total EQ,PDF.m2.yr,8.595531912939188e-05,0.00023625744406727327
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RoW,Total EQ,PDF.m2.yr,8.590322181305904e-05,0.00023611424898726857
+Nickel,cobalt production,IN,Total EQ,PDF.m2.yr,8.560969470908571e-05,0.00023530745815626933
+Nickel,"platinum group metal mine operation, ore with high palladium content",NL,Total EQ,PDF.m2.yr,6.014408612042035e-05,0.00016531249265891714
+Nickel,cobalt production,PL,Total EQ,PDF.m2.yr,5.316034207824144e-05,0.00014611692065549656
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CZ,Total EQ,PDF.m2.yr,4.9324598012892214e-05,0.00013557396533691476
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",KR,Total EQ,PDF.m2.yr,4.7516155959525246e-05,0.00013060326775124137
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CH,Total EQ,PDF.m2.yr,4.173845742202841e-05,0.00011472264159702512
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",IN,Total EQ,PDF.m2.yr,3.61726752655376e-05,9.942449041980363e-05
+Nickel,"platinum group metal mine operation, ore with high palladium content",CZ,Total EQ,PDF.m2.yr,3.2556508628610026e-05,8.948506729142487e-05
+Nickel,processing of nickel-rich materials,NL,Total EQ,PDF.m2.yr,3.2509331041763036e-05,8.935539461731203e-05
+Nickel,"platinum group metal mine operation, ore with high palladium content",CH,Total EQ,PDF.m2.yr,3.171011967296649e-05,8.715867616900819e-05
+Nickel,"platinum group metal mine operation, ore with high palladium content",IN,Total EQ,PDF.m2.yr,2.7133600163851765e-05,7.457961983021629e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",FR,Total EQ,PDF.m2.yr,2.5154215192456082e-05,6.913906723959473e-05
+Nickel,processing of nickel-rich materials,CH,Total EQ,PDF.m2.yr,2.3560993040296696e-05,6.475992471167378e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AT,Total EQ,PDF.m2.yr,2.0037510755267356e-05,5.507525449802208e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",JP,Total EQ,PDF.m2.yr,1.9712951217085632e-05,5.418316768227726e-05
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",PL,Total EQ,PDF.m2.yr,1.958217701982135e-05,5.3823720728807184e-05
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",HK,Total EQ,PDF.m2.yr,1.747602871691525e-05,4.80347454808394e-05
+Nickel,processing of nickel-rich materials,CZ,Total EQ,PDF.m2.yr,1.5377231059664612e-05,4.2265974273440545e-05
+Nickel,"platinum group metal mine operation, ore with high palladium content",PL,Total EQ,PDF.m2.yr,1.3439763333878126e-05,3.694063574298739e-05
+Nickel,processing of nickel-rich materials,IN,Total EQ,PDF.m2.yr,1.0090569264534894e-05,2.773501544487449e-05
+Nickel,"platinum group metal, extraction and refinery operations",HK,Total EQ,PDF.m2.yr,6.914173464864905e-06,1.9004349785354604e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",SE,Total EQ,PDF.m2.yr,6.5728697900608925e-06,1.8066239908308137e-05
+Nickel,processing of nickel-rich materials,PL,Total EQ,PDF.m2.yr,5.8125224520068326e-06,1.5976343430562628e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CN,Total EQ,PDF.m2.yr,4.845936323762712e-06,1.3319577445131598e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",GB,Total EQ,PDF.m2.yr,4.531570278461582e-06,1.2455508541465752e-05
+Nickel,cobalt production,HK,Total EQ,PDF.m2.yr,4.458502022445066e-06,1.2254672577109332e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",IT,Total EQ,PDF.m2.yr,2.651442877183829e-06,7.28777606317591e-06
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",HK,Total EQ,PDF.m2.yr,1.6587888332067003e-06,4.559359606248513e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BE,Total EQ,PDF.m2.yr,1.0156754839317436e-06,2.791693361923096e-06
+Nickel,"platinum group metal mine operation, ore with high palladium content",HK,Total EQ,PDF.m2.yr,1.001030525525159e-06,2.751440117834702e-06
+Nickel,processing of nickel-rich materials,HK,Total EQ,PDF.m2.yr,4.373122078829171e-07,1.2019996614555646e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZA,Total EQ,PDF.m2.yr,3.2924021478699164e-07,9.049521590704729e-07
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",NL,Total EQ,PDF.m2.yr,1.1465168758602528e-07,3.1513250071584597e-07
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CH,Total EQ,PDF.m2.yr,9.102486070531547e-08,2.5019162460957934e-07
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CZ,Total EQ,PDF.m2.yr,5.205066377789138e-08,1.4306685043723622e-07
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",IN,Total EQ,PDF.m2.yr,3.1139722032725313e-08,8.559087687572042e-08
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",PL,Total EQ,PDF.m2.yr,1.8958898485306622e-08,5.21105726072258e-08
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",HK,Total EQ,PDF.m2.yr,1.4345697594980423e-09,3.9430693544981105e-09
+Nickel,cobalt production,US,Total HH,DALY,2.6039170099327225e-05,21.90994732903518
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",US,Total HH,DALY,2.0785469630702763e-05,17.489364794683844
+Nickel,cobalt production,DE,Total HH,DALY,1.4314739723785515e-05,12.044746133637018
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",DE,Total HH,DALY,1.1518508339461717e-05,9.691933731527763
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",US,Total HH,DALY,7.018934403195044e-06,5.905890337262696
+Nickel,"platinum group metal mine operation, ore with high palladium content",US,Total HH,DALY,4.337652896885081e-06,3.6497993653355514
+Nickel,"platinum group metal, extraction and refinery operations",US,Total HH,DALY,4.07712205421492e-06,3.4305828150876674
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",DE,Total HH,DALY,3.89540466581195e-06,3.2776816898409082
+Nickel,processing of nickel-rich materials,US,Total HH,DALY,3.052189343736044e-06,2.568181224839688
+Nickel,cobalt production,RoW,Total HH,DALY,2.7251672962810855e-06,2.2930174693190577
+Nickel,"platinum group metal, extraction and refinery operations",DE,Total HH,DALY,2.5519111401904285e-06,2.1472358165283847
+Nickel,"platinum group metal mine operation, ore with high palladium content",DE,Total HH,DALY,2.263625814065823e-06,1.9046660154544623
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",RoW,Total HH,DALY,1.9659051658366713e-06,1.6541571207168586
+Nickel,processing of nickel-rich materials,DE,Total HH,DALY,1.6578605484338446e-06,1.3949614045498864
+Nickel,cobalt production,KR,Total HH,DALY,1.4144113157592757e-06,1.1901177077328498
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",KR,Total HH,DALY,1.0707052543123347e-06,0.9009156450616136
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",RoW,Total HH,DALY,9.319993345204554e-07,0.7842053434170934
+Nickel,cobalt production,FR,Total HH,DALY,7.437673279851186e-07,0.6258226709626287
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",FR,Total HH,DALY,6.058417033498039e-07,0.509768927331141
+Nickel,cobalt production,AT,Total HH,DALY,5.868727729648303e-07,0.4938080397898885
+Nickel,cobalt production,JP,Total HH,DALY,5.562562218432321e-07,0.4680465804226308
+Nickel,"platinum group metal mine operation, ore with high palladium content",RoW,Total HH,DALY,4.993932287288833e-07,0.4202007704619338
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",AT,Total HH,DALY,4.831546919791128e-07,0.40653729794990984
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",KR,Total HH,DALY,4.7622387133211344e-07,0.40070554852227863
+Nickel,"platinum group metal, extraction and refinery operations",RoW,Total HH,DALY,4.490910688135489e-07,0.3778753941124719
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",JP,Total HH,DALY,4.488398723592488e-07,0.37766403172795804
+Nickel,"market group for transport, freight, lorry, unspecified",GLO,Total HH,DALY,4.075823328229203e-07,0.3429490037636106
+Nickel,processing of nickel-rich materials,RoW,Total HH,DALY,2.957309941805629e-07,0.248834754769191
+Nickel,"platinum group metal mine operation, ore with high palladium content",KR,Total HH,DALY,2.759168144528801e-07,0.23216265529191993
+Nickel,"platinum group metal, extraction and refinery operations",KR,Total HH,DALY,2.6320193268584024e-07,0.22146406586882805
+Nickel,cobalt production,SE,Total HH,DALY,1.948797277256312e-07,0.1639762155889759
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",JP,Total HH,DALY,1.6546257521004567e-07,0.13922395736691656
+Nickel,processing of nickel-rich materials,KR,Total HH,DALY,1.6315244068874542e-07,0.13728015787209388
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",SE,Total HH,DALY,1.618097257883695e-07,0.13615036715169349
+Nickel,cobalt production,CN,Total HH,DALY,1.4831521505912957e-07,0.12479578026659204
+Nickel,"market group for transport, freight train",GLO,Total HH,DALY,1.414369629066657e-07,0.11900826316057643
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",FR,Total HH,DALY,1.3401977216086034e-07,0.11276727091888432
+Nickel,cobalt production,GB,Total HH,DALY,1.2874125802493772e-07,0.10832580960301003
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",AT,Total HH,DALY,1.2605167057700018e-07,0.10606272982372521
+Nickel,"platinum group metal, extraction and refinery operations",FR,Total HH,DALY,1.0851961916647795e-07,0.09131086478696647
+Nickel,"platinum group metal mine operation, ore with high palladium content",JP,Total HH,DALY,1.0691538934439025e-07,0.08996102948992998
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CN,Total HH,DALY,1.0676577756727373e-07,0.08983514275299012
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",GB,Total HH,DALY,1.0670672060107002e-07,0.08978545088439369
+Nickel,"platinum group metal, extraction and refinery operations",JP,Total HH,DALY,1.0182869326554139e-07,0.08568096823063248
+Nickel,"platinum group metal, extraction and refinery operations",AT,Total HH,DALY,9.193651782806783e-08,0.07735746782805164
+Nickel,processing of nickel-rich materials,FR,Total HH,DALY,7.907215853487947e-08,0.06653310462982422
+Nickel,cobalt production,IT,Total HH,DALY,7.761348578109894e-08,0.06530574434592425
+Nickel,"platinum group metal mine operation, ore with high palladium content",AT,Total HH,DALY,7.641130304646137e-08,0.0642942005718596
+Nickel,"platinum group metal mine operation, ore with high palladium content",FR,Total HH,DALY,7.518922829361907e-08,0.06326591920326059
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",US,Total HH,DALY,6.856515622245169e-08,0.057692274973072166
+Nickel,processing of nickel-rich materials,JP,Total HH,DALY,6.716268208243085e-08,0.05651220147530027
+Nickel,processing of nickel-rich materials,AT,Total HH,DALY,6.441447361263411e-08,0.0541997966408616
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",IT,Total HH,DALY,6.221784960811018e-08,0.052351507465084185
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CN,Total HH,DALY,5.3913800531763345e-08,0.045364292542855025
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",DE,Total HH,DALY,3.749208957587687e-08,0.03154669310617372
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",SE,Total HH,DALY,3.305989675542799e-08,0.0278173457084749
+Nickel,"platinum group metal mine operation, ore with high palladium content",CN,Total HH,DALY,3.171216585207046e-08,0.026683334409587946
+Nickel,cobalt production,BE,Total HH,DALY,2.90427013976222e-08,0.024437186572671896
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",GB,Total HH,DALY,2.8865423175096063e-08,0.024288020662110367
+Nickel,"platinum group metal, extraction and refinery operations",SE,Total HH,DALY,2.8141816322562384e-08,0.023679161471688186
+Nickel,"platinum group metal, extraction and refinery operations",CN,Total HH,DALY,2.807425986379726e-08,0.023622317937595744
+Nickel,"market for transport, freight, sea, container ship",GLO,Total HH,DALY,2.636509774009253e-08,0.022184190225986375
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",BE,Total HH,DALY,2.4139148038519954e-08,0.020311225744687612
+Nickel,"platinum group metal, extraction and refinery operations",GB,Total HH,DALY,2.098435781544308e-08,0.017656713816768862
+Nickel,processing of nickel-rich materials,SE,Total HH,DALY,2.0545131442525417e-08,0.017287138801150456
+Nickel,"platinum group metal mine operation, ore with high palladium content",SE,Total HH,DALY,1.9654602148693817e-08,0.01653782728897913
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",IT,Total HH,DALY,1.902652591061311e-08,0.01600934972066667
+Nickel,"platinum group metal mine operation, ore with high palladium content",GB,Total HH,DALY,1.7063372951485432e-08,0.014357508368993245
+Nickel,processing of nickel-rich materials,CN,Total HH,DALY,1.6931130108762997e-08,0.014246236246739041
+Nickel,processing of nickel-rich materials,GB,Total HH,DALY,1.4610694010379083e-08,0.012293768771698544
+Nickel,"market group for transport, freight, inland waterways, barge",GLO,Total HH,DALY,1.3123531350814928e-08,0.011042436435972513
+Nickel,"platinum group metal, extraction and refinery operations",IT,Total HH,DALY,1.2522542163372875e-08,0.010536750525402143
+Nickel,"platinum group metal mine operation, ore with high palladium content",IT,Total HH,DALY,1.092936146087292e-08,0.009196212207773075
+Nickel,cobalt production,ZA,Total HH,DALY,8.979624751948871e-09,0.007555659592806439
+Nickel,processing of nickel-rich materials,IT,Total HH,DALY,8.659197385801892e-09,0.007286044751462352
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",ZA,Total HH,DALY,7.0682115783549395e-09,0.005947353268230102
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",RoW,Total HH,DALY,6.311975079084893e-09,0.005311038754207677
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",BE,Total HH,DALY,6.002830873207928e-09,0.0050509178194004765
+Nickel,"platinum group metal, extraction and refinery operations",BE,Total HH,DALY,4.568233359524004e-09,0.003843814987655784
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",ZA,Total HH,DALY,3.7249207392436943e-09,0.003134232653742246
+Nickel,"platinum group metal mine operation, ore with high palladium content",BE,Total HH,DALY,3.5073466931324356e-09,0.002951160924793945
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",KR,Total HH,DALY,3.4743943880707265e-09,0.0029234341091727745
+Nickel,processing of nickel-rich materials,BE,Total HH,DALY,3.2353079474029976e-09,0.0027222613643374167
+Nickel,cobalt production,NL,Total HH,DALY,3.2051572147548996e-09,0.0026968918551813345
+Nickel,cobalt production,CH,Total HH,DALY,2.6767798546183697e-09,0.0022523031802625004
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",NL,Total HH,DALY,2.643224367904876e-09,0.0022240688339416176
+Nickel,"platinum group metal mine operation, ore with high palladium content",ZA,Total HH,DALY,2.554193554832014e-09,0.0021491562918887516
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CH,Total HH,DALY,2.2359759090686858e-09,0.0018814007593103829
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",FR,Total HH,DALY,1.965330613421263e-09,0.0016536736793048878
+Nickel,"platinum group metal, extraction and refinery operations",ZA,Total HH,DALY,1.930006330760913e-09,0.0016239510280233011
+Nickel,cobalt production,CZ,Total HH,DALY,1.5855749987094037e-09,0.0013341387062430086
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",AT,Total HH,DALY,1.5417520267498737e-09,0.0012972650653484436
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",JP,Total HH,DALY,1.4581452193235333e-09,0.0012269164044628482
+Nickel,processing of nickel-rich materials,ZA,Total HH,DALY,1.198169764108774e-09,0.0010081671697956308
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",CZ,Total HH,DALY,1.1837305821555002e-09,0.0009960177151523448
+Nickel,cobalt production,IN,Total HH,DALY,8.766220810315547e-10,0.0007376096684189952
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",NL,Total HH,DALY,8.740611186844079e-10,0.0007354548167119865
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",IN,Total HH,DALY,6.667282351156224e-10,0.0005610002338185615
+Nickel,"platinum group metal mine operation, ore with high palladium content",NL,Total HH,DALY,5.359642886452982e-10,0.0004509724883576722
+Nickel,cobalt production,PL,Total HH,DALY,5.314585919874084e-10,0.00044718129316679596
+Nickel,"platinum group metal, extraction and refinery operations",NL,Total HH,DALY,5.224046161990405e-10,0.0004395630729284088
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",SE,Total HH,DALY,5.163407749784742e-10,0.00043446081962127776
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CZ,Total HH,DALY,5.069561159650226e-10,0.0004265643550296128
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",CH,Total HH,DALY,4.42169363508209e-10,0.00037205131453971245
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",PL,Total HH,DALY,4.1674935383370843e-10,0.0003506623428118361
+Nickel,"platinum group metal, extraction and refinery operations",CH,Total HH,DALY,3.881408169492991e-10,0.00032659047209141086
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",IN,Total HH,DALY,3.868983176953202e-10,0.00032554500508508155
+Nickel,processing of nickel-rich materials,NL,Total HH,DALY,3.806816917127978e-10,0.0003203141952197204
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CN,Total HH,DALY,3.4804139714317366e-10,0.00029284991229147395
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",GB,Total HH,DALY,3.463683455313872e-10,0.00029144216878224647
+Nickel,"platinum group metal mine operation, ore with high palladium content",CZ,Total HH,DALY,3.0000667362950964e-10,0.00025243240827216046
+Nickel,processing of nickel-rich materials,CH,Total HH,DALY,2.831075998287964e-10,0.00023821314492886858
+Nickel,"platinum group metal, extraction and refinery operations",CZ,Total HH,DALY,2.6976336268782877e-10,0.0002269850016435989
+Nickel,"platinum group metal mine operation, ore with high palladium content",CH,Total HH,DALY,2.6624218942880567e-10,0.0002240222067331883
+Nickel,"platinum group metal mine operation, ore with high palladium content",IN,Total HH,DALY,2.6223770219143575e-10,0.00022065274049767124
+Nickel,"platinum group metal, extraction and refinery operations",IN,Total HH,DALY,2.3616482215059096e-10,0.00019871442886054566
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",IT,Total HH,DALY,2.0169842433507513e-10,0.00016971362131257256
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",PL,Total HH,DALY,1.9945697521719803e-10,0.00016782761527144038
+Nickel,processing of nickel-rich materials,CZ,Total HH,DALY,1.7915284659903492e-10,0.00015074326170375876
+Nickel,"platinum group metal mine operation, ore with high palladium content",PL,Total HH,DALY,1.2523718215683284e-10,0.00010537740082445589
+Nickel,processing of nickel-rich materials,IN,Total HH,DALY,1.1589038162664269e-10,9.751279121784038e-05
+Nickel,"platinum group metal, extraction and refinery operations",PL,Total HH,DALY,1.0543612275216554e-10,8.871634108405477e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",BE,Total HH,DALY,7.835318680697614e-11,6.592814553821959e-05
+Nickel,processing of nickel-rich materials,PL,Total HH,DALY,6.702743989186454e-11,5.639840563385569e-05
+Nickel,cobalt production,HK,Total HH,DALY,4.456726234703965e-11,3.7499903679655305e-05
+Nickel,"smelting and refining of nickel concentrate, 7% Ni",HK,Total HH,DALY,3.219792588883253e-11,2.7092063903631313e-05
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",ZA,Total HH,DALY,2.2871809121734847e-11,1.9244858083626263e-05
+Nickel,"smelting and refining of nickel concentrate, 16% Ni",HK,Total HH,DALY,1.6808000488190566e-11,1.414263219595342e-05
+Nickel,"platinum group metal mine operation, ore with high palladium content",HK,Total HH,DALY,9.254142777706294e-12,7.786645275617093e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",NL,Total HH,DALY,8.589174043653366e-12,7.227125525833236e-06
+Nickel,"platinum group metal, extraction and refinery operations",HK,Total HH,DALY,7.823504328607337e-12,6.582873690459677e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CH,Total HH,DALY,7.164726993420792e-12,6.028563523874441e-06
+Nickel,processing of nickel-rich materials,HK,Total HH,DALY,5.04295683618316e-12,4.2432580701266545e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",CZ,Total HH,DALY,3.8320698411742225e-12,3.22439033429413e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",IN,Total HH,DALY,2.1539785221234177e-12,1.812406301259826e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",PL,Total HH,DALY,1.3558201731401753e-12,1.1408177936481975e-06
+Nickel,"treatment of metal part of electronics scrap, in copper, anode, by electrolytic refining",HK,Total HH,DALY,1.0337165303885004e-13,8.69792495212826e-08

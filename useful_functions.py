@@ -10,9 +10,31 @@ import math # for pedigree matrix
 
 
 ### LCI ###
+def search_activity(database_name, activity_name, ref_product, location):
+    """
+    Function to find a specific activity based on its name and reference product in a BW database
+    """
+    db = bw.Database(database_name)
+    matches = [ds for ds in db if ds["name"] == activity_name
+               and ds["reference product"] == ref_product
+               and ds["location"] == location]
+
+    if matches:
+        print(f"Match found in {database_name}:")
+        for match in matches:
+            print(match)
+    else:
+        print(
+            f"No match found in {database_name} for activity '{activity_name}', product '{ref_product}', location '{location}'")
+
+
 def get_inventory_dataset(inventories, database_names):
     """
     Function to find the dataset in the specified databases.
+
+    :param inventories: dict in the format (mineral name: activity name, reference product, location)
+    :param database_names: must be a list
+    :return df:
     """
     inventory_ds = {}
     for rm_name, (activity_name, ref_product, location) in inventories.items():
@@ -136,6 +158,124 @@ def multi_lcia(lca, activity, lcia_methods, amount=1):
     return results
 
 
+def direct_technosphere_contribution(lca, activities, lcia_methods, amount=1):
+    """
+    Calculate the contribution of direct technosphere flows to the total impact of multiple activities
+    for multiple LCIA methods and return results as a pandas DataFrame.
+
+    Parameters:
+    - lca: LCA object
+    - activities (dict): A dictionary where keys are activity names and values are Brightway activity objects.
+    - lcia_methods (dict): A dictionary with LCIA method names as keys and method tuples as values.
+    - amount (float): The functional unit of the activities.
+
+    Returns:
+    - df (pd.DataFrame): A DataFrame with columns for activity name, technosphere flow name, LCIA method,
+                         absolute contribution, percentage contribution, and units.
+    """
+    rows = []
+
+    for activity_name, activity in activities.items():
+        # Redo LCI for the main activity
+        lca.redo_lci({activity.key: amount})
+
+        for impact_name, method in lcia_methods.items():
+            # Switch to the desired LCIA method
+            lca.switch_method(method)
+            lca.lcia()
+
+            # Total impact for the activity
+            total_impact = lca.score
+            method_obj = bw.Method(method)
+            unit = method_obj.metadata.get("unit", "Unknown unit")
+
+            # Analyze direct technosphere flows
+            for exc in activity.technosphere():
+                # Load the technosphere exchange key
+                flow_key = exc.input.key
+                flow_name = exc.input['name']
+                flow_amount = exc['amount'] * amount  # Scale to the functional unit
+
+                # Calculate the impact of this flow
+                lca.redo_lci({flow_key: flow_amount})
+                lca.lcia()
+
+                # Append the data to rows
+                rows.append({
+                    "Activity": activity_name,
+                    "Flow Name": flow_name,
+                    "LCIA Method": impact_name,
+                    "Unit": unit,
+                    "Absolute Contribution": lca.score,
+                    "Percentage Contribution": (lca.score / total_impact) * 100 if total_impact != 0 else 0,
+                })
+
+    # Create a DataFrame
+    df = pd.DataFrame(rows)
+    return df
+
+
+def direct_technosphere_contribution_multi_activities_fixed(lca, activities, lcia_methods, amount=1):
+    """
+    Calculate the contribution of direct technosphere flows to the total impact of multiple activities
+    for multiple LCIA methods and return results as a pandas DataFrame.
+
+    Parameters:
+    - lca: LCA object
+    - activities (dict): A dictionary where keys are activity names and values are Brightway activity objects.
+    - lcia_methods (dict): A dictionary with LCIA method names as keys and method tuples as values.
+    - amount (float): The functional unit of the activities.
+
+    Returns:
+    - df (pd.DataFrame): A DataFrame with columns for activity name, technosphere flow name, LCIA method,
+                         absolute contribution, percentage contribution, and units.
+    """
+
+    rows = []
+
+    for activity_name, activity in activities.items():
+        for impact_name, method in lcia_methods.items():
+            # Initialize a new LCA object for the current method and activity
+            lca = bw.LCA({activity.key: amount}, method=method)
+            lca.lci()
+            lca.lcia()
+
+            # Total impact for the activity and method
+            total_impact = lca.score
+            if total_impact == 0:
+                continue  # Skip this method if total impact is zero
+
+            method_obj = bw.Method(method)
+            unit = method_obj.metadata.get("unit", "Unknown unit")
+
+            # Analyze direct technosphere flows
+            for exc in activity.technosphere():
+                # Load the technosphere exchange key
+                flow_key = exc.input.key
+                flow_name = exc.input['name']
+                flow_location = exc.input['location']
+                flow_amount = exc['amount'] * amount  # Scale to the functional unit
+
+                # Calculate the impact of this flow
+                lca.redo_lci({flow_key: flow_amount})
+                lca.lcia()
+
+                # Append the data to rows
+                rows.append({
+                    "Activity": activity_name,
+                    "Flow Name": flow_name,
+                    "Flow Location": flow_location,
+                    "LCIA Method": impact_name,
+                    "Unit": unit,
+                    "Absolute Contribution": lca.score,
+                    "Percentage Contribution": (lca.score / total_impact) * 100,  # Correct percentage
+                })
+
+    # Create a DataFrame
+    df = pd.DataFrame(rows)
+    return df.sort_values(by=["Activity", "LCIA Method", "Percentage Contribution"], ascending=[True, True, False]).reset_index(drop=True)
+
+
 # Function for contribution analysis with customizable threshold and percentage calculation
 def multi_contribution_analysis(lca, lcia_methods, top_n=10, threshold=0.01):
     """
@@ -182,19 +322,19 @@ def multi_contribution_analysis(lca, lcia_methods, top_n=10, threshold=0.01):
 def calculate_projected_impacts(production_df, impact_df, mapping):
     projections = []
 
-    for mineral in production_df['Mineral'].unique():
+    for mineral in production_df['Commodity'].unique():
         # Use the mapping dictionary to get the corresponding raw material
         raw_material = mapping.get(mineral)
 
         if raw_material:
             # Fetch impact factors for the mapped raw material
-            material_impacts = impact_df[impact_df['Mineral'] == raw_material]
+            material_impacts = impact_df[impact_df['Commodity'] == raw_material]
 
             if not material_impacts.empty:
                 impacts_per_kt = material_impacts.iloc[0, 1:].to_dict()  # Extract impact per kilotonne as a dict
 
                 # Filter production data for the mineral
-                mineral_data = production_df[production_df['Mineral'] == mineral]
+                mineral_data = production_df[production_df['Commodity'] == mineral]
 
                 for _, row in mineral_data.iterrows():
                     year = row['Year']
@@ -204,11 +344,15 @@ def calculate_projected_impacts(production_df, impact_df, mapping):
                     annual_impacts = {f"{category}": production_kilotons * impact_per_kt * 1000000
                                       for category, impact_per_kt in impacts_per_kt.items()}
                     annual_impacts['Year'] = year
-                    annual_impacts['Mineral'] = mineral
+                    annual_impacts['Commodity'] = mineral
                     projections.append(annual_impacts)
 
     # Convert list of dictionaries to DataFrame
     projected_impacts_df = pd.DataFrame(projections)
+
+    # Reorder columns to have 'Year' and 'Commodity' first
+    impact_columns = [col for col in projected_impacts_df.columns if col not in ['Year', 'Commodity']]
+    projected_impacts_df = projected_impacts_df[['Year', 'Commodity'] + impact_columns]
 
     return projected_impacts_df
 
