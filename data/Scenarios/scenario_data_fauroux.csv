@@ -1,0 +1,201 @@
+﻿scenario,region,variables,unit,2022,2025,2030,2035,2040,2045,2050
+SPS,CHA,Electricity|Alu|Hydro,%,0.192,0.216,0.194,0.177,0.174,0.175,0.175
+SPS,CHA,Electricity|Alu|Coal,%,0.745,0.622,0.516,0.43,0.334,0.252,0.139
+SPS,CHA,Electricity|Alu|Natural Gas,%,0,0.002,0.002,0.001,0.001,0.001,0.001
+SPS,CHA,Electricity|Alu|Nuclear,%,0.006,0.016,0.022,0.027,0.033,0.039,0.039
+SPS,CHA,Electricity|Alu|Wind,%,0.029,0.061,0.1,0.121,0.137,0.156,0.156
+SPS,CHA,Electricity|Alu|Solar,%,0.028,0.083,0.166,0.244,0.321,0.377,0.377
+SPS,CHA,Electricity|Alu|Hydrogen,%,0,0,0,0,0,0,0
+SPS,CAZ,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,CAZ,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,CHA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,CHA,Efficiency|Smelting,%,1,1.008,1.023,1.038,1.053,1.069,1.085
+SPS,EUR,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,EUR,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,IND,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,IND,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,JPN,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,JPN,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,LAM,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,LAM,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,MEA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,MEA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,NEU,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,NEU,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,OAS,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,OAS,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,REF,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,REF,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,SSA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,SSA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,USA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,USA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,World,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+SPS,World,Efficiency|Smelting,%,1,1,1,1,1,1,1
+SPS,CAZ,Production|Alu|Primary,ton,0.02,0.019,0.018,0.017,0.017,0.016,0.015
+SPS,CHA,Production|Alu|Primary,ton,0.411,0.391,0.372,0.359,0.346,0.327,0.314
+SPS,EUR,Production|Alu|Primary,ton,0.039,0.037,0.035,0.034,0.032,0.031,0.029
+SPS,LAM,Production|Alu|Primary,ton,0.012,0.012,0.011,0.011,0.01,0.01,0.009
+SPS,MEA,Production|Alu|Primary,ton,0.066,0.063,0.06,0.058,0.056,0.053,0.051
+SPS,OAS,Production|Alu|Primary,ton,0.052,0.049,0.047,0.045,0.044,0.041,0.04
+SPS,USA,Production|Alu|Primary,ton,0.041,0.039,0.037,0.036,0.035,0.033,0.031
+SPS,CHA,Production|Alu|Secondary Old,ton,0.056,0.085,0.097,0.104,0.112,0.123,0.131
+SPS,EUR,Production|Alu|Secondary Old,ton,0.041,0.037,0.042,0.045,0.049,0.054,0.057
+SPS,JPN,Production|Alu|Secondary Old,ton,0.009,0.008,0.009,0.009,0.01,0.011,0.012
+SPS,LAM,Production|Alu|Secondary Old,ton,0.015,0.012,0.013,0.014,0.015,0.017,0.018
+SPS,MEA,Production|Alu|Secondary Old,ton,0.005,0.004,0.004,0.005,0.005,0.005,0.006
+SPS,OAS,Production|Alu|Secondary Old,ton,0.026,0.042,0.047,0.051,0.055,0.06,0.064
+SPS,USA,Production|Alu|Secondary Old,ton,0.041,0.036,0.041,0.045,0.048,0.053,0.056
+SPS,CHA,Production|Alu|Secondary New,ton,0.081,0.081,0.081,0.081,0.081,0.081,0.081
+SPS,EUR,Production|Alu|Secondary New,ton,0.018,0.018,0.018,0.018,0.018,0.018,0.018
+SPS,JPN,Production|Alu|Secondary New,ton,0.004,0.004,0.004,0.004,0.004,0.004,0.004
+SPS,LAM,Production|Alu|Secondary New,ton,0.004,0.004,0.004,0.004,0.004,0.004,0.004
+SPS,MEA,Production|Alu|Secondary New,ton,0.001,0.001,0.001,0.001,0.001,0.001,0.001
+SPS,OAS,Production|Alu|Secondary New,ton,0.041,0.041,0.041,0.041,0.041,0.041,0.041
+SPS,USA,Production|Alu|Secondary New,ton,0.018,0.018,0.018,0.018,0.018,0.018,0.018
+SPS,CAZ,Production|Copper|Electrorefining,ton,282.33,297.91,345.45,349.17,362.94,378.01,370.09
+SPS,CHA,Production|Copper|Electrorefining,ton,8431.22,8896.33,10316.03,10427.03,10838.25,11288.23,11051.87
+SPS,EUR,Production|Copper|Electrorefining,ton,1707.84,1802.05,2089.63,2112.11,2195.41,2286.56,2238.68
+SPS,IND,Production|Copper|Electrorefining,ton,473.2,499.3,578.98,585.21,608.29,633.55,620.28
+SPS,JPN,Production|Copper|Electrorefining,ton,1286.01,1356.95,1573.5,1590.43,1653.15,1721.79,1685.73
+SPS,LAM,Production|Copper|Electrorefining,ton,1507.57,1590.74,1844.59,1864.44,1937.97,2018.43,1976.16
+SPS,MEA,Production|Copper|Electrorefining,ton,412.74,435.51,505.01,510.44,530.57,552.6,541.03
+SPS,NEU,Production|Copper|Electrorefining,ton,199.68,210.69,244.31,246.94,256.68,267.34,261.74
+SPS,OAS,Production|Copper|Electrorefining,ton,1089.63,1149.74,1333.21,1347.56,1400.7,1458.86,1428.31
+SPS,REF,Production|Copper|Electrorefining,ton,1583.55,1670.9,1937.55,1958.4,2035.63,2120.15,2075.76
+SPS,SSA,Production|Copper|Electrorefining,ton,217.64,229.64,266.29,269.15,279.77,291.38,285.28
+SPS,USA,Production|Copper|Electrorefining,ton,509.79,537.91,623.75,630.46,655.33,682.53,668.24
+SPS,CAZ,Production|Copper|Leaching,ton,27.89,29.43,34.12,34.49,35.85,37.34,36.56
+SPS,CHA,Production|Copper|Leaching,ton,62.13,65.56,76.02,76.84,79.87,83.19,81.45
+SPS,EUR,Production|Copper|Leaching,ton,54.43,57.43,66.6,67.31,69.97,72.87,71.35
+SPS,IND,Production|Copper|Leaching,ton,0,0,0,0,0,0,0
+SPS,JPN,Production|Copper|Leaching,ton,0,0,0,0,0,0,0
+SPS,LAM,Production|Copper|Leaching,ton,2040.93,2153.51,2497.18,2524.05,2623.59,2732.51,2675.3
+SPS,MEA,Production|Copper|Leaching,ton,18.29,19.3,22.38,22.62,23.52,24.49,23.98
+SPS,NEU,Production|Copper|Leaching,ton,0.8,0.85,0.98,0.99,1.03,1.07,1.05
+SPS,OAS,Production|Copper|Leaching,ton,282.93,298.54,346.18,349.91,363.71,378.81,370.87
+SPS,REF,Production|Copper|Leaching,ton,45.51,48.02,55.69,56.29,58.51,60.94,59.66
+SPS,SSA,Production|Copper|Leaching,ton,1364.64,1439.92,1669.71,1687.68,1754.24,1827.07,1788.81
+SPS,USA,Production|Copper|Leaching,ton,587.87,620.3,719.29,727.03,755.7,787.08,770.6
+SPS,CAZ,Production|Copper|Secondary,ton,124.32,125.42,138.82,153.75,174.11,228.16,272.66
+SPS,CHA,Production|Copper|Secondary,ton,1727.8,1742.97,1929.25,2136.8,2419.73,3170.85,3789.26
+SPS,EUR,Production|Copper|Secondary,ton,441.9,445.78,493.42,546.5,618.87,810.97,969.13
+SPS,IND,Production|Copper|Secondary,ton,1.59,1.61,1.78,1.97,2.23,2.92,3.49
+SPS,JPN,Production|Copper|Secondary,ton,272.61,275.01,304.4,337.15,381.79,500.3,597.87
+SPS,LAM,Production|Copper|Secondary,ton,52.53,52.99,58.66,64.97,73.57,96.4,115.21
+SPS,MEA,Production|Copper|Secondary,ton,271.81,274.2,303.5,336.15,380.66,498.82,596.11
+SPS,NEU,Production|Copper|Secondary,ton,25,25.22,27.91,30.92,35.01,45.88,54.83
+SPS,OAS,Production|Copper|Secondary,ton,154.73,156.09,172.77,191.35,216.69,283.96,339.34
+SPS,REF,Production|Copper|Secondary,ton,195.8,197.52,218.63,242.15,274.21,359.33,429.41
+SPS,SSA,Production|Copper|Secondary,ton,11.81,11.91,13.19,14.61,16.54,21.67,25.9
+SPS,USA,Production|Copper|Secondary,ton,35.34,35.65,39.46,43.7,49.49,64.85,77.5
+SPS,World,Production|Nickel|Secondary,ton,0.012,0.014,0.015,0.045,0.08,0.16,0.25
+SPS,World,Production|Nickel|Materials,ton,0.139,0.138,0.138,0.134,0.129,0.118,0.105
+SPS,World,Production|Nickel|PGM,ton,0.189,0.189,0.189,0.183,0.176,0.161,0.144
+SPS,World,Production|Nickel|Smelting16,ton,0.16,0.16,0.16,0.155,0.149,0.136,0.122
+SPS,World,Production|Nickel|Smelting7,ton,0.166,0.166,0.166,0.161,0.155,0.141,0.126
+SPS,World,Production|Nickel|Cobalt,ton,0.334,0.333,0.333,0.322,0.311,0.284,0.253
+SPS,World,Production|Cobalt|Primary,ton,0.92,0.93,0.93,0.9,0.84,0.78,0.73
+SPS,World,Production|Cobalt|Secondary,ton,0.08,0.07,0.07,0.1,0.16,0.22,0.27
+SPS,World,Production|Lithium|Primary,ton,0.988,0.986,0.985,0.955,0.916,0.8,0.66
+SPS,World,Production|Lithium|Secondary,ton,0.012,0.014,0.015,0.045,0.084,0.2,0.34
+NZE,CHA,Electricity|Alu|Hydro,%,0.192,0.249,0.208,0.17,0.158,0.156,0.156
+NZE,CHA,Electricity|Alu|Coal,%,0.745,0.393,0.041,0,0,0,0
+NZE,CHA,Electricity|Alu|Natural Gas,%,0,0.021,0.02,0.01,0.004,0.001,0
+NZE,CHA,Electricity|Alu|Nuclear,%,0.006,0.035,0.054,0.055,0.059,0.061,0.062
+NZE,CHA,Electricity|Alu|Wind,%,0.027,0.119,0.23,0.269,0.28,0.281,0.282
+NZE,CHA,Electricity|Alu|Solar,%,0.03,0.184,0.447,0.494,0.496,0.496,0.492
+NZE,CHA,Electricity|Alu|Hydrogen,%,0,0,0,0.002,0.002,0.003,0.005
+NZE,CAZ,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,CAZ,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,CHA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,CHA,Efficiency|Smelting,%,1,1.008,1.023,1.038,1.053,1.069,1.085
+NZE,EUR,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,EUR,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,IND,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,IND,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,JPN,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,JPN,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,LAM,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,LAM,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,MEA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,MEA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,NEU,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,NEU,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,OAS,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,OAS,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,REF,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,REF,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,SSA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,SSA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,USA,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,USA,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,World,Production|Aluminium|Liquid,ton,1,1,1,1,1,1,1
+NZE,World,Efficiency|Smelting,%,1,1,1,1,1,1,1
+NZE,CAZ,Production|Alu|Primary,ton,0.02,0.019,0.018,0.017,0.017,0.016,0.015
+NZE,CHA,Production|Alu|Primary,ton,0.411,0.391,0.372,0.359,0.346,0.327,0.314
+NZE,EUR,Production|Alu|Primary,ton,0.039,0.037,0.035,0.034,0.032,0.031,0.029
+NZE,LAM,Production|Alu|Primary,ton,0.012,0.012,0.011,0.011,0.01,0.01,0.009
+NZE,MEA,Production|Alu|Primary,ton,0.066,0.063,0.06,0.058,0.056,0.053,0.051
+NZE,OAS,Production|Alu|Primary,ton,0.052,0.049,0.047,0.045,0.044,0.041,0.04
+NZE,USA,Production|Alu|Primary,ton,0.041,0.039,0.037,0.036,0.035,0.033,0.031
+NZE,CHA,Production|Alu|Secondary Old,ton,0.056,0.085,0.097,0.104,0.112,0.123,0.131
+NZE,EUR,Production|Alu|Secondary Old,ton,0.041,0.037,0.042,0.045,0.049,0.054,0.057
+NZE,JPN,Production|Alu|Secondary Old,ton,0.009,0.008,0.009,0.009,0.01,0.011,0.012
+NZE,LAM,Production|Alu|Secondary Old,ton,0.015,0.012,0.013,0.014,0.015,0.017,0.018
+NZE,MEA,Production|Alu|Secondary Old,ton,0.005,0.004,0.004,0.005,0.005,0.005,0.006
+NZE,OAS,Production|Alu|Secondary Old,ton,0.026,0.042,0.047,0.051,0.055,0.06,0.064
+NZE,USA,Production|Alu|Secondary Old,ton,0.041,0.036,0.041,0.045,0.048,0.053,0.056
+NZE,CHA,Production|Alu|Secondary New,ton,0.081,0.081,0.081,0.081,0.081,0.081,0.081
+NZE,EUR,Production|Alu|Secondary New,ton,0.018,0.018,0.018,0.018,0.018,0.018,0.018
+NZE,JPN,Production|Alu|Secondary New,ton,0.004,0.004,0.004,0.004,0.004,0.004,0.004
+NZE,LAM,Production|Alu|Secondary New,ton,0.004,0.004,0.004,0.004,0.004,0.004,0.004
+NZE,MEA,Production|Alu|Secondary New,ton,0.001,0.001,0.001,0.001,0.001,0.001,0.001
+NZE,OAS,Production|Alu|Secondary New,ton,0.041,0.041,0.041,0.041,0.041,0.041,0.041
+NZE,USA,Production|Alu|Secondary New,ton,0.018,0.018,0.018,0.018,0.018,0.018,0.018
+NZE,CAZ,Production|Copper|Electrorefining,ton,282.33,310.36,398.8,428.82,447.56,426.29,404.5
+NZE,CHA,Production|Copper|Electrorefining,ton,8431.22,9268.15,11909.29,12805.76,13365.33,12730.2,12079.4
+NZE,EUR,Production|Copper|Electrorefining,ton,1707.84,1877.37,2412.36,2593.95,2707.3,2578.65,2446.82
+NZE,IND,Production|Copper|Electrorefining,ton,473.2,520.17,668.4,718.72,750.12,714.48,677.95
+NZE,JPN,Production|Copper|Electrorefining,ton,1286.01,1413.67,1816.52,1953.25,2038.61,1941.73,1842.46
+NZE,LAM,Production|Copper|Electrorefining,ton,1507.57,1657.22,2129.48,2289.77,2389.83,2276.26,2159.89
+NZE,MEA,Production|Copper|Electrorefining,ton,412.74,453.71,583,626.89,654.28,623.19,591.33
+NZE,NEU,Production|Copper|Electrorefining,ton,199.68,219.5,282.05,303.28,316.53,301.49,286.07
+NZE,OAS,Production|Copper|Electrorefining,ton,1089.63,1197.79,1539.12,1654.98,1727.3,1645.21,1561.11
+NZE,REF,Production|Copper|Electrorefining,ton,1583.55,1740.74,2236.8,2405.17,2510.27,2390.98,2268.75
+NZE,SSA,Production|Copper|Electrorefining,ton,217.64,239.24,307.41,330.56,345,328.6,311.81
+NZE,USA,Production|Copper|Electrorefining,ton,509.79,560.39,720.08,774.29,808.12,769.72,730.37
+NZE,CAZ,Production|Copper|Leaching,ton,27.89,30.66,39.39,42.36,44.21,42.11,39.95
+NZE,CHA,Production|Copper|Leaching,ton,62.13,68.3,87.77,94.37,98.5,93.81,89.02
+NZE,EUR,Production|Copper|Leaching,ton,54.43,59.83,76.88,82.67,86.28,82.18,77.98
+NZE,IND,Production|Copper|Leaching,ton,0,0,0,0,0,0,0
+NZE,JPN,Production|Copper|Leaching,ton,0,0,0,0,0,0,0
+NZE,LAM,Production|Copper|Leaching,ton,2040.93,2243.52,2882.85,3099.86,3235.31,3081.57,2924.03
+NZE,MEA,Production|Copper|Leaching,ton,18.29,20.11,25.84,27.79,29,27.62,26.21
+NZE,NEU,Production|Copper|Leaching,ton,0.8,0.88,1.13,1.22,1.27,1.21,1.15
+NZE,OAS,Production|Copper|Leaching,ton,282.93,311.02,399.65,429.73,448.51,427.19,405.36
+NZE,REF,Production|Copper|Leaching,ton,45.51,50.03,64.29,69.13,72.15,68.72,65.21
+NZE,SSA,Production|Copper|Leaching,ton,1364.64,1500.11,1927.59,2072.69,2163.26,2060.46,1955.12
+NZE,USA,Production|Copper|Leaching,ton,587.87,646.23,830.38,892.89,931.91,887.62,842.24
+NZE,CAZ,Production|Copper|Secondary,ton,124.32,130.66,160.26,188.83,214.71,257.3,298.01
+NZE,CHA,Production|Copper|Secondary,ton,1727.8,1815.82,2227.22,2624.27,2983.92,3575.89,4141.56
+NZE,EUR,Production|Copper|Secondary,ton,441.9,464.41,569.63,671.18,763.16,914.56,1059.24
+NZE,IND,Production|Copper|Secondary,ton,1.59,1.67,2.05,2.42,2.75,3.29,3.82
+NZE,JPN,Production|Copper|Secondary,ton,272.61,286.5,351.41,414.06,470.81,564.21,653.46
+NZE,LAM,Production|Copper|Secondary,ton,52.53,55.21,67.72,79.79,90.72,108.72,125.92
+NZE,MEA,Production|Copper|Secondary,ton,271.81,285.66,350.38,412.84,469.42,562.54,651.53
+NZE,NEU,Production|Copper|Secondary,ton,25,26.27,32.23,37.97,43.17,51.74,59.92
+NZE,OAS,Production|Copper|Secondary,ton,154.73,162.61,199.45,235.01,267.22,320.23,370.89
+NZE,REF,Production|Copper|Secondary,ton,195.8,205.77,252.39,297.39,338.15,405.23,469.33
+NZE,SSA,Production|Copper|Secondary,ton,11.81,12.41,15.22,17.94,20.4,24.44,28.31
+NZE,USA,Production|Copper|Secondary,ton,35.34,37.14,45.55,53.67,61.03,73.14,84.71
+NZE,World,Production|Nickel|Secondary,ton,0.012,0.014,0.015,0.045,0.08,0.16,0.25
+NZE,World,Production|Nickel|Materials,ton,0.139,0.138,0.138,0.134,0.129,0.118,0.105
+NZE,World,Production|Nickel|PGM,ton,0.189,0.189,0.189,0.183,0.176,0.161,0.144
+NZE,World,Production|Nickel|Smelting16,ton,0.16,0.16,0.16,0.155,0.149,0.136,0.122
+NZE,World,Production|Nickel|Smelting7,ton,0.166,0.166,0.166,0.161,0.155,0.141,0.126
+NZE,World,Production|Nickel|Cobalt,ton,0.334,0.333,0.333,0.322,0.311,0.284,0.253
+NZE,World,Production|Cobalt|Primary,ton,0.92,0.93,0.93,0.9,0.84,0.78,0.73
+NZE,World,Production|Cobalt|Secondary,ton,0.08,0.07,0.07,0.1,0.16,0.22,0.27
+NZE,World,Production|Lithium|Primary,ton,0.988,0.986,0.985,0.955,0.916,0.8,0.66
+NZE,World,Production|Lithium|Secondary,ton,0.012,0.014,0.015,0.045,0.084,0.2,0.34
