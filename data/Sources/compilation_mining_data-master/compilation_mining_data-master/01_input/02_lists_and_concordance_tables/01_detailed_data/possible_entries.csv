@@ -1,0 +1,65 @@
+variable;source_entry;entry_name
+type_mineral;Ore mined;Ore mined
+type_mineral;Ore Mined;Ore mined
+type_mineral;Concentrate;Concentrate
+type_mineral;Ore processed;Ore processed
+type_mineral;Coal mined;Coal mined
+type_mineral;Coal;Coal mined
+type_mineral;Clean coal;Clean coal
+type_mineral;NM mineral;NM mineral
+type_mineral;NM mineral ore;NM mineral ore
+type_mining;Open pit;Surface
+type_mining;Underground;Underground
+type_mining;Surface;Surface
+type_mining;Open Pit;Surface
+type_mining;Open cut;Surface
+type_mining;Open Cut;Surface
+type_mining;Leaching;Leaching
+type_mining;Heap leach;Heap leaching
+type_mining;Open pit, Underground;Open pit, Underground
+type_mining;Dump leach;Dump leaching
+type_mining;Dump leaching;Dump leaching
+type_mining;Underground, Open pit;Underground, Surface
+type_mining;Stockpiles;Stockpiles
+type_mining;-;
+type_mining;Open Pits;Surface
+type_mining;underground;Underground
+type_mining;Leach;Leaching
+type_mining;Autoclave;Autoclave
+type_mining;Heap Leach;Heap leaching
+type_mining;Open Pit, Underground;Surface, Underground
+type_mining;Leach Pad;Leach pad
+type_mining;Leach pad;Leach pad
+type_mining;Open pit and Underground;Surface, Underground
+type_mining;Dump leach ore;Dump leaching
+type_mining;Underground, Surface;Underground, Surface
+type_mining;Undergrpund;Underground
+type_mining;Flotation;Flotation
+type_mining;Dump Leach;Dump leaching
+type_mining;Vat and Heap Leach;Vat and Heap leaching
+type_mining;Vat and Heap leaching;Vat and Heap leaching
+type_mining;leaching;Leaching
+mine_processing;SX-EW;SX-EW
+mine_processing;Heap leaching;Heap leaching
+mine_processing;heap leaching;Heap leaching
+mine_processing;Merrill-Crowe;Merrill-Crowe
+type_facility;Smelter;Smelter
+type_facility;Refinery;Refinery
+type_facility;Coke oven;Coke oven
+type_facility;Rod plant;Rod plant
+waste_type;Waste rock;Waste rock
+waste_type;Waste Rock;Waste rock
+waste_type;Waste;Waste rock
+waste_type;Overburden;Waste rock
+waste_type;Stripped topsoil;Waste rock
+waste_type;Development waste;Waste rock
+waste_type;Raisebore waste;Waste rock
+waste_type;Waste mined;Waste rock
+waste_type;Waste material mined;Waste rock
+waste_type;Dry tailings;Dry tailings
+waste_type;Tailings and Sludge;Tailings
+waste_type;Coarse reject;Tailings
+waste_type;Fine reject (tailings);Tailings
+waste_type;Tailings;Tailings
+waste_type;Acid produced;Acid produced
+waste_type;Surplus acid;Surplus acid

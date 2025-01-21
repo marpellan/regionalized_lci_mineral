@@ -1,0 +1,2416 @@
+facility_id,mine_fac,sub_site
+COM00001.00,777,
+COM00002.00,A Narrain,
+COM00003.00,Absaloka,
+COM00004.00,Abyz,
+COM00005.00,Achinsk Alumina Refinery,
+COM00006.00,Acindar,
+COM00007.00,AGA Mineracao,
+COM00007.01,AGA Mineracao,Cuiaba
+COM00007.02,AGA Mineracao,Lamego
+COM00007.03,AGA Mineracao,Corrego do Sitio 1
+COM00007.04,AGA Mineracao,Corrego do Sitio 2
+COM00008.00,Aguablanca,
+COM00009.00,Ahafo,
+COM00009.01,Ahafo,Ahafo South
+COM00009.02,Ahafo,Ahafo North
+COM00010.00,AHMSA Monclova Steel Plant,
+COM00010.01,AHMSA Monclova Steel Plant,AHMSA Monclova Steel Plant 1
+COM00010.02,AHMSA Monclova Steel Plant,AHMSA Monclova Steel Plant 2
+COM00011.00,Air Quality,
+COM00012.00,Airly,
+COM00013.00,Aitik,
+COM00014.00,Akbastau,
+COM00015.00,Aktogay,
+COM00016.00,Akyem,
+COM00017.00,Al Ba’itha,
+COM00018.00,Alamo Dorado,
+COM00019.00,Albras,
+COM00020.00,Alexievskaya,
+COM00021.00,Aljustrel,
+COM00022.00,Alma,
+COM00023.00,Alouette,
+COM00024.00,Alpamarca,
+COM00024.01,Alpamarca,Rio Pallanga
+COM00024.02,Alpamarca,Alpamarca
+COM00024.03,Alpamarca,Romina-Puagjanca
+COM00025.00,Alpart,
+COM00026.00,ALSCON Aluminium Smelter,
+COM00027.00,Altar,
+COM00028.00,Altonorte,
+COM00029.00,Alucam,
+COM00030.00,Alumar,
+COM00031.00,Alumbrera,
+COM00032.00,Alunorte,
+COM00033.00,Amandelbult,
+COM00034.00,Amapa,
+COM00035.00,Ambatovy,
+COM00036.00,Amona,
+COM00037.00,Amonate,
+COM00038.00,Amurugol AO,
+COM00038.01,Amurugol AO,Erkovetskiy
+COM00038.02,Amurugol AO,Severo-Vostochniy
+COM00039.00,AMVEST Fola Complex,
+COM00040.00,AMVEST Terry Eagle Complex,
+COM00041.00,Andina,
+COM00042.00,Andorinhas,
+COM00043.00,Andrade,
+COM00044.00,Anglesey,
+COM00045.00,Anglo American other coal mines South Africa,
+COM00046.00,Angul Aluminium Smelter,
+COM00047.00,Angus Place,
+COM00048.00,Antamina,
+COM00049.00,Antapaccay,
+COM00049.01,Antapaccay,Tintaya
+COM00049.02,Antapaccay,Coroccohuayco
+COM00050.00,Antapite,
+COM00051.00,Antas,
+COM00052.00,Antelope,
+COM00053.00,Antonovskaya,
+COM00054.00,Antucoya,
+COM00055.00,Anyuan,
+COM00055.01,Anyuan,Anyuan
+COM00055.02,Anyuan,Zhuanlongwan
+COM00056.00,Araxa,
+COM00057.00,Araxa CBBM,
+COM00058.00,ArcelorMittal Bremen,
+COM00059.00,ArcelorMittal Cleveland,
+COM00060.00,ArcelorMittal Duisburg steel plant,
+COM00061.00,ArcelorMittal Gipuzkoa,
+COM00061.01,ArcelorMittal Gipuzkoa,Olaberria
+COM00061.02,ArcelorMittal Gipuzkoa,Bergara
+COM00061.03,ArcelorMittal Gipuzkoa,Zumarraga
+COM00062.00,ArcelorMittal Hamburg steel plant,
+COM00063.00,ArcelorMittal Tubarao,
+COM00064.00,ArcelorMittal Warszawa steel plant,
+COM00065.00,Arch of West Virginia,
+COM00066.00,Arch of Wyoming,
+COM00067.00,Argyle,
+COM00068.00,Arnot,
+COM00069.00,Artemyevsky,
+COM00070.00,Arvida,
+COM00070.01,Arvida,Arvida AP60
+COM00071.00,Asam-Asam,
+COM00072.00,Ashele,
+COM00073.00,Atansore,
+COM00074.00,Atasu,
+COM00075.00,Atlantic Copper,
+COM00076.00,Aughinish Alumina,
+COM00077.00,Australia Sands,
+COM00078.00,Avdiivka Coke,
+COM00079.00,Aviles and Gijon steel plant,
+COM00080.00,Awaso,
+COM00081.00,Azovstal,
+COM00082.00,Azul,
+COM00083.00,Baal Bone,
+COM00084.00,Bagdad,
+COM00085.00,Baie Comeau Aluminium Smelter,
+COM00086.00,Bakan,
+COM00086.01,Bakan,Bakan
+COM00086.02,Bakan,North Lanut
+COM00087.00,Balangan,
+COM00087.01,Balangan,PT Semesta Centramas (SCM)
+COM00087.02,Balangan,PT Laskar Semesta Alam (LSA)
+COM00087.03,Balangan,PT Paramitha Cipta Sarana (PCS)
+COM00088.00,Bald Mountain,
+COM00089.00,Balkhash Smelter,
+COM00090.00,Bangun Olahsarana Sukses,
+COM00091.00,Bank,
+COM00092.00,Bao Vista,
+COM00093.00,Baorixile Mines,
+COM00094.00,Baotou Aluminum,
+COM00095.00,Baotou Mines,
+COM00095.01,Baotou Mines,Shuiquan
+COM00095.02,Baotou Mines,Adaohai
+COM00095.03,Baotou Mines,Lijiahao
+COM00096.00,Baralaba,
+COM00097.00,Barbacena Ferroalloys plant,
+COM00098.00,Barberton,
+COM00098.01,Barberton,Fairview
+COM00098.02,Barberton,Sheba
+COM00098.03,Barberton,Consort
+COM00099.00,Barneys Canyon,
+COM00100.00,Barro Alto,
+COM00101.00,Barsingsar,
+COM00102.00,Baruun Noyon Uul,
+COM00103.00,Barzasskoye tovarischestvo,
+COM00104.00,Batu Hijau,
+COM00105.00,Batulicin,
+COM00106.00,Bauxite Company of Guyana,
+COM00106.01,Bauxite Company of Guyana,Linden
+COM00106.02,Bauxite Company of Guyana,Kwakwani
+COM00106.03,Bauxite Company of Guyana,Ituni
+COM00107.00,Bayovar,
+COM00108.00,Bayside,
+COM00109.00,Bear Run,
+COM00110.00,Beatrix,
+COM00111.00,Beauharnois,
+COM00112.00,Becancour,
+COM00113.00,Beckley,
+COM00114.00,Beeshoek,
+COM00115.00,Beisu,
+COM00116.00,Belfast,
+COM00117.00,Bell Bay,
+COM00118.00,Belmont,
+COM00119.00,Belousovsky,
+COM00120.00,Beltana,
+COM00121.00,Belval and Differdange steel plant,
+COM00122.00,Bembele,
+COM00123.00,Benga,
+COM00124.00,Bengalla,
+COM00125.00,Berezovskaya,
+COM00125.01,Berezovskaya,Pervomayskaya
+COM00126.00,Berezovskiy,
+COM00127.00,Bergsöe,
+COM00128.00,Beulah,
+COM00129.00,Bharat Coking Coal Limited,
+COM00129.01,Bharat Coking Coal Limited,Barora
+COM00129.02,Bharat Coking Coal Limited,Block II
+COM00129.03,Bharat Coking Coal Limited,Govindpur
+COM00129.04,Bharat Coking Coal Limited,Katras
+COM00129.05,Bharat Coking Coal Limited,Sijua
+COM00129.06,Bharat Coking Coal Limited,Kusunda
+COM00129.07,Bharat Coking Coal Limited,PB Area
+COM00129.08,Bharat Coking Coal Limited,WJ Area
+COM00129.09,Bharat Coking Coal Limited,Bastacolla
+COM00129.10,Bharat Coking Coal Limited,Lodna
+COM00129.11,Bharat Coking Coal Limited,EJ Area
+COM00129.12,Bharat Coking Coal Limited,Canch/Victoria
+COM00130.00,Bibiani,
+COM00131.00,Big Mountain,
+COM00132.00,Big Sky,
+COM00133.00,Bingham Canyon,
+COM00134.00,Binungan,
+COM00134.01,Binungan,Site Binungan
+COM00134.02,Binungan,Site Binungan 2
+COM00134.03,Binungan,Binungan
+COM00135.00,Birch River,
+COM00136.00,Birchtree,
+COM00137.00,Birdwell/Miller Creek,
+COM00138.00,Black Mesa,
+COM00139.00,Black Mountain,
+COM00139.01,Black Mountain,Black Mountain
+COM00139.02,Black Mountain,Gamsberg
+COM00140.00,Black Rock,
+COM00141.00,Black Thunder,
+COM00141.01,Black Thunder,Black Thunder
+COM00141.02,Black Thunder,Jacobs Ranch
+COM00142.00,Blacksville,
+COM00143.00,Blackwater,
+COM00144.00,Blair Athol,
+COM00145.00,Bleomhoek,
+COM00146.00,Bloom Lake,
+COM00147.00,Blue Ridge,
+COM00148.00,Bluegrass,
+COM00148.01,Bluegrass,Freedom
+COM00148.02,Bluegrass,Patriot
+COM00149.00,Bocaina,
+COM00150.00,Bodai-Daldali,
+COM00151.00,Boddington,
+COM00152.00,Boffa,
+COM00153.00,Bogatyr,
+COM00154.00,Boggabri,
+COM00155.00,Bogoslovsk,
+COM00156.00,Bokoni,
+COM00157.00,Bolivar,
+COM00158.00,Bolshevik,
+COM00159.00,Bonikro,
+COM00160.00,Bosjesspruit,
+COM00161.00,Boxitogorsk Alumina Refinery,
+COM00162.00,Boyne Island,
+COM00163.00,Bozshakol,
+COM00164.00,Bozymchak,
+COM00165.00,Bracemac-McLeod,
+COM00166.00,Brandspruit,
+COM00167.00,Bratsk Aluminium Smelter,
+COM00168.00,Breapampa,
+COM00169.00,Broadlea,
+COM00170.00,Broadmeadow,
+COM00171.00,Brocks Creek,
+COM00172.00,Broken Hill,
+COM00173.00,BRPM,
+COM00174.00,Brunswick,
+COM00175.00,Bryansky,
+COM00176.00,Buchanan,
+COM00177.00,Buckingham,
+COM00178.00,Buenavista,
+COM00179.00,Bulga,
+COM00180.00,Bulyanhulu,
+COM00181.00,Burbanks,
+COM00181.01,Burbanks,Coogee
+COM00181.02,Burbanks,Wattle Dam
+COM00182.00,Burns Harbor,
+COM00183.00,Burnstone,
+COM00184.00,Burton,
+COM00185.00,Buruktal,
+COM00186.00,Buzwagi,
+COM00187.00,Bwana,
+COM00188.00,Bystrinsky GOK,
+COM00188.01,Bystrinsky GOK,Verkhneildikansky
+COM00188.02,Bystrinsky GOK,Bystrinsky-2
+COM00189.00,Caballo,
+COM00190.00,Cadia,
+COM00190.01,Cadia,Cadia Hill
+COM00190.02,Cadia,Ridgeway
+COM00190.03,Cadia,Cadia East
+COM00190.04,Cadia,Cadia Valley Operations
+COM00191.00,Cadiz,
+COM00191.01,Cadiz,Sandy Ridge
+COM00191.02,Cadiz,Harrison
+COM00191.03,Cadiz,Daron
+COM00191.04,Cadiz,Harrah
+COM00192.00,Cagdianao,
+COM00193.00,Cairn Hill,
+COM00194.00,Cajati,
+COM00195.00,Callide,
+COM00196.00,Canadian Malartic,
+COM00197.00,Candelaria,
+COM00197.01,Candelaria,La Espanola
+COM00198.00,Cannington,
+COM00199.00,CAP Acero,
+COM00200.00,CAP Huasco Pellet Plant,
+COM00201.00,Capcoal,
+COM00201.01,Capcoal,German Creek
+COM00201.02,Capcoal,Grasstree
+COM00202.00,Carbones del Guasare,
+COM00203.00,Carborough Downs,
+COM00204.00,Cardinal River,
+COM00205.00,Carlin,
+COM00205.01,Carlin,Gold Quarry
+COM00205.02,Carlin,Emigrant
+COM00205.03,Carlin,Chukar
+COM00205.04,Carlin,Exodus
+COM00205.05,Carlin,Pete Bajo
+COM00205.06,Carlin,Leeville
+COM00205.07,Carlin,Carlin East
+COM00205.08,Carlin,Deep Post
+COM00206.00,Carlota,
+COM00207.00,Carmen de Andacollo,
+COM00208.00,Carosue Dam,
+COM00208.01,Carosue Dam,Karari
+COM00208.02,Carosue Dam,Dervish
+COM00209.00,Carrapateena,
+COM00210.00,Casa de Pedra,
+COM00210.01,Casa de Pedra,Pires
+COM00210.02,Casa de Pedra,Engenho
+COM00211.00,Casposo,
+COM00212.00,Catalao,
+COM00213.00,Catalao Phosphate,
+COM00214.00,Cato Ridge,
+COM00215.00,Caval Ridge,
+COM00216.00,Cayeli,
+COM00217.00,CBG Sangaredi,
+COM00218.00,Cedynia Wire Rod Plant,
+COM00219.00,CEMESA,
+COM00220.00,Centinela,
+COM00220.01,Centinela,Esperanza
+COM00220.02,Centinela,El Tesoro
+COM00221.00,Central Coalfields Limited,
+COM00221.01,Central Coalfields Limited,Govindpur project
+COM00221.02,Central Coalfields Limited,Kathara
+COM00221.03,Central Coalfields Limited,Karma
+COM00221.04,Central Coalfields Limited,Kantaghar
+COM00221.05,Central Coalfields Limited,Religara
+COM00221.06,Central Coalfields Limited,Birsa
+COM00221.07,Central Coalfields Limited,Kedla
+COM00221.08,Central Coalfields Limited,Kocp
+COM00221.09,Central Coalfields Limited,Tapin North
+COM00221.10,Central Coalfields Limited,BGR
+COM00221.11,Central Coalfields Limited,Rajrappa
+COM00221.12,Central Coalfields Limited,Piparwar
+COM00221.13,Central Coalfields Limited,Ashoka
+COM00221.14,Central Coalfields Limited,Amlo
+COM00221.15,Central Coalfields Limited,Tarmi
+COM00221.16,Central Coalfields Limited,Kargali
+COM00221.17,Central Coalfields Limited,Amrapali
+COM00221.18,Central Coalfields Limited,Magadh 1
+COM00221.19,Central Coalfields Limited,Magadh 2
+COM00221.20,Central Coalfields Limited,Giridih
+COM00222.00,Central GOK,
+COM00222.01,Central GOK,Hleyevatskyi
+COM00222.02,Central GOK,Petrovskyi
+COM00222.03,Central GOK,Artyomovskyi
+COM00222.04,Central GOK,Ordzhonikidze
+COM00223.00,Central Murchison Gold Project,
+COM00223.01,Central Murchison Gold Project,Meekatharra Gold Operations
+COM00223.02,Central Murchison Gold Project,Cue Gold Operations
+COM00224.00,Century,
+COM00225.00,Cerrejon,
+COM00226.00,Cerro Bayo,
+COM00227.00,Cerro de Pasco,
+COM00227.01,Cerro de Pasco,Paragsha
+COM00227.02,Cerro de Pasco,Raúl Rojas
+COM00227.03,Cerro de Pasco,Vinchos
+COM00227.04,Cerro de Pasco,San Sebastian
+COM00228.00,Cerro Matoso,
+COM00229.00,Cerro Moro,
+COM00230.00,Cerro Negro,
+COM00230.01,Cerro Negro,Euroka
+COM00230.02,Cerro Negro,Mariana Central
+COM00230.03,Cerro Negro,Mariana Norte
+COM00230.04,Cerro Negro,Emilia
+COM00230.05,Cerro Negro,San Marcos
+COM00231.00,Cerro Negro Norte,
+COM00232.00,Cerro Vanguardia,
+COM00233.00,Cerro Verde,
+COM00234.00,Chagres,
+COM00235.00,Chaijiagou,
+COM00236.00,Chain Valley,
+COM00237.00,Chalco Chongqing Branch,
+COM00238.00,Chalco Henan Branch,
+COM00239.00,Chalco Qinghai Branch,
+COM00240.00,Chalco Shandong Branch,
+COM00241.00,Chalco Shanxi Other Mines,
+COM00242.00,Chanderiya Smelter,
+COM00242.01,Chanderiya Smelter,Pyrometallurgical lead-zinc smelter
+COM00242.02,Chanderiya Smelter,First hydrometallurgical zinc smelter
+COM00242.03,Chanderiya Smelter,Second hydrometallurgical zinc smelter
+COM00242.04,Chanderiya Smelter,Lead smelter
+COM00243.00,Changgou,
+COM00244.00,Chapada,
+COM00245.00,Chapadao,
+COM00246.00,Charbon,
+COM00247.00,Cheremshansky,
+COM00248.00,Cherepovets Steel,
+COM00249.00,Chernigovets,
+COM00250.00,Chibuluma South,
+COM00250.01,Chibuluma South,Chifupu
+COM00251.00,Chifeng,
+COM00252.00,China Coal Energy,
+COM00253.00,Chino,
+COM00254.00,Chirano,
+COM00255.00,Chongli,
+COM00256.00,Chotia,
+COM00257.00,Chungar,
+COM00257.01,Chungar,Animon
+COM00257.02,Chungar,Islay
+COM00257.03,Chungar,Islay mine processed at Cerro de Pasco
+COM00258.00,Cienega,
+COM00259.00,Clairton Plant,
+COM00260.00,Clarence,
+COM00261.00,Clermont,
+COM00262.00,Cliffs,
+COM00263.00,Cliffs Logan County Coal,
+COM00263.01,Cliffs Logan County Coal,Powellton
+COM00263.02,Cliffs Logan County Coal,Lower War Eagle
+COM00263.03,Cliffs Logan County Coal,The Toney Fork
+COM00264.00,Climax,
+COM00265.00,Coal Creek,
+COM00266.00,Coal Valley,
+COM00267.00,Coal‑Mac,
+COM00268.00,Coatesville,
+COM00269.00,Cobre Las Cruces,
+COM00270.00,Cobre Panama,
+COM00271.00,Cockatoo Island,
+COM00272.00,Codelco Norte,
+COM00272.01,Codelco Norte,Chuquicamata
+COM00272.02,Codelco Norte,Radomiro Tomic
+COM00273.00,Codemin,
+COM00274.00,Coermotibo and Onverdacht,
+COM00274.01,Coermotibo and Onverdacht,Coermotibo
+COM00274.02,Coermotibo and Onverdacht,Onverdacht
+COM00275.00,Coleman,
+COM00276.00,Collahuasi,
+COM00276.01,Collahuasi,Rosario
+COM00276.02,Collahuasi,Ujina
+COM00277.00,Collingwood,
+COM00278.00,Collinsville,
+COM00279.00,Colowyo,
+COM00280.00,Colstrip,
+COM00281.00,Conga,
+COM00282.00,Consolidated Murchison,
+COM00283.00,Constancia,
+COM00284.00,Contrecoeur steel plant,
+COM00285.00,Cooke,
+COM00285.01,Cooke,Cooke Shaft 1
+COM00285.02,Cooke,Cooke Shaft 2
+COM00285.03,Cooke,Cooke Shaft 3
+COM00285.04,Cooke,Cooke Shaft 4
+COM00286.00,Copebras,
+COM00287.00,Coppabella,
+COM00288.00,Copper Cliff North,
+COM00289.00,Copper Cliff South,
+COM00290.00,COR Industri Indonesia,
+COM00291.00,Coral Bay Nickel Corporation,
+COM00292.00,Cordero Rojo,
+COM00293.00,Corridor G,
+COM00293.01,Corridor G,Job 21
+COM00293.02,Corridor G,Hill Fork
+COM00294.00,Cortez,
+COM00294.01,Cortez,Pipeline
+COM00294.02,Cortez,Cortez Hills
+COM00295.00,Corumba,
+COM00296.00,Cosmos,
+COM00297.00,Cowal,
+COM00298.00,Coyote Creek,
+COM00299.00,Cozamin,
+COM00300.00,Cracow,
+COM00301.00,Creighton,
+COM00302.00,Cripple Creek & Victor,
+COM00303.00,CRL Queensland,
+COM00304.00,CSA,
+COM00305.00,Cuajone,
+COM00306.00,Cubatao,
+COM00307.00,Cumberland River,
+COM00308.00,Cumnock,
+COM00309.00,Curragh,
+COM00310.00,Cusi,
+COM00311.00,Damanjodi Refinery,
+COM00312.00,Darby,
+COM00312.01,Darby,Darby Fork
+COM00312.02,Darby,Powell Mountain
+COM00313.00,Dariba Smelter,
+COM00314.00,Darling Range Mines,
+COM00314.01,Darling Range Mines,Huntly
+COM00314.02,Darling Range Mines,Willowdale
+COM00315.00,Darlot,
+COM00316.00,Dartbrook,
+COM00317.00,Datong Coal Industry,
+COM00317.01,Datong Coal Industry,Xinzhou Kiln
+COM00317.02,Datong Coal Industry,Meiyukou
+COM00317.03,Datong Coal Industry,Yanzishan
+COM00317.04,Datong Coal Industry,Silaogou
+COM00318.00,Datun,
+COM00318.01,Datun,Yaoqiao
+COM00318.02,Datun,Kongzhuang
+COM00318.03,Datun,Xuzhuang
+COM00318.04,Datun,Longdong
+COM00319.00,Daunia,
+COM00320.00,Dawson,
+COM00321.00,Daxin,
+COM00322.00,De Bron Merriespruit,
+COM00323.00,Debari Smelter,
+COM00324.00,Decker,
+COM00325.00,Deerni,
+COM00326.00,Deflector,
+COM00327.00,DeGrussa,
+COM00327.01,DeGrussa,DeGrussa
+COM00327.02,DeGrussa,Monty
+COM00328.00,Delma,
+COM00329.00,Denisovskiy,
+COM00330.00,Deschambault Aluminium Smelter,
+COM00331.00,Dian Dian,
+COM00332.00,Diavik,
+COM00333.00,Didipio,
+COM00334.00,Dilworth,
+COM00335.00,Dodge Hill,
+COM00336.00,Dofasco Hamilton,
+COM00337.00,Dolomit,
+COM00338.00,Dolores,
+COM00339.00,Dongpo,
+COM00340.00,Donlin Creek,
+COM00341.00,Dotiki Complex,
+COM00342.00,Drayton,
+COM00343.00,DRDGOLD,
+COM00344.00,Driefontein,
+COM00345.00,Drummond Cesar,
+COM00345.01,Drummond Cesar,La Loma
+COM00345.02,Drummond Cesar,El Descanso
+COM00345.03,Drummond Cesar,Pribbenow
+COM00346.00,DTEK Dobropolyeugol,
+COM00346.01,DTEK Dobropolyeugol,Dobropilske
+COM00346.02,DTEK Dobropolyeugol,Bilozerske
+COM00347.00,DTEK Obukhovskaya,
+COM00348.00,DTEK Pavlohradcoal,
+COM00348.01,DTEK Pavlohradcoal,Ternivske
+COM00348.02,DTEK Pavlohradcoal,Pavlogradske
+COM00348.03,DTEK Pavlohradcoal,Geroiv Kosmosu
+COM00348.04,DTEK Pavlohradcoal,Dniprovske
+COM00348.05,DTEK Pavlohradcoal,Pershotravneve
+COM00349.00,DTEK Rovenkyanthracite,
+COM00349.01,DTEK Rovenkyanthracite,V. V. Vakhrushev
+COM00349.02,DTEK Rovenkyanthracite,M. V. Frunze
+COM00350.00,DTEK Sverdlovanthracite,
+COM00351.00,Duck Pond,
+COM00352.00,Dugald River,
+COM00353.00,Dugout Canyon,
+COM00354.00,Duketon,
+COM00354.01,Duketon,Garden Well
+COM00354.02,Duketon,Rosemont
+COM00354.03,Duketon,Moolart Well
+COM00355.00,Dunkerque,
+COM00356.00,Dunkirk steel plant,
+COM00357.00,Duobaoshan,
+COM00358.00,Durnacol,
+COM00359.00,Dvoinoye,
+COM00360.00,Dwarsrivier,
+COM00361.00,Dynamic Energy,
+COM00361.01,Dynamic Energy,Job 30
+COM00361.02,Dynamic Energy,Ben’s Creek 1 (Frontier)
+COM00362.00,Dzhebariki-Khaya,
+COM00363.00,Eagle,
+COM00364.00,Eagle Pass,
+COM00365.00,East Boulder,
+COM00366.00,Eastern Coalfields Limited,
+COM00366.01,Eastern Coalfields Limited,Raniganj
+COM00366.02,Eastern Coalfields Limited,Mugma/Salanpur
+COM00366.03,Eastern Coalfields Limited,Adra
+COM00366.04,Eastern Coalfields Limited,Pirpainti
+COM00366.05,Eastern Coalfields Limited,Rajmahal
+COM00366.06,Eastern Coalfields Limited,Kalidaspur
+COM00366.07,Eastern Coalfields Limited,Parasea
+COM00366.08,Eastern Coalfields Limited,Patmohona
+COM00366.09,Eastern Coalfields Limited,Bonjemehari
+COM00366.10,Eastern Coalfields Limited,Mohanpur
+COM00366.11,Eastern Coalfields Limited,Sonepur Bazari
+COM00366.12,Eastern Coalfields Limited,Khottadih
+COM00366.13,Eastern Coalfields Limited,Pandaveswar
+COM00366.14,Eastern Coalfields Limited,Chitra
+COM00367.00,Edgar Thomson Plant,
+COM00368.00,Edikan,
+COM00369.00,Edna May,
+COM00369.01,Edna May,Marda
+COM00369.02,Edna May,Edna May
+COM00369.03,Edna May,Tampia
+COM00370.00,Eisenhüttenstadt steel plant,
+COM00371.00,Ekati,
+COM00372.00,El Abra,
+COM00373.00,El Algarrobo,
+COM00373.01,El Algarrobo,Algarrobo
+COM00373.02,El Algarrobo,Cristales
+COM00374.00,El Arco,
+COM00375.00,El Hatillo,
+COM00376.00,El Penon,
+COM00377.00,El Pilar,
+COM00378.00,El Romeral,
+COM00379.00,El Sauzal,
+COM00380.00,El Segundo/Lee Ranch,
+COM00380.01,El Segundo/Lee Ranch,El Segundo
+COM00380.02,El Segundo/Lee Ranch,Lee Ranch
+COM00381.00,El Soldado,
+COM00382.00,El Teniente,
+COM00383.00,El Volcan,
+COM00384.00,Elang,
+COM00385.00,Electrosteel Steels Limited,
+COM00386.00,Eleonore,
+COM00387.00,Elgaugol,
+COM00388.00,Ellen,
+COM00389.00,Emery,
+COM00390.00,Empire,
+COM00391.00,Endeavor,
+COM00392.00,Energy Resources of Australia,
+COM00393.00,Ensham,
+COM00394.00,Ergo,
+COM00395.00,Ernest Henry and Mount Isa,
+COM00395.01,Ernest Henry and Mount Isa,Ernest Henry
+COM00395.02,Ernest Henry and Mount Isa,Mount Isa
+COM00395.03,Ernest Henry and Mount Isa,Townsville
+COM00396.00,Escobal,
+COM00397.00,Escondida,
+COM00397.01,Escondida,Escondia Norte
+COM00398.00,Eskay Creek,
+COM00399.00,Estevan,
+COM00399.01,Estevan,Boundary Dam
+COM00399.02,Estevan,Bienfait
+COM00400.00,Eurallumina,
+COM00401.00,EVRAZ VGOK,
+COM00401.01,EVRAZ VGOK,Magnetitovaya
+COM00401.02,EVRAZ VGOK,Zapadny
+COM00401.03,EVRAZ VGOK,Estuninskaya
+COM00401.04,EVRAZ VGOK,Yuzhnaya iron ore
+COM00402.00,Evrazruda,
+COM00402.01,Evrazruda,Tashtagol
+COM00402.02,Evrazruda,Gorno-Shorskaya
+COM00402.03,Evrazruda,Kazskaya
+COM00403.00,Extension Hill/Iron Hill,
+COM00404.00,Exxaro Coal Central,
+COM00404.01,Exxaro Coal Central,Dorstfontein
+COM00404.02,Exxaro Coal Central,Forzando
+COM00404.03,Exxaro Coal Central,Tumelo
+COM00405.00,Fabrica,
+COM00406.00,Fairfield Works,
+COM00407.00,Falcondo,
+COM00408.00,Falkirk,
+COM00409.00,Farmersburg,
+COM00410.00,Fazenda,
+COM00411.00,Federal,
+COM00412.00,Fernandinho,
+COM00413.00,Ferrexpo Poltava Mining,
+COM00413.01,Ferrexpo Poltava Mining,Ferrexpo Poltava Mining
+COM00413.02,Ferrexpo Poltava Mining,Ferrexpo Yeristovo Mining
+COM00414.00,Five Forks,
+COM00415.00,Fjardaal Aluminium Smelter,
+COM00416.00,Flint Ridge,
+COM00417.00,FNI Cagdianao,
+COM00417.01,FNI Cagdianao,CAGA 2
+COM00417.02,FNI Cagdianao,CAGA 4
+COM00418.00,Fort Knox,
+COM00419.00,Fort Site,
+COM00420.00,Fortaleza,
+COM00421.00,Fortescue Pilbara Region,
+COM00421.01,Fortescue Pilbara Region,Cloudbreak
+COM00421.02,Fortescue Pilbara Region,Christmas Creek
+COM00421.03,Fortescue Pilbara Region,Firetail
+COM00421.04,Fortescue Pilbara Region,Kings and Queens
+COM00421.05,Fortescue Pilbara Region,Eliwana
+COM00422.00,Fortnum Gold Operations,
+COM00422.01,Fortnum Gold Operations,Starlight
+COM00422.02,Fortnum Gold Operations,Yarlarweelor
+COM00422.03,Fortnum Gold Operations,Horseshoe - Cassidy
+COM00422.04,Fortnum Gold Operations,Peak Hill
+COM00423.00,Fos-sur-Mer steel plant,
+COM00424.00,Foxleigh,
+COM00425.00,Francisco,
+COM00426.00,Franke,
+COM00427.00,Freda-Rebecca,
+COM00428.00,Freedom,
+COM00429.00,Fresnillo,
+COM00430.00,Friguia,
+COM00431.00,Frontier,
+COM00432.00,Fruta del Norte,
+COM00433.00,Fujairah Refinery,
+COM00434.00,Fujian Makeng,
+COM00435.00,Fushun Aluminum,
+COM00436.00,Gabriela Mistral,
+COM00437.00,Galati steel plant,
+COM00438.00,Galena,
+COM00439.00,Galmoy,
+COM00440.00,Gansu Hualu,
+COM00441.00,Gaohe,
+COM00442.00,Garpenberg,
+COM00443.00,Garson,
+COM00444.00,Gary Works,
+COM00445.00,Gateway North,
+COM00446.00,Geita,
+COM00447.00,GEMCO,
+COM00448.00,Genesee,
+COM00449.00,Gent steel plant,
+COM00450.00,Georgetown,
+COM00451.00,Gerdau Aconorte,
+COM00452.00,Gerdau Barao de Cocais,
+COM00453.00,Gerdau Cambridge,
+COM00454.00,Gerdau Cartersville,
+COM00455.00,Gerdau Cearense,
+COM00456.00,Gerdau Charlotte,
+COM00457.00,Gerdau Charqueadas,
+COM00458.00,Gerdau Contagem,
+COM00459.00,Gerdau Cosigua,
+COM00460.00,Gerdau Divinopolis,
+COM00461.00,Gerdau Fort Smith,
+COM00462.00,Gerdau Guaira,
+COM00463.00,Gerdau Jackson - Michigan,
+COM00464.00,Gerdau Jackson - Tennessee,
+COM00465.00,Gerdau Manitoba - MRM,
+COM00466.00,Gerdau Midlothian,
+COM00467.00,Gerdau Mogi das Cruzes,
+COM00468.00,Gerdau Monroe,
+COM00469.00,Gerdau Ouro Branco,
+COM00470.00,Gerdau Petersburg,
+COM00471.00,Gerdau Pindamonhangaba,
+COM00472.00,Gerdau Riograndense,
+COM00473.00,Gerdau Sao Paulo,
+COM00474.00,Gerdau Sete Lagoas,
+COM00475.00,Gerdau St. Paul,
+COM00476.00,Gerdau Usiba,
+COM00477.00,Gerdau Whitby,
+COM00478.00,Gerdau Wilton,
+COM00479.00,Gertrude,
+COM00480.00,Gibson Complex,
+COM00480.01,Gibson Complex,Gibson South
+COM00480.02,Gibson Complex,Gibson North
+COM00481.00,Glogow metallurgical complex,
+COM00482.00,Goedehoop,
+COM00483.00,Goedgevonden,
+COM00484.00,Golden Grove,
+COM00485.00,Golden Sunlight,
+COM00486.00,Goldex,
+COM00487.00,Goldrush - Fourmile,
+COM00488.00,Goldstrike,
+COM00488.01,Goldstrike,Betze-Post
+COM00488.02,Goldstrike,South Arturo JV
+COM00488.03,Goldstrike,Meikle
+COM00488.04,Goldstrike,Goldstrike Underground
+COM00489.00,Goonyella Riverside,
+COM00489.01,Goonyella Riverside,Goonyella
+COM00489.02,Goonyella Riverside,Riverside
+COM00490.00,Gosowong,
+COM00491.00,Gove,
+COM00492.00,Gramalote,
+COM00493.00,Grande-Baie,
+COM00494.00,Granite City Works,
+COM00495.00,Granny Smith,
+COM00496.00,Grasberg,
+COM00497.00,Great Lakes Works,
+COM00498.00,Great Noligwa,
+COM00499.00,Greenbrier,
+COM00500.00,Greens Creek,
+COM00501.00,Greenside,
+COM00502.00,Gregory,
+COM00502.01,Gregory,Gregory
+COM00502.02,Gregory,Crinum
+COM00503.00,Griffin,
+COM00504.00,Grootegeluk,
+COM00505.00,Grosvenor,
+COM00506.00,Gualcamayo,
+COM00507.00,Guanaco and Amancaya,
+COM00507.01,Guanaco and Amancaya,Guanaco
+COM00507.02,Guanaco and Amancaya,Amancaya
+COM00508.00,Guelb Moghrein,
+COM00509.00,Guizhou,
+COM00509.01,Guizhou,Guizhou No. 1
+COM00509.02,Guizhou,Guizhou No. 2
+COM00509.03,Guizhou,Baiyun Aluminium Refinery
+COM00510.00,Guizhou Huajin Alumina,
+COM00511.00,Guizhou Huaren Aluminium Smelter,
+COM00512.00,Gunnedah,
+COM00512.01,Gunnedah,Tarrawonga
+COM00512.02,Gunnedah,Rocglen
+COM00512.03,Gunnedah,Sunnyside
+COM00512.04,Gunnedah,Gunnedah CHPP
+COM00512.05,Gunnedah,Canyon
+COM00513.00,Gurimbang,
+COM00514.00,Guston Run,
+COM00515.00,Hail Creek,
+COM00516.00,Haile,
+COM00517.00,Halls Creek,
+COM00517.01,Halls Creek,Nicolsons
+COM00517.02,Halls Creek,Wagtail
+COM00518.00,Hamersley - Channar,
+COM00519.00,Hamersley - Eastern Range,
+COM00520.00,Hamersley Mines,
+COM00520.01,Hamersley Mines,Brockman 2
+COM00520.02,Hamersley Mines,Brockman 4
+COM00520.03,Hamersley Mines,Silvergrass
+COM00520.04,Hamersley Mines,Marandoo
+COM00520.05,Hamersley Mines,Mount Tom Price
+COM00520.06,Hamersley Mines,Nammuldi
+COM00520.07,Hamersley Mines,Paraburdoo
+COM00520.08,Hamersley Mines,Western Turner Syncline
+COM00520.09,Hamersley Mines,Yandicoogina
+COM00520.10,Hamersley Mines,Koodaideri
+COM00520.11,Hamersley Mines,Turee Central
+COM00521.00,Hamilton Complex,
+COM00522.00,Hamilton Works,
+COM00523.00,Haquira,
+COM00524.00,Haridwar,
+COM00525.00,Harjavalta,
+COM00526.00,Haystack,
+COM00527.00,Hazard,
+COM00528.00,Hebi Zhong Tai,
+COM00529.00,Hemlo,
+COM00530.00,Henderson,
+COM00531.00,Henty,
+COM00532.00,Hercules,
+COM00533.00,Herradura,
+COM00534.00,Hibbing,
+COM00535.00,Hidden Valley,
+COM00536.00,Higginsville Gold Operations,
+COM00537.00,Highland,
+COM00538.00,Highland Valley Copper,
+COM00539.00,Highvale,
+COM00540.00,Hillside,
+COM00541.00,Hinatuan,
+COM00542.00,Hoedspruit,
+COM00543.00,Holt-McDermott,
+COM00544.00,Hope Downs,
+COM00544.01,Hope Downs,Hope Downs 1
+COM00544.02,Hope Downs,Hope Downs 4
+COM00545.00,Hopkins Complex,
+COM00546.00,Hotazel,
+COM00546.01,Hotazel,Wessels
+COM00546.02,Hotazel,Mamatwan
+COM00547.00,Huaron,
+COM00548.00,Huaxing,
+COM00549.00,Humphrey,
+COM00550.00,Hunedoara steel plant,
+COM00551.00,Hunter Valley Operations,
+COM00552.00,Huolinhe Holingol,
+COM00552.01,Huolinhe Holingol,Huolinhe No. 1 North
+COM00552.02,Huolinhe Holingol,Huolinhe No. 1 South
+COM00552.03,Huolinhe Holingol,Zhahazhuoer
+COM00553.00,Iduapriem,
+COM00554.00,Illawarra,
+COM00554.01,Illawarra,Bulli
+COM00554.02,Illawarra,Wongawilli
+COM00555.00,ILO,
+COM00556.00,Iluka Florida/Georgia,
+COM00557.00,Iluka Virginia,
+COM00558.00,Iluka Western Australia,
+COM00558.01,Iluka Western Australia,Cataby
+COM00558.02,Iluka Western Australia,Narngulu
+COM00558.03,Iluka Western Australia,Eneabba
+COM00558.04,Iluka Western Australia,Capel
+COM00558.05,Iluka Western Australia,Mid West
+COM00558.06,Iluka Western Australia,South West
+COM00559.00,Ilyich Steel,
+COM00560.00,IMMSA - Charcas,
+COM00560.01,IMMSA - Charcas,San Bartolo
+COM00560.02,IMMSA - Charcas,Rey-Reina
+COM00560.03,IMMSA - Charcas,La Aurora
+COM00561.00,IMMSA - San Martin,
+COM00562.00,IMMSA - Santa Barbara,
+COM00562.01,IMMSA - Santa Barbara,San Diego
+COM00562.02,IMMSA - Santa Barbara,Segovedad
+COM00562.03,IMMSA - Santa Barbara,Tecolotes
+COM00563.00,IMMSA - Santa Eulalia,
+COM00564.00,IMMSA - Taxco,
+COM00564.01,IMMSA - Taxco,San Antonio
+COM00564.02,IMMSA - Taxco,Guerrero
+COM00564.03,IMMSA - Taxco,Remedios
+COM00565.00,Impumelelo,
+COM00566.00,Impunzi,
+COM00567.00,Inaglinskiy,
+COM00568.00,Indiana Harbor,
+COM00569.00,Ingulets GOK,
+COM00570.00,Intalco Aluminium Smelter,
+COM00571.00,Integra Coal,
+COM00572.00,Inyanda,
+COM00573.00,Ipatinga,
+COM00574.00,Irbeysky,
+COM00575.00,Irkutsk Aluminium Smelter,
+COM00576.00,Iron Ore Company of Canada Labrador City,
+COM00577.00,Iron Valley,
+COM00578.00,Irtyshsky,
+COM00579.00,Isaac Plains,
+COM00580.00,ISAL,
+COM00581.00,Ishihuinca,
+COM00582.00,Isibonelo,
+COM00583.00,Itabira,
+COM00583.01,Itabira,Caue
+COM00583.02,Itabira,Conceicao
+COM00584.00,Itatiaiucu,
+COM00584.01,Itatiaiucu,MUSA Oeste
+COM00584.02,Itatiaiucu,MUSA Central
+COM00584.03,Itatiaiucu,MUSA Leste
+COM00584.04,Itatiaiucu,MUSA Pau de Vinho
+COM00585.00,Itmann No. 5 Mine,
+COM00586.00,Jabal Sayid,
+COM00587.00,Jacinth-Ambrosia,
+COM00588.00,Jacobina,
+COM00589.00,Jamalco,
+COM00589.01,Jamalco,Mount Oliphant plateau
+COM00589.02,Jamalco,Harmons Valley
+COM00589.03,Jamalco,Halse Hall
+COM00590.00,Jaurdi,
+COM00591.00,Jellinbah,
+COM00592.00,Jerritt Canyon,
+COM00593.00,Jewett,
+COM00594.00,Jharsuguda Aluminium Smelter,
+COM00595.00,Jiaozuo,
+COM00596.00,Jiaozuo Wanfang,
+COM00597.00,Jimblebar,
+COM00597.01,Jimblebar,Wheelarra
+COM00598.00,Jingtieshan,
+COM00599.00,Jinzhong,
+COM00600.00,Joao Monlevade,
+COM00601.00,Jones Fork Complex,
+COM00602.00,Jonquiere,
+COM00602.01,Jonquiere,Jonquiere specialty plant
+COM00602.02,Jonquiere,Jonquiere
+COM00603.00,Julcani,
+COM00604.00,Julietta,
+COM00605.00,Jundee,
+COM00606.00,Jupiter,
+COM00607.00,Juruti,
+COM00608.00,Justice Energy,
+COM00608.01,Justice Energy,Job 38
+COM00609.00,Kabanga,
+COM00610.00,Kachkanar GOK,
+COM00610.01,Kachkanar GOK,Glavny
+COM00610.02,Kachkanar GOK,Zapadny
+COM00610.03,Kachkanar GOK,Severny
+COM00610.04,Kachkanar GOK,Yuzhny
+COM00611.00,Kalgoorlie,
+COM00611.01,Kalgoorlie,Fimiston
+COM00611.02,Kalgoorlie,Mt. Charlotte
+COM00612.00,Kalgoorlie Smelter,
+COM00613.00,Kanawha Eagle,
+COM00614.00,Kandalaksha Aluminium Smelter,
+COM00615.00,Kangala,
+COM00615.01,Kangala,Wolvenfontein
+COM00615.02,Kangala,Middelbult
+COM00616.00,Kangalassky,
+COM00617.00,Kanowna Belle,
+COM00618.00,Kansanshi,
+COM00619.00,Karaganda,
+COM00619.01,Karaganda,Kostenko
+COM00619.02,Karaganda,Kuzembaeva
+COM00619.03,Karaganda,Saranskaya
+COM00619.04,Karaganda,Abayskaya
+COM00619.05,Karaganda,Kazakhstanskaya
+COM00619.06,Karaganda,Lenina
+COM00619.07,Karaganda,Shakhtinskaya
+COM00619.08,Karaganda,Tentekskaya
+COM00620.00,Karagaylinskoye,
+COM00621.00,Karakansky-South,
+COM00622.00,Karelsky Okatysh,
+COM00622.01,Karelsky Okatysh,Kostomuksha
+COM00622.02,Karelsky Okatysh,Korpanga
+COM00623.00,Karouni,
+COM00624.00,Katanga Mining Complex,
+COM00624.01,Katanga Mining Complex,Kamoto
+COM00624.02,Katanga Mining Complex,KOV
+COM00625.00,Kayad,
+COM00626.00,Kayenta,
+COM00627.00,Kazzinc,
+COM00627.01,Kazzinc,Altyntau Kokshetau
+COM00627.02,Kazzinc,Zhairem
+COM00627.03,Kazzinc,Ust-Kamenogorsk
+COM00627.04,Kazzinc,Tishinsky
+COM00627.05,Kazzinc,Dolinny
+COM00627.06,Kazzinc,Ridder-Sokolny
+COM00627.07,Kazzinc,Shubinsky
+COM00627.08,Kazzinc,Maleevsky
+COM00628.00,Keetac,
+COM00629.00,Kelian,
+COM00630.00,Kemmerer,
+COM00631.00,Kensington,
+COM00631.01,Kensington,Kensington
+COM00631.02,Kensington,Jualin
+COM00632.00,Kentobe,
+COM00633.00,Kestrel,
+COM00634.00,Kettle River,
+COM00635.00,Kevitsa,
+COM00636.00,Keystone,
+COM00636.01,Keystone,Mine 58
+COM00636.02,Keystone,Mine 65
+COM00636.03,Keystone,Pocahontas No. 11 Contour and Auger No. 2
+COM00637.00,Khakas Aluminium Smelter,
+COM00638.00,Khumani,
+COM00639.00,Khutala,
+COM00640.00,Khwezela,
+COM00640.01,Khwezela,Kleinkopje
+COM00640.02,Khwezela,Landau
+COM00641.00,Kia-Shaltyr,
+COM00642.00,Kibali,
+COM00643.00,Kidd,
+COM00644.00,Kideco,
+COM00644.01,Kideco,Roto North
+COM00644.02,Kideco,Roto South
+COM00644.03,Kideco,Roto Middle
+COM00644.04,Kideco,Susubang
+COM00644.05,Kideco,Samarangau
+COM00645.00,Kijang,
+COM00646.00,KIM BLOK,
+COM00647.00,Kindia,
+COM00648.00,Kinsenda,
+COM00649.00,Kinsevere,
+COM00650.00,Kintap,
+COM00651.00,Kipoi,
+COM00652.00,Kiruna,
+COM00653.00,Kiselevsky,
+COM00654.00,Kitimat,
+COM00655.00,Kittila,
+COM00656.00,Klipspruit,
+COM00657.00,Kloof,
+COM00658.00,KMAruda,
+COM00659.00,Knott County mines,
+COM00660.00,Kokkola,
+COM00661.00,Kolomela,
+COM00662.00,Kolwezi,
+COM00663.00,Komsomolets Donbassa,
+COM00664.00,Koniambo,
+COM00665.00,Koolan Island,
+COM00666.00,Koolyanobbing,
+COM00667.00,Koornfontein,
+COM00668.00,Kopanang,
+COM00669.00,Korba,
+COM00670.00,Korshunov,
+COM00671.00,Kosmurun,
+COM00672.00,Kostromovskaya,
+COM00672.01,Kostromovskaya,Kostromovskaya
+COM00672.02,Kostromovskaya,Chertinskaya-Koksovaya
+COM00673.00,Kounrad,
+COM00674.00,Kovdorskiy GOK,
+COM00675.00,Krasnodon Coal,
+COM00675.01,Krasnodon Coal,Molodogvardeysk
+COM00675.02,Krasnodon Coal,Samsonivska-Zakhidna
+COM00675.03,Krasnodon Coal,Duvanna
+COM00676.00,Krasnogorsky,
+COM00677.00,Krasnoyarsk Aluminium Smelter,
+COM00678.00,Krasnoyarskkraiugol,
+COM00678.01,Krasnoyarskkraiugol,Sayano-Partizanskiy
+COM00678.02,Krasnoyarskkraiugol,Abanskiy
+COM00679.00,Kriel,
+COM00680.00,Kroondal,
+COM00681.00,Kryvyi Rih,
+COM00682.00,KUBAL Aluminium Smelter,
+COM00683.00,Kundana,
+COM00684.00,Kupol,
+COM00684.01,Kupol,Dvoinoye
+COM00685.00,Kuprinsky,
+COM00686.00,Kusheki,
+COM00687.00,Kuzbassrazrezugol,
+COM00687.01,Kuzbassrazrezugol,Kedrovsky
+COM00687.02,Kuzbassrazrezugol,Mokhovsky
+COM00687.03,Kuzbassrazrezugol,Bachatsky
+COM00687.04,Kuzbassrazrezugol,Krasnobrodsky
+COM00687.05,Kuzbassrazrezugol,Taldinsky
+COM00687.06,Kuzbassrazrezugol,Kaltansky
+COM00687.07,Kuzbassrazrezugol,Baykaimskaya
+COM00688.00,Kwinana Alumina Refinery,
+COM00689.00,Kylylahti,
+COM00690.00,Kyzyl-Tash Turk,
+COM00691.00,KZN Sands,
+COM00692.00,La Arena,
+COM00693.00,La Caridad,
+COM00693.01,La Caridad,La Caridad Smelter
+COM00693.02,La Caridad,La Caridad Refinery
+COM00693.03,La Caridad,La Caridad Copper Rod Plant
+COM00694.00,La Coipa,
+COM00695.00,La Colorada,
+COM00696.00,La India,
+COM00697.00,La Perla,
+COM00698.00,La Zanja,
+COM00699.00,Lagunas Norte,
+COM00700.00,Lake Erie Works,
+COM00701.00,Lalor,
+COM00701.01,Lalor,PEN 2 Deposit
+COM00702.00,Lanjigarh Alumina Refinery,
+COM00703.00,Lannemezan,
+COM00704.00,Lanzhou Aluminum,
+COM00705.00,Lapa,
+COM00706.00,LaPlace,
+COM00707.00,LaRonde Complex,
+COM00707.01,LaRonde Complex,LaRonde Mine
+COM00707.02,LaRonde Complex,LaRonde Zone 5
+COM00708.00,Las Bambas,
+COM00708.01,Las Bambas,Chalcobamba
+COM00708.02,Las Bambas,Sulfobamba
+COM00708.03,Las Bambas,Ferrobamba
+COM00709.00,Las Truchas,
+COM00710.00,Laterriere,
+COM00711.00,Lati,
+COM00712.00,Lawlers,
+COM00713.00,Lazaro Cardenas steel plant,
+COM00714.00,Lebedinsky GOK,
+COM00715.00,Leer,
+COM00716.00,Leer South/Sentinel,
+COM00716.01,Leer South/Sentinel,Sentinel
+COM00716.02,Leer South/Sentinel,Leer South
+COM00717.00,Leeuwpan,
+COM00718.00,Legnica metallurgical complex,
+COM00719.00,Leinster,
+COM00720.00,Lennard Shelf,
+COM00721.00,Leonora,
+COM00721.01,Leonora,King of the Hills
+COM00721.02,Leonora,Gwalia
+COM00722.00,Liancheng Branch,
+COM00723.00,Liberty,
+COM00724.00,Lidell,
+COM00725.00,Lihir,
+COM00726.00,Liliu,
+COM00726.01,Liliu,Shaqu No.1
+COM00726.02,Liliu,Shaqu No.2
+COM00727.00,Line Creek,
+COM00728.00,Lisakovsk,
+COM00729.00,Lisheen,
+COM00730.00,Lista Aluminium Smelter,
+COM00731.00,Listvyazhnaya,
+COM00732.00,LKAB Southern Division,
+COM00732.01,LKAB Southern Division,Malmberget
+COM00732.02,LKAB Southern Division,Svappavaara
+COM00733.00,Lobo Marte,
+COM00734.00,Lochaber,
+COM00735.00,Logan County,
+COM00736.00,Loma de Niquel,
+COM00737.00,Lomas Bayas,
+COM00738.00,Lone Mountain,
+COM00739.00,Long Canyon,
+COM00740.00,Longmen Aluminum,
+COM00741.00,Longnan,
+COM00742.00,Longyu,
+COM00743.00,Lonshi,
+COM00744.00,Los Bronces,
+COM00744.01,Los Bronces,Las Tortolas
+COM00744.02,Los Bronces,Confluencia
+COM00745.00,Los Colorados,
+COM00745.01,Los Colorados,Reject Plant
+COM00746.00,Los Filos,
+COM00746.01,Los Filos,Los Filos
+COM00746.02,Los Filos,Bermejal
+COM00747.00,Los Pelambres,
+COM00748.00,Loulo - Gounkoto,
+COM00748.01,Loulo - Gounkoto,Yalea
+COM00748.02,Loulo - Gounkoto,Gara
+COM00748.03,Loulo - Gounkoto,Gounkoto
+COM00749.00,Lounge Lizard,
+COM00750.00,Loveridge,
+COM00751.00,Lubambe,
+COM00752.00,Lubin,
+COM00753.00,Luchegorsky,
+COM00754.00,Lumwana,
+COM00755.00,Luoyang,
+COM00755.01,Luoyang,Jiagou
+COM00755.02,Luoyang,Liangwa
+COM00755.03,Luoyang,Qingshigou
+COM00756.00,Luyuangou,
+COM00757.00,Lynemouth,
+COM00758.00,Macraes,
+COM00758.01,Macraes,Macraes Coronation
+COM00758.02,Macraes,Coronation North
+COM00758.03,Macraes,Innes Mills
+COM00758.04,Macraes,Frasers
+COM00759.00,Mafube,
+COM00760.00,Mahanadi Coalfields Limited,
+COM00760.01,Mahanadi Coalfields Limited,Jagannath
+COM00760.02,Mahanadi Coalfields Limited,Bharatpur
+COM00760.03,Mahanadi Coalfields Limited,Hingula
+COM00760.04,Mahanadi Coalfields Limited,Lingaraj
+COM00760.05,Mahanadi Coalfields Limited,Kaniha
+COM00760.06,Mahanadi Coalfields Limited,Talcher
+COM00760.07,Mahanadi Coalfields Limited,Lakhanpur
+COM00760.08,Mahanadi Coalfields Limited,IB Valley
+COM00760.09,Mahanadi Coalfields Limited,Basundhara-Garjanbahal
+COM00760.10,Mahanadi Coalfields Limited,Kulda-Garajanbahal
+COM00760.11,Mahanadi Coalfields Limited,Orient
+COM00760.12,Mahanadi Coalfields Limited,Lajkura
+COM00760.13,Mahanadi Coalfields Limited,Samaleswari
+COM00761.00,Mahoning Valley,
+COM00762.00,Mainpat,
+COM00763.00,Mallay,
+COM00764.00,Maly Kuybas,
+COM00765.00,Mamahak,
+COM00766.00,Manantial Espejo,
+COM00767.00,Mandalong,
+COM00768.00,Mangoola,
+COM00769.00,Mantos Blancos,
+COM00770.00,Mantoverde,
+COM00771.00,Manzanillo,
+COM00772.00,Marathon,
+COM00773.00,Marcapunta,
+COM00774.00,Mariana,
+COM00774.01,Mariana,Alegria
+COM00774.02,Mariana,Fabrica Nova
+COM00774.03,Mariana,Fazendao
+COM00774.04,Mariana,Timbopeba
+COM00774.05,Mariana,Capanema/Ouro Fino
+COM00775.00,Maricunga,
+COM00776.00,Marigold,
+COM00777.00,Marlin,
+COM00778.00,Marshall,
+COM00779.00,Martabe,
+COM00780.00,Martha,
+COM00781.00,Massena West Aluminium Smelter,
+COM00782.00,Matla,
+COM00783.00,Maules Creek,
+COM00784.00,MC Mining Complex,
+COM00785.00,McArthur River,
+COM00786.00,Meadowbank Complex,
+COM00786.01,Meadowbank Complex,Amaruq
+COM00787.00,Mega Centauro,
+COM00788.00,Meigs,
+COM00789.00,Meliadine,
+COM00790.00,Mercedes,
+COM00791.00,Merian,
+COM00792.00,Merlin,
+COM00793.00,MetCoal,
+COM00793.01,MetCoal,Lahai
+COM00793.02,MetCoal,Lampunut
+COM00793.03,MetCoal,Haju
+COM00794.00,Metropolitan,
+COM00795.00,Mettiki Complex,
+COM00795.01,Mettiki Complex,Mountain View
+COM00795.02,Mettiki Complex,Mettiki (MD)
+COM00796.00,Mexican IMMSA unit,
+COM00797.00,Meyerton Metalloys Smelter,
+COM00798.00,Mezhdurechenskiy,
+COM00799.00,Mezhegey,
+COM00800.00,Miami,
+COM00801.00,Mianchi,
+COM00801.01,Mianchi,Guangou
+COM00801.02,Mianchi,Jiajiawaxi
+COM00801.03,Mianchi,Xiangcaiwa
+COM00802.00,Miaogou & Sanguikou,
+COM00803.00,MICARE Unit Mines Coahuila,
+COM00804.00,Michilla,
+COM00805.00,Midas,
+COM00806.00,Middelburg/Wolvekrans,
+COM00806.01,Middelburg/Wolvekrans,Douglas
+COM00807.00,Middleback Ranges,
+COM00807.01,Middleback Ranges,Iron Knob
+COM00807.02,Middleback Ranges,Ibma Scree
+COM00807.03,Middleback Ranges,Iron Baron
+COM00807.04,Middleback Ranges,Camel Hills
+COM00807.05,Middleback Ranges,Iron Queen
+COM00807.06,Middleback Ranges,North Middleback
+COM00807.07,Middleback Ranges,Iron Warrior
+COM00807.08,Middleback Ranges,Iron Chieftain
+COM00807.09,Middleback Ranges,Iron Knight
+COM00807.10,Middleback Ranges,Iron Duchess
+COM00807.11,Middleback Ranges,Iron Duke
+COM00808.00,Middlemount,
+COM00809.00,Midland Trail,
+COM00810.00,Miguel Burnier,
+COM00810.01,Miguel Burnier,Miguel Burnier
+COM00810.02,Miguel Burnier,Varzea do Lopes
+COM00811.00,Mikhailovsky GOK,
+COM00812.00,Miles Branch,
+COM00813.00,Mill Creek,
+COM00814.00,Millennium,
+COM00815.00,Miller Creek Complex,
+COM00816.00,Mimosa,
+COM00817.00,MIMOSA Unit Mines,
+COM00818.00,Minas Centrais,
+COM00818.01,Minas Centrais,Agua Limpa
+COM00818.02,Minas Centrais,Gongo Soco
+COM00818.03,Minas Centrais,Brucutu
+COM00818.04,Minas Centrais,Corrego do Meio
+COM00819.00,Minas Itabirito,
+COM00819.01,Minas Itabirito,Segredo/Joao Pereira
+COM00819.02,Minas Itabirito,Sapecado/Galinheiro
+COM00820.00,Minas-Rio,
+COM00821.00,Mine 84,
+COM00822.00,Minera Florida,
+COM00823.00,Mingo Logan,
+COM00824.00,Ministro Hales,
+COM00825.00,Minntac,
+COM00826.00,Minorca,
+COM00826.01,Minorca,Laurentian
+COM00826.02,Minorca,East Pits
+COM00827.00,Minto,
+COM00828.00,Moa Project,
+COM00829.00,Moab Khotsong,
+COM00830.00,Moatize,
+COM00831.00,Modikwa,
+COM00832.00,Mogalakwena,
+COM00833.00,Molodenzhny,
+COM00834.00,Mont Wright,
+COM00834.01,Mont Wright,Fire Lake
+COM00835.00,Montcalm,
+COM00836.00,Moolarben,
+COM00837.00,Moorvale,
+COM00838.00,Mopani,
+COM00839.00,Moranbah,
+COM00840.00,Morenci,
+COM00841.00,Morila,
+COM00842.00,Morococha,
+COM00843.00,Morrison,
+COM00844.00,Morro da Mina,
+COM00845.00,Morro do Felipe,
+COM00846.00,Morro do Ouro,
+COM00847.00,Morro Velho,
+COM00848.00,Mosjoen Aluminium Smelter,
+COM00849.00,Mototolo,
+COM00850.00,Mount Arthur,
+COM00850.01,Mount Arthur,Mount Arthur North
+COM00850.02,Mount Arthur,Mount Arthur South
+COM00851.00,Mount Garnet,
+COM00851.01,Mount Garnet,Balcooma
+COM00851.02,Mount Garnet,Maitland
+COM00851.03,Mount Garnet,Mount Garnet
+COM00851.04,Mount Garnet,Bald Hill
+COM00851.05,Mount Garnet,Baal Gammon
+COM00851.06,Mount Garnet,Griffiths Hill
+COM00851.07,Mount Garnet,King Vol
+COM00851.08,Mount Garnet,Montevideo
+COM00851.09,Mount Garnet,Mungana
+COM00851.10,Mount Garnet,Red Cap Victoria
+COM00851.11,Mount Garnet,Vomacka
+COM00851.12,Mount Garnet,Copper plant
+COM00851.13,Mount Garnet,Polymetallic plant
+COM00852.00,Mount Goldsworthy,
+COM00852.01,Mount Goldsworthy,Yarrie
+COM00852.02,Mount Goldsworthy,Nimingarra
+COM00852.03,Mount Goldsworthy,Mining Area C
+COM00853.00,Mount Keith,
+COM00854.00,Mount Marion,
+COM00855.00,Mount Monger,
+COM00855.01,Mount Monger,Daisy
+COM00855.02,Mount Monger,Mount Belches
+COM00855.03,Mount Monger,Aldiss
+COM00856.00,Mount Newman,
+COM00856.01,Mount Newman,Mount Whaleback
+COM00856.02,Mount Newman,Orebody 18
+COM00856.03,Mount Newman,Orebody 24
+COM00856.04,Mount Newman,Orebody 25
+COM00856.05,Mount Newman,Orebody 29
+COM00856.06,Mount Newman,Orebody 30
+COM00856.07,Mount Newman,Orebody 31
+COM00856.08,Mount Newman,Orebody 32
+COM00856.09,Mount Newman,Orebody 35
+COM00857.00,Mount Thorley Warkworth,
+COM00857.01,Mount Thorley Warkworth,Mount Thorley
+COM00857.02,Mount Thorley Warkworth,Warkworth
+COM00858.00,Mountain Laurel,
+COM00859.00,Mozal,
+COM00860.00,Mponeng,
+COM00861.00,MRN Porto Trombetas,
+COM00862.00,Mt Cattlin,
+COM00863.00,Mt Lyell,
+COM00864.00,Mt Magnet,
+COM00864.01,Mt Magnet,Vivien
+COM00864.02,Mt Magnet,Mt Magnet
+COM00864.03,Mt Magnet,Penny
+COM00864.04,Mt Magnet,Kathleen Valley
+COM00865.00,Mt Muro,
+COM00866.00,Mt Owen/Glendell,
+COM00867.00,Mt Sterling,
+COM00868.00,Muhlenberg,
+COM00869.00,Mulia/Jumbang,
+COM00870.00,Murowa,
+COM00871.00,Murray Basin,
+COM00872.00,Murrin Murrin,
+COM00873.00,Muskingum,
+COM00874.00,Musselwhite,
+COM00875.00,Muswellbrook,
+COM00876.00,Mutanda,
+COM00877.00,Myuna,
+COM00878.00,Nadvoitsy Aluminium Smelter,
+COM00879.00,Namakwa Sands,
+COM00880.00,Namakwa Sands Smelter,
+COM00881.00,Namosi,
+COM00882.00,Nanchuan,
+COM00883.00,Nanliang,
+COM00884.00,Narama,
+COM00885.00,Narrabri,
+COM00886.00,Navachab,
+COM00887.00,Navajo,
+COM00888.00,Neryungrinsky,
+COM00889.00,Neves Corvo,
+COM00890.00,New Clydesdale,
+COM00890.01,New Clydesdale,Roodekop
+COM00890.02,New Clydesdale,Diepspruit
+COM00891.00,New Denmark,
+COM00892.00,New Lexington,
+COM00893.00,New Vaal,
+COM00894.00,Newlands,
+COM00895.00,Neyveli I,
+COM00896.00,Neyveli IA,
+COM00897.00,Neyveli II,
+COM00898.00,Nickel West Kwinana refinery,
+COM00899.00,Nifty,
+COM00900.00,Nikkelverk,
+COM00901.00,Nikolaev Alumina,
+COM00902.00,Nikolayevsky,
+COM00903.00,Niquelandia,
+COM00904.00,Nkomati,
+COM00905.00,Noble,
+COM00906.00,Noche Buena,
+COM00907.00,Nooitgedacht,
+COM00908.00,Nordenhamer Zinkhuette,
+COM00909.00,Nornickel Kola Peninsula,
+COM00909.01,Nornickel Kola Peninsula,Severny
+COM00909.02,Nornickel Kola Peninsula,Kaula-Kotselvaara
+COM00910.00,Nornickel Taimyr Peninsula,
+COM00910.01,Nornickel Taimyr Peninsula,Oktyabrsky
+COM00910.02,Nornickel Taimyr Peninsula,Taimyrsky
+COM00910.03,Nornickel Taimyr Peninsula,Komsomolsky
+COM00910.04,Nornickel Taimyr Peninsula,Skalisty
+COM00910.05,Nornickel Taimyr Peninsula,Mayak
+COM00910.06,Nornickel Taimyr Peninsula,Zapolyarny
+COM00911.00,Norte Abierto,
+COM00912.00,North Antelope Rochelle,
+COM00913.00,North Block Complex,
+COM00913.01,North Block Complex,Glisa
+COM00913.02,North Block Complex,Eerstelingsfontein
+COM00913.03,North Block Complex,Paardeplaats
+COM00914.00,North Eastern Coalfields,
+COM00914.01,North Eastern Coalfields,Tikak
+COM00914.02,North Eastern Coalfields,Tirap
+COM00914.03,North Eastern Coalfields,Tipong
+COM00914.04,North Eastern Coalfields,Baragolai
+COM00915.00,North Goonyella,
+COM00916.00,North Mara,
+COM00917.00,North Urals,
+COM00918.00,Northern Coalfields Limited,
+COM00918.01,Northern Coalfields Limited,Amlohri
+COM00918.02,Northern Coalfields Limited,Bina
+COM00918.03,Northern Coalfields Limited,Block-B
+COM00918.04,Northern Coalfields Limited,Dudhichua
+COM00918.05,Northern Coalfields Limited,Jayant
+COM00918.06,Northern Coalfields Limited,Jhingurda
+COM00918.07,Northern Coalfields Limited,Kakri
+COM00918.08,Northern Coalfields Limited,Khadia
+COM00918.09,Northern Coalfields Limited,Krishnashila
+COM00918.10,Northern Coalfields Limited,Nigahi
+COM00919.00,Northern GOK,
+COM00919.01,Northern GOK,Annovskiy
+COM00919.02,Northern GOK,Pervomayskiy
+COM00920.00,Northern Star Kalgoorlie Operations,
+COM00920.01,Northern Star Kalgoorlie Operations,Kundana
+COM00921.00,Northfleet,
+COM00922.00,Northparkes,
+COM00923.00,Northshore,
+COM00924.00,Norwich Park,
+COM00925.00,Novokuznetsk Aluminium Smelter,
+COM00926.00,Nueva Rosita Complex,
+COM00927.00,NuevaUnion,
+COM00927.01,NuevaUnion,Relincho
+COM00927.02,NuevaUnion,La Fortuna
+COM00928.00,Nurkazgan,
+COM00929.00,Oak Grove,
+COM00930.00,Oaky Creek,
+COM00931.00,Obed Mountain,
+COM00932.00,Obuasi,
+COM00933.00,Odda,
+COM00934.00,Ok Tedi,
+COM00935.00,Oktyabrskaya,
+COM00936.00,Olcon,
+COM00937.00,Olympic Dam,
+COM00938.00,Olzherassky,
+COM00939.00,Ombilin,
+COM00940.00,Onca Puma,
+COM00941.00,Optimum,
+COM00942.00,Orcopampa,
+COM00943.00,Orlovsky,
+COM00944.00,Osbourne,
+COM00945.00,Oskol Electrometallurgical Plant,
+COM00946.00,Ostrava steel plant,
+COM00947.00,Ouro Preto Ferroalloys plant,
+COM00948.00,Ovoid,
+COM00949.00,Oyu Tolgoi,
+COM00949.01,Oyu Tolgoi,Hugo Dummett North
+COM00949.02,Oyu Tolgoi,Hugo Dummett North Extension
+COM00950.00,Paddington,
+COM00951.00,Paint Creek,
+COM00951.01,Paint Creek,Samples
+COM00952.00,Paintearth,
+COM00953.00,Palabora,
+COM00954.00,Palmarejo,
+COM00954.01,Palmarejo,Guadalupe
+COM00954.02,Palmarejo,Independencia
+COM00954.03,Palmarejo,La Nacion
+COM00955.00,Pampa Norte,
+COM00955.01,Pampa Norte,Spence
+COM00955.02,Pampa Norte,Cerro Colorado
+COM00956.00,Panchpatmali,
+COM00957.00,Panther,
+COM00958.00,Pantnagar,
+COM00959.00,Paracatu,
+COM00960.00,Paragominas,
+COM00961.00,Paranam,
+COM00962.00,Paraopeba,
+COM00962.01,Paraopeba,Jangada
+COM00962.02,Paraopeba,Corrego do Feijao
+COM00962.03,Paraopeba,Capao Xavier
+COM00962.04,Paraopeba,Mar Azul
+COM00963.00,Pascua-Lama,
+COM00964.00,Patos de Minas,
+COM00965.00,Pattiki Complex,
+COM00966.00,Paulsens,
+COM00967.00,PBS Coal,
+COM00968.00,Peace River Coal,
+COM00969.00,Peak Downs,
+COM00970.00,Pena Colorada,
+COM00971.00,Penasquito,
+COM00971.01,Penasquito,Penasco
+COM00971.02,Penasquito,Chile Colorado
+COM00972.00,Pend Oreille,
+COM00973.00,Penjom,
+COM00974.00,Pennsylvania Mining Complex,
+COM00974.01,Pennsylvania Mining Complex,Bailey Prep plant
+COM00974.02,Pennsylvania Mining Complex,Bailey
+COM00974.03,Pennsylvania Mining Complex,Enlow Fork
+COM00974.04,Pennsylvania Mining Complex,Harvey
+COM00975.00,Peranap,
+COM00976.00,Pering,
+COM00977.00,Perkasa Inakakerta,
+COM00978.00,Pervomaysky,
+COM00979.00,Petorca,
+COM00980.00,Phil's Creek,
+COM00981.00,Phoenix,
+COM00981.01,Phoenix,Phoenix
+COM00981.02,Phoenix,Lone Tree
+COM00982.00,Pierina,
+COM00983.00,Pilares,
+COM00984.00,Pingdingshan,
+COM00984.01,Pingdingshan,Ruzhou
+COM00985.00,Pingdingshan Tianan Coal,
+COM00985.01,Pingdingshan Tianan Coal,Tianan No.1
+COM00985.02,Pingdingshan Tianan Coal,Tianan No.2
+COM00985.03,Pingdingshan Tianan Coal,Tianan No.3
+COM00985.04,Pingdingshan Tianan Coal,Tianan No.4
+COM00985.05,Pingdingshan Tianan Coal,Tianan No.5
+COM00985.06,Pingdingshan Tianan Coal,Tianan No.6
+COM00985.07,Pingdingshan Tianan Coal,Tianan No.7
+COM00985.08,Pingdingshan Tianan Coal,Tianan No.8
+COM00985.09,Pingdingshan Tianan Coal,Tianan No.9
+COM00985.10,Pingdingshan Tianan Coal,Tianan No.10
+COM00985.11,Pingdingshan Tianan Coal,Tianan No.11
+COM00985.12,Pingdingshan Tianan Coal,Tianan No.12
+COM00985.13,Pingdingshan Tianan Coal,Tianan No.13
+COM00985.14,Pingdingshan Tianan Coal,Xiangshan
+COM00985.15,Pingdingshan Tianan Coal,Wuzhai
+COM00985.16,Pingdingshan Tianan Coal,Cheonan Chaochuan
+COM00985.17,Pingdingshan Tianan Coal,Pingbao
+COM00986.00,Pingguo,
+COM00986.01,Pingguo,Pinggou East
+COM00986.02,Pingguo,Pinggou North
+COM00986.03,Pingguo,Dashan Aluminium Refinery
+COM00987.00,Pingshuo,
+COM00987.01,Pingshuo,Antaibao
+COM00987.02,Pingshuo,Anjialing
+COM00987.03,Pingshuo,Jingdong
+COM00988.00,Pinjarra Alumina Refinery,
+COM00989.00,Pinnacle Complex,
+COM00989.01,Pinnacle Complex,Pinnacle
+COM00989.02,Pinnacle Complex,Green Ridge
+COM00990.00,Pinos Altos,
+COM00990.01,Pinos Altos,Creston Mascota
+COM00990.02,Pinos Altos,Pinos Altos
+COM00991.00,Pinto Valley,
+COM00992.00,Pit Bajau Bulungan Kaltara,
+COM00993.00,Plainfield,
+COM00994.00,Platinum Mile,
+COM00995.00,Plutonic,
+COM00996.00,Pocos de Caldas,
+COM00997.00,Pogo,
+COM00998.00,Point Lisas,
+COM00999.00,Poitrel,
+COM01000.00,Polkowice-Sieroszowice,
+COM01000.01,Polkowice-Sieroszowice,Polkowice
+COM01000.02,Polkowice-Sieroszowice,Radwanice Wschód
+COM01000.03,Polkowice-Sieroszowice,Sieroszowice
+COM01000.04,Polkowice-Sieroszowice,Gaworzyce
+COM01001.00,Polosukhinskaya,
+COM01002.00,Pomalaa,
+COM01003.00,Pongkor and Cibaliung,
+COM01003.01,Pongkor and Cibaliung,Pongkor
+COM01003.02,Pongkor and Cibaliung,Cibaliung
+COM01004.00,Poondano,
+COM01005.00,Poplar River,
+COM01006.00,Poracota,
+COM01007.00,Porcupine,
+COM01007.01,Porcupine,Hollinger
+COM01007.02,Porcupine,Hoyle pond
+COM01008.00,Porgera,
+COM01009.00,Portland Aluminium Smelter,
+COM01010.00,POSMAC,
+COM01011.00,Presidente Vargas Steelworks,
+COM01012.00,Prijedor,
+COM01013.00,Princeton,
+COM01014.00,Prokopyevsky,
+COM01015.00,Prominent Hill,
+COM01015.01,Prominent Hill,Malu
+COM01015.02,Prominent Hill,Ankata
+COM01016.00,PT Adaro Indonesia,
+COM01016.01,PT Adaro Indonesia,Paringin
+COM01016.02,PT Adaro Indonesia,Tutupan
+COM01016.03,PT Adaro Indonesia,Wara
+COM01017.00,PT Adimitra Baratama Nusantara,
+COM01018.00,PT Alusentosa,
+COM01019.00,PT Antang Gunung Meratus,
+COM01019.01,PT Antang Gunung Meratus,Block 1
+COM01019.02,PT Antang Gunung Meratus,Block 2
+COM01019.03,PT Antang Gunung Meratus,Block 3
+COM01019.04,PT Antang Gunung Meratus,Block 4
+COM01019.05,PT Antang Gunung Meratus,Block 5
+COM01019.06,PT Antang Gunung Meratus,Block 6
+COM01020.00,PT Atlas Resources Tbk,
+COM01020.01,PT Atlas Resources Tbk,Mutara Hub
+COM01020.02,PT Atlas Resources Tbk,Kukar Hub Borneo Minerals
+COM01020.03,PT Atlas Resources Tbk,Kukar Hub Alhasanie
+COM01020.04,PT Atlas Resources Tbk,Berau Hub
+COM01020.05,PT Atlas Resources Tbk,Kubar Hub Diva Kencana Borneo
+COM01020.06,PT Atlas Resources Tbk,Kubar Hub Karya Borneo Agung
+COM01020.07,PT Atlas Resources Tbk,Oku Hub Hanson Energy Bataraja
+COM01020.08,PT Atlas Resources Tbk,Oku Hub Ogan Energy
+COM01020.09,PT Atlas Resources Tbk,Oku Hub Anugrah Energy
+COM01020.10,PT Atlas Resources Tbk,Papua Hub Karya Manunggal
+COM01020.11,PT Atlas Resources Tbk,Papua Inti Energi
+COM01021.00,PT Baramulti Suksessarana Tbk,
+COM01022.00,PT Barasentosa Lestari,
+COM01023.00,PT Batubara Bukit Kendi,
+COM01024.00,PT Bhakti Energi Persada,
+COM01025.00,PT Bharinto Ekatama,
+COM01026.00,PT Borneo Indobara,
+COM01027.00,PT Bukit Enim Energi,
+COM01028.00,PT Central Omega Resources Tbk,
+COM01028.01,PT Central Omega Resources Tbk,PT Mulia Pacifc Resources
+COM01028.02,PT Central Omega Resources Tbk,PT Itamatra Nusantara
+COM01028.03,PT Central Omega Resources Tbk,Bumi Konawe Abadi
+COM01028.04,PT Central Omega Resources Tbk,PT Mega Buana Resources
+COM01029.00,PT Gunungbayan Pratamacoal,
+COM01029.01,PT Gunungbayan Pratamacoal,Block 1
+COM01029.02,PT Gunungbayan Pratamacoal,Block 2
+COM01030.00,PT Indominco Mandiri,
+COM01030.01,PT Indominco Mandiri,Block 1
+COM01030.02,PT Indominco Mandiri,CPP4
+COM01031.00,PT Indomining,
+COM01032.00,PT Insani Baraperkasa,
+COM01032.01,PT Insani Baraperkasa,Blok G Pinang
+COM01033.00,PT Internasional Prima Coal,
+COM01033.01,PT Internasional Prima Coal,Bantuas
+COM01033.02,PT Internasional Prima Coal,Tabalong
+COM01034.00,PT Jorong Barutama Greston,
+COM01035.00,PT Kalmin,
+COM01036.00,PT Kaltim Prima Coal,
+COM01036.01,PT Kaltim Prima Coal,Bengalon
+COM01036.02,PT Kaltim Prima Coal,Sangatta
+COM01037.00,PT Karya Usaha Pertiwi,
+COM01038.00,PT Kitadin,
+COM01038.01,PT Kitadin,Tandung Mayang
+COM01038.02,PT Kitadin,Embalut
+COM01039.00,PT Mahakam Sumber Jaya,
+COM01040.00,PT Mitrabara Adiperdana Tbk,
+COM01040.01,PT Mitrabara Adiperdana Tbk,PT Mitrabara Adiperdana Tbk
+COM01040.02,PT Mitrabara Adiperdana Tbk,PT Baradinamika Mudasukses
+COM01041.00,PT Multi Tambangjaya Utama,
+COM01042.00,PT Mustika Indah Permai,
+COM01043.00,PT Santan Batubara,
+COM01044.00,PT Smelting,
+COM01045.00,PT Triaryani,
+COM01046.00,PT Trisensa Mineral Utama,
+COM01047.00,PT Trisula Kencana Sakti,
+COM01048.00,PT Trubaindo Coal Mining,
+COM01048.01,PT Trubaindo Coal Mining,Block 1
+COM01048.02,PT Trubaindo Coal Mining,Blok 2 Barat Sim 3000
+COM01049.00,PT Tuah Turangga Agung,
+COM01049.01,PT Tuah Turangga Agung,PT Asmin Bara Bronang
+COM01049.02,PT Tuah Turangga Agung,PT Telen Orbit Prima
+COM01049.03,PT Tuah Turangga Agung,PT Kadya Caraka Mulia
+COM01049.04,PT Tuah Turangga Agung,PT Suprabari Mapanindo Mineral
+COM01049.05,PT Tuah Turangga Agung,PT Prima Multi Mineral
+COM01049.06,PT Tuah Turangga Agung,PT Duta Nurcahya
+COM01050.00,PT Visitama,
+COM01051.00,Pucarrajo,
+COM01052.00,Pueblo Viejo,
+COM01052.01,Pueblo Viejo,Moore
+COM01052.02,Pueblo Viejo,Monte Negro
+COM01053.00,Puna,
+COM01053.01,Puna,Pirquitas
+COM01053.02,Puna,Chinchillas
+COM01054.00,Punitaqui,
+COM01055.00,Pyhäsalmi,
+COM01056.00,Quebrada Blanca,
+COM01057.00,Quebradona,
+COM01058.00,Queensland Alumina,
+COM01059.00,Quellaveco,
+COM01060.00,Quiruvilca,
+COM01061.00,Rajpura Dariba,
+COM01061.01,Rajpura Dariba,Sindesar Khurd
+COM01061.02,Rajpura Dariba,Rajpura Dariba
+COM01062.00,Rampura Agucha,
+COM01063.00,Ras Al Khair Refinery,
+COM01064.00,Raspadskaya,
+COM01064.01,Raspadskaya,Raspadskaya
+COM01064.02,Raspadskaya,Razrez Raspadsky
+COM01064.03,Raspadskaya,MUK-96
+COM01064.04,Raspadskaya,Raspadskaya-Koksovaya
+COM01065.00,Raven,
+COM01066.00,Ravensthorpe,
+COM01067.00,Ravenswood,
+COM01068.00,Ravensworth Complex,
+COM01069.00,Rawhide,
+COM01070.00,Rawhide Coal,
+COM01071.00,Recuperada,
+COM01072.00,Red Dog,
+COM01073.00,Red Hills,
+COM01074.00,Red Lake,
+COM01074.01,Red Lake,Red Lake
+COM01074.02,Red Lake,Campbell
+COM01074.03,Red Lake,Cochenour
+COM01075.00,Red River,
+COM01076.00,Reed,
+COM01077.00,Reefton,
+COM01077.01,Reefton,Globe Progress
+COM01077.02,Reefton,General Gordon
+COM01077.03,Reefton,Souvenir
+COM01078.00,Reko Diq,
+COM01079.00,Remington,
+COM01079.01,Remington,Stockburg 2
+COM01079.02,Remington,Deskins
+COM01080.00,Rend Lake,
+COM01081.00,Renison,
+COM01081.01,Renison,Renison
+COM01081.02,Renison,Mt Bischoff
+COM01082.00,Riestpruit,
+COM01083.00,Rio Capim,
+COM01084.00,Rio Grande,
+COM01085.00,Rio Tinto Kennecott,
+COM01086.00,Rio Tuba,
+COM01087.00,Riola/Vermilion Grove,
+COM01088.00,River View Complex,
+COM01089.00,Riverdale,
+COM01090.00,Robe River,
+COM01090.01,Robe River,Robe Valley
+COM01090.02,Robe River,Robe Valley - Mesa A
+COM01090.03,Robe River,West Angelas
+COM01091.00,Robinson,
+COM01092.00,Robinson Run,
+COM01093.00,Rochester,
+COM01094.00,Rocklick,
+COM01094.01,Rocklick,Rocklick
+COM01094.02,Rocklick,Harris
+COM01095.00,Rolleston,
+COM01096.00,Rönnskär,
+COM01097.00,Rosebery,
+COM01098.00,Rosemont,
+COM01099.00,Rosh Pinah,
+COM01100.00,Rössing,
+COM01101.00,Round Mountain,
+COM01102.00,Ruashi,
+COM01103.00,Ruby Hill,
+COM01104.00,Rudna,
+COM01105.00,Rustenburg,
+COM01105.01,Rustenburg,Waterval
+COM01105.02,Rustenburg,Khuseleka 1
+COM01105.03,Rustenburg,Khuseleka 2
+COM01105.04,Rustenburg,Thembelani
+COM01106.00,Sadiola,
+COM01107.00,Safford,
+COM01107.01,Safford,Lone Star
+COM01108.00,Saint-Jean-de-Maurienne,
+COM01109.00,Sakhara,
+COM01110.00,Sakura Ferroalloys,
+COM01111.00,Salek,
+COM01112.00,Salobo,
+COM01113.00,Salvador,
+COM01114.00,Samarco,
+COM01115.00,Sambarata,
+COM01116.00,San Andres,
+COM01117.00,San Bartolome,
+COM01118.00,San Ciprian Refinery,
+COM01119.00,San Dimas,
+COM01120.00,San Jose,
+COM01121.00,San Juan,
+COM01122.00,San Juan de Nieva,
+COM01123.00,San Julian,
+COM01123.01,San Julian,Veins
+COM01123.02,San Julian,Disseminated
+COM01124.00,San Luis Potosi Complex,
+COM01124.01,San Luis Potosi Complex,San Luis Potosi Smelter
+COM01124.02,San Luis Potosi Complex,San Luis Potosi Refinery
+COM01125.00,San Manuel,
+COM01126.00,San Martin,
+COM01127.00,San Miguel,
+COM01128.00,San Vicente,
+COM01129.00,Sandstone,
+COM01130.00,Sanmenxia,
+COM01131.00,Santo Domingo,
+COM01132.00,Sao Francisco,
+COM01133.00,Sao Luis Iron Ore Pellet Operation,
+COM01134.00,Saraji,
+COM01135.00,Sarongga,
+COM01136.00,Sasol Sigma,
+COM01136.01,Sasol Sigma,Mooikraal
+COM01136.02,Sasol Sigma,Moholo
+COM01137.00,Satui,
+COM01138.00,Saucito,
+COM01139.00,Savage,
+COM01140.00,Savuka,
+COM01141.00,Sayak,
+COM01142.00,Sayanogorsk Aluminium Smelter,
+COM01143.00,Seabee,
+COM01143.01,Seabee,Seabee
+COM01143.02,Seabee,Santoy
+COM01143.03,Seabee,Porky
+COM01144.00,Sebree,
+COM01145.00,Sebree - Onton Complex,
+COM01146.00,Selbaie,
+COM01147.00,Selian,
+COM01148.00,Senakin,
+COM01149.00,Seneca,
+COM01150.00,Sentinel,
+COM01151.00,Sepon,
+COM01152.00,Serra Azul,
+COM01153.00,Serra Grande,
+COM01154.00,Serra Leste,
+COM01155.00,Serra Norte,
+COM01155.01,Serra Norte,N4W
+COM01155.02,Serra Norte,N4E
+COM01155.03,Serra Norte,N5
+COM01155.04,Serra Norte,N5-W
+COM01155.05,Serra Norte,N5E
+COM01155.06,Serra Norte,N5E-N
+COM01155.07,Serra Norte,Carajas
+COM01156.00,Serra Sul,
+COM01157.00,Sertao Mineracao LTDA,
+COM01158.00,Seruyung,
+COM01159.00,Sestao steel plant,
+COM01160.00,Shaanxi Binhuang Mining Area,
+COM01160.01,Shaanxi Binhuang Mining Area,Binchang mining area
+COM01160.02,Shaanxi Binhuang Mining Area,Huangling mining area
+COM01161.00,Shaanxi North Shaanxi Mining Area,
+COM01162.00,Shaanxi Weibei Mining Area,
+COM01162.01,Shaanxi Weibei Mining Area,Jiaoping
+COM01162.02,Shaanxi Weibei Mining Area,Tongchuan
+COM01162.03,Shaanxi Weibei Mining Area,Pubai
+COM01162.04,Shaanxi Weibei Mining Area,Chenghe
+COM01162.05,Shaanxi Weibei Mining Area,Han
+COM01163.00,Shahta No. 12,
+COM01164.00,Shahuindo,
+COM01165.00,Shandong Huayu,
+COM01166.00,Shanggong,
+COM01167.00,Shanxi Huasheng,
+COM01168.00,Shanxi Lu'an Mines,
+COM01168.01,Shanxi Lu'an Mines,Wangzhuang
+COM01168.02,Shanxi Lu'an Mines,Changcun
+COM01168.03,Shanxi Lu'an Mines,Yuwu
+COM01168.04,Shanxi Lu'an Mines,Zhangcun
+COM01168.05,Shanxi Lu'an Mines,Wuyang
+COM01168.06,Shanxi Lu'an Mines,Luning
+COM01168.07,Shanxi Lu'an Mines,Licun
+COM01169.00,Shanxi New Material,
+COM01170.00,Shanxi Zhongrun Aluminium,
+COM01171.00,Shatyrkul,
+COM01172.00,Shawinigan,
+COM01173.00,Sheerness,
+COM01174.00,Shendong Mines,
+COM01174.01,Shendong Mines,Bulianta
+COM01174.02,Shendong Mines,Daliuta-Huojitu
+COM01174.03,Shendong Mines,Yujialiang
+COM01174.04,Shendong Mines,Shangwan
+COM01174.05,Shendong Mines,Halagou
+COM01174.06,Shendong Mines,Baode
+COM01174.07,Shendong Mines,Shigetai
+COM01174.08,Shendong Mines,Wulanmulun
+COM01174.09,Shendong Mines,Jinjie
+COM01174.10,Shendong Mines,Bu’erta
+COM01174.11,Shendong Mines,Wanli
+COM01174.12,Shendong Mines,Liuta
+COM01174.13,Shendong Mines,Cuncaota No. 1
+COM01174.14,Shendong Mines,Cuncaota No. 2
+COM01174.15,Shendong Mines,Huangyuchuan
+COM01174.16,Shendong Mines,Tanggonggou
+COM01174.17,Shendong Mines,Other Shendong Mines
+COM01175.00,Shengli Mines,
+COM01176.00,Shenhua Baotou Coal Chemical Refinery,
+COM01177.00,Shestaki,
+COM01178.00,Shila-Paula,
+COM01178.01,Shila-Paula,Shila
+COM01178.02,Shila-Paula,Paula
+COM01179.00,Shilawusu,
+COM01180.00,Shoal Creek,
+COM01181.00,Shoemaker,
+COM01182.00,Shondoni,
+COM01183.00,Shuguang,
+COM01184.00,Shuiyindong,
+COM01185.00,Siana,
+COM01186.00,Sibenergougol,
+COM01187.00,Sibirginsky,
+COM01188.00,Sierra Gorda,
+COM01189.00,Sierra Rutile,
+COM01190.00,Sierrita,
+COM01191.00,Siguiri,
+COM01192.00,Silvassa,
+COM01193.00,Silvertip,
+COM01194.00,Simandou,
+COM01195.00,Simberi,
+COM01195.01,Simberi,Sorowar
+COM01196.00,Simoes Filho Ferroalloys plant,
+COM01197.00,Sinclair,
+COM01198.00,Sino Iron,
+COM01199.00,Sishen,
+COM01200.00,Sissingue,
+COM01201.00,Skorpion,
+COM01202.00,Skyline,
+COM01203.00,Smederevo,
+COM01204.00,Sohar,
+COM01205.00,Soledad-Dipolos,
+COM01206.00,Somerville,
+COM01206.01,Somerville,Somerville North
+COM01206.02,Somerville,Somerville South
+COM01206.03,Somerville,Somerville Central
+COM01207.00,Soral,
+COM01208.00,Sorowako,
+COM01209.00,Sossego,
+COM01210.00,South Eastern Coalfields Limited,
+COM01210.01,South Eastern Coalfields Limited,Chirimiri
+COM01210.02,South Eastern Coalfields Limited,Baikunthpur
+COM01210.03,South Eastern Coalfields Limited,Bisrampur
+COM01210.04,South Eastern Coalfields Limited,Hasdeo
+COM01210.05,South Eastern Coalfields Limited,Bhatgaon
+COM01210.06,South Eastern Coalfields Limited,Jamuna
+COM01210.07,South Eastern Coalfields Limited,Sohagpur
+COM01210.08,South Eastern Coalfields Limited,Johilla
+COM01210.09,South Eastern Coalfields Limited,Korba
+COM01210.10,South Eastern Coalfields Limited,Kusmunda
+COM01210.11,South Eastern Coalfields Limited,Dipka
+COM01210.12,South Eastern Coalfields Limited,Gevra
+COM01210.13,South Eastern Coalfields Limited,Raigarh
+COM01210.14,South Eastern Coalfields Limited,Korea
+COM01210.15,South Eastern Coalfields Limited,Driver
+COM01210.16,South Eastern Coalfields Limited,Kurasia
+COM01210.17,South Eastern Coalfields Limited,Amadand
+COM01210.18,South Eastern Coalfields Limited,Kurja
+COM01210.19,South Eastern Coalfields Limited,Bijuri
+COM01210.20,South Eastern Coalfields Limited,Baherabandh
+COM01210.21,South Eastern Coalfields Limited,Bhadra
+COM01210.22,South Eastern Coalfields Limited,Kotma
+COM01210.23,South Eastern Coalfields Limited,Atul Bhardwaaj
+COM01210.24,South Eastern Coalfields Limited,Dhanpuri
+COM01210.25,South Eastern Coalfields Limited,Amlai
+COM01211.00,South Hallsville No. 1,
+COM01212.00,South Kalgoorlie,
+COM01213.00,South Stock,
+COM01214.00,South Walker Creek,
+COM01215.00,Southern Cross,
+COM01215.01,Southern Cross,Copperhead
+COM01215.02,Southern Cross,Corinthian
+COM01215.03,Southern Cross,Frasers South
+COM01215.04,Southern Cross,Marvel Loch
+COM01215.05,Southern Cross,Nevoria
+COM01216.00,Southern GOK,
+COM01217.00,Southern Iron,
+COM01218.00,Southern West Virginia Resources,
+COM01219.00,Southstock,
+COM01220.00,Spinifex Ridge,
+COM01221.00,Spitzkop,
+COM01222.00,Spring Creek,
+COM01223.00,Springvale,
+COM01224.00,Stagdok,
+COM01225.00,Steelton,
+COM01226.00,Stepnoy,
+COM01227.00,Stillwater,
+COM01228.00,Stobie,
+COM01229.00,Stoilensky,
+COM01230.00,Storliden,
+COM01231.00,Stratford Duralie,
+COM01232.00,Sudbury Integrated Nickel Operations,
+COM01232.01,Sudbury Integrated Nickel Operations,Fraser
+COM01232.02,Sudbury Integrated Nickel Operations,Nickel Rim South
+COM01232.03,Sudbury Integrated Nickel Operations,Raglan
+COM01233.00,SUEK Buryatia,
+COM01233.01,SUEK Buryatia,Nikolsky
+COM01233.02,SUEK Buryatia,Tugnuisky
+COM01234.00,SUEK Kemerovo,
+COM01234.01,SUEK Kemerovo,Kamyshansky
+COM01234.02,SUEK Kemerovo,Kirov
+COM01234.03,SUEK Kemerovo,Komsomolets
+COM01234.04,SUEK Kemerovo,Polysaevskaya
+COM01234.05,SUEK Kemerovo,Ruban
+COM01234.06,SUEK Kemerovo,Taldinskaya-Zapadnaya 1
+COM01234.07,SUEK Kemerovo,Taldinskaya-Zapadnaya 2
+COM01234.08,SUEK Kemerovo,Yalevsky
+COM01234.09,SUEK Kemerovo,Zarechny
+COM01235.00,SUEK Khabarovsk,
+COM01235.01,SUEK Khabarovsk,Bureinsky
+COM01235.02,SUEK Khabarovsk,Pravoberezhny
+COM01235.03,SUEK Khabarovsk,Severnaya
+COM01236.00,SUEK Khakassia,
+COM01236.01,SUEK Khakassia,Abakansky
+COM01236.02,SUEK Khakassia,Chernogorsky
+COM01236.03,SUEK Khakassia,Izykhsky
+COM01236.04,SUEK Khakassia,Vostochno-Beisky
+COM01236.05,SUEK Khakassia,Khakasskaya
+COM01237.00,SUEK Krasnoyarsk,
+COM01237.01,SUEK Krasnoyarsk,Berezovsky
+COM01237.02,SUEK Krasnoyarsk,Borodinsky
+COM01237.03,SUEK Krasnoyarsk,Nazarovsky
+COM01238.00,SUEK Primorye,
+COM01238.01,SUEK Primorye,Nekkovy
+COM01238.02,SUEK Primorye,Novoshakhtinskoye
+COM01239.00,SUEK Zabaikalye,
+COM01239.01,SUEK Zabaikalye,Apsatsky
+COM01239.02,SUEK Zabaikalye,Kharanorsky
+COM01239.03,SUEK Zabaikalye,Vostochny
+COM01240.00,Sufco,
+COM01241.00,Sukari,
+COM01242.00,Sukha Balka,
+COM01242.01,Sukha Balka,Yubileynaya
+COM01242.02,Sukha Balka,Frunze
+COM01243.00,Sunrise Dam,
+COM01244.00,Sycamore and Imperial,
+COM01244.01,Sycamore and Imperial,Sycamore No. 2
+COM01244.02,Sycamore and Imperial,Imperial
+COM01244.03,Sycamore and Imperial,Sycamore No. 1
+COM01244.04,Sycamore and Imperial,Sago
+COM01245.00,Syferfontein,
+COM01246.00,Tabang Project,
+COM01246.01,Tabang Project,Fajar Sakti Prima
+COM01246.02,Tabang Project,Bara Tabang
+COM01246.03,Tabang Project,Brian Anjat Sentosa
+COM01247.00,Taca Taca,
+COM01248.00,Taganito,
+COM01249.00,Taganito HPAL Nickel Corporation,
+COM01250.00,Tahmoor,
+COM01251.00,Tajo Norte,
+COM01252.00,Talabira,
+COM01253.00,Taldybulak Levoberezhny,
+COM01254.00,Tallering Peak,
+COM01255.00,Tambomayo,
+COM01256.00,Tanami,
+COM01257.00,Tanjung Enim,
+COM01257.01,Tanjung Enim,Air Laya
+COM01257.02,Tanjung Enim,Muara Tiga Besar
+COM01257.03,Tanjung Enim,Banko Barat & Tengah
+COM01257.04,Tanjung Enim,"Banjarsari, Kungkilan, Bunian, Arahan Utara, Arahan Selatan"
+COM01258.00,Tantahuatay,
+COM01259.00,Tapira,
+COM01260.00,Taquari-Vassouras,
+COM01261.00,Tara,
+COM01262.00,Taranto steel plant,
+COM01263.00,Tarong,
+COM01264.00,Tashan,
+COM01265.00,Tasiast,
+COM01266.00,Tau Lekoa,
+COM01267.00,TauTona,
+COM01268.00,Tayan,
+COM01269.00,Teguh Sinarabadi and Firman Ketaun Perkasa,
+COM01269.01,Teguh Sinarabadi and Firman Ketaun Perkasa,Teguh Sinarabadi
+COM01269.02,Teguh Sinarabadi and Firman Ketaun Perkasa,Firman Ketaun Perkasa
+COM01270.00,Telfer,
+COM01271.00,TEMCO,
+COM01272.00,Temirtau steel plant,
+COM01273.00,Tenke Fungurume,
+COM01274.00,Thabazimbi,
+COM01275.00,Thalanga,
+COM01275.01,Thalanga,Far West
+COM01275.02,Thalanga,Liontown
+COM01276.00,The Boliden Area,
+COM01276.01,The Boliden Area,Renström
+COM01276.02,The Boliden Area,Kristineberg
+COM01276.03,The Boliden Area,Kankberg
+COM01276.04,The Boliden Area,Maurliden
+COM01277.00,Thompson,
+COM01278.00,Thunderbox,
+COM01278.01,Thunderbox,Thunderbox
+COM01278.02,Thunderbox,Rainbow
+COM01278.03,Thunderbox,Otto Bore
+COM01278.04,Thunderbox,Kailis
+COM01278.05,Thunderbox,Bannockburn
+COM01278.06,Thunderbox,Waterloo
+COM01279.00,Tia Maria,
+COM01280.00,Tianchi,
+COM01281.00,Tiandeng,
+COM01282.00,Tilden,
+COM01283.00,Timan,
+COM01284.00,Timmins West & Bell Creek,
+COM01284.01,Timmins West & Bell Creek,Timmins West
+COM01284.02,Timmins West & Bell Creek,Bell Creek
+COM01285.00,Tiwai Point,
+COM01286.00,Tohono,
+COM01287.00,Tomago,
+COM01288.00,Tomusinsky,
+COM01289.00,Tongon,
+COM01290.00,Toquepala,
+COM01291.00,Totten,
+COM01292.00,Touquoy,
+COM01292.01,Touquoy,Beaver Dam
+COM01292.02,Touquoy,Fifteen Mile Stream
+COM01292.03,Touquoy,Cochrane Hill
+COM01293.00,Trail Operations,
+COM01294.00,Tres Valles,
+COM01295.00,Tritton,
+COM01295.01,Tritton,Tritton
+COM01295.02,Tritton,Murrawombie
+COM01295.03,Tritton,Avoca Tank
+COM01295.04,Tritton,Girilambone
+COM01296.00,Tropicana,
+COM01297.00,Tselentis,
+COM01298.00,Tshikondeni,
+COM01299.00,Tuhup,
+COM01299.01,Tuhup,Kohong
+COM01299.02,Tuhup,Telakon
+COM01300.00,Tujuh Bukit,
+COM01301.00,Tulawaka,
+COM01302.00,Tunnel Ridge Complex,
+COM01302.01,Tunnel Ridge Complex,Prep plant
+COM01302.02,Tunnel Ridge Complex,Portal 16
+COM01303.00,Tuscarawas,
+COM01304.00,Tusky,
+COM01305.00,Tuticorin,
+COM01306.00,Tweefontein,
+COM01307.00,Twentymile,
+COM01308.00,Twin Creeks Operation,
+COM01308.01,Twin Creeks Operation,Twin Creeks Mine
+COM01308.02,Twin Creeks Operation,Turquoise Ridge
+COM01309.00,Twistdraai Thubelisha,
+COM01310.00,Two Rivers,
+COM01311.00,Tyrone,
+COM01312.00,U. S. Steel Kosice,
+COM01313.00,Ubuntu,
+COM01314.00,Uchucchacua,
+COM01315.00,Ulan,
+COM01316.00,Union Reefs,
+COM01317.00,United,
+COM01318.00,United Coal Company,
+COM01318.01,United Coal Company,Wellmore Coal Company
+COM01318.02,United Coal Company,Pocahontas Coal Company
+COM01318.03,United Coal Company,Affinity Coal Complex
+COM01318.04,United Coal Company,Carter Roag Coal Company
+COM01319.00,United Taconite,
+COM01320.00,Unki,
+COM01321.00,Ural Steel,
+COM01322.00,Urals Works,
+COM01323.00,Urucum,
+COM01324.00,V.I. Lenina,
+COM01325.00,Vale New Caledonia,
+COM01326.00,Vale Oman Pellet Operation,
+COM01327.00,Vale Tubarao,
+COM01327.01,Vale Tubarao,Tubarao 1 and 2
+COM01327.02,Vale Tubarao,Tubarao 3
+COM01327.03,Vale Tubarao,Tubarao 4
+COM01327.04,Vale Tubarao,Tubarao 5 and 6
+COM01327.05,Vale Tubarao,Tubarao 7
+COM01327.06,Vale Tubarao,Tubarao 8
+COM01328.00,Valesul,
+COM01329.00,Vargem Grande,
+COM01329.01,Vargem Grande,Tamandua
+COM01329.02,Vargem Grande,Capitao do Mato
+COM01329.03,Vargem Grande,Aboboras
+COM01330.00,Vedanta Goa mines,
+COM01330.01,Vedanta Goa mines,Codli
+COM01330.02,Vedanta Goa mines,Sonshi
+COM01330.03,Vedanta Goa mines,Bicholim
+COM01330.04,Vedanta Goa mines,Surla
+COM01331.00,Veladero,
+COM01332.00,Ventanas,
+COM01333.00,Vergenoeg,
+COM01334.00,Viking,
+COM01334.01,Viking,Corning
+COM01334.02,Viking,Knot
+COM01335.00,Vindex,
+COM01336.00,Vinogradovsky,
+COM01337.00,Vinton,
+COM01338.00,Viper,
+COM01339.00,Vizag,
+COM01340.00,Volgograd Aluminium Smelter,
+COM01341.00,Volkhov Aluminium Smelter,
+COM01342.00,Vorkutaugol,
+COM01342.01,Vorkutaugol,Vorkutinskoye
+COM01342.02,Vorkutaugol,Vorgashorskoye
+COM01342.03,Vorkutaugol,Yunyaginskoe
+COM01343.00,VP-8,
+COM01344.00,Vygenhoek,
+COM01345.00,Wabush,
+COM01346.00,Wafi-Golpu,
+COM01346.01,Wafi-Golpu,Golpu
+COM01346.02,Wafi-Golpu,Wafi
+COM01346.03,Wafi-Golpu,Nambonga
+COM01347.00,Wagerup Alumina Refinery,
+COM01348.00,Wahana Baratama,
+COM01349.00,Waifu,
+COM01350.00,Waihi,
+COM01350.01,Waihi,Favona
+COM01350.02,Waihi,Trio
+COM01350.03,Waihi,Correnso
+COM01350.04,Waihi,Martha
+COM01351.00,Wambo,
+COM01352.00,Warrick Aluminium Smelter,
+COM01353.00,Warrior Complex,
+COM01354.00,Watagan,
+COM01354.01,Watagan,Ashton
+COM01354.02,Watagan,Austar
+COM01354.03,Watagan,Donaldson
+COM01355.00,Weipa,
+COM01355.01,Weipa,Amrun
+COM01355.02,Weipa,East Weipa and Andoom
+COM01356.00,Wells,
+COM01357.00,Wenatchee Aluminium Smelter,
+COM01358.00,Wenyu,
+COM01359.00,Werris Creek,
+COM01360.00,West Elk,
+COM01361.00,West Wallsend,
+COM01362.00,Western Allegheny,
+COM01363.00,Western Coalfields Limited,
+COM01363.01,Western Coalfields Limited,Damua
+COM01363.02,Western Coalfields Limited,Ghodawari
+COM01363.03,Western Coalfields Limited,Moari
+COM01363.04,Western Coalfields Limited,Barkuhi
+COM01363.05,Western Coalfields Limited,Umreth
+COM01363.06,Western Coalfields Limited,Parasia
+COM01363.07,Western Coalfields Limited,Urdhan
+COM01363.08,Western Coalfields Limited,Thisgora
+COM01363.09,Western Coalfields Limited,Mandla South
+COM01363.10,Western Coalfields Limited,Kamptee
+COM01363.11,Western Coalfields Limited,Inder
+COM01363.12,Western Coalfields Limited,Gondegaon
+COM01363.13,Western Coalfields Limited,Bhanegaon
+COM01363.14,Western Coalfields Limited,Singhori
+COM01363.15,Western Coalfields Limited,Patansaongi
+COM01363.16,Western Coalfields Limited,Silwara
+COM01363.17,Western Coalfields Limited,MakaDhokda
+COM01363.18,Western Coalfields Limited,Majri
+COM01363.19,Western Coalfields Limited,Wani North
+COM01363.20,Western Coalfields Limited,Neeljai 2
+COM01363.21,Western Coalfields Limited,Ghughus
+COM01363.22,Western Coalfields Limited,Ghonsa
+COM01363.23,Western Coalfields Limited,Mungoli
+COM01363.24,Western Coalfields Limited,Penganga
+COM01363.25,Western Coalfields Limited,Sector 4
+COM01363.26,Western Coalfields Limited,Bhatadi
+COM01363.27,Western Coalfields Limited,Padmapur
+COM01363.28,Western Coalfields Limited,Mahakali
+COM01363.29,Western Coalfields Limited,Nandgaon
+COM01363.30,Western Coalfields Limited,Chandrapur
+COM01363.31,Western Coalfields Limited,Ballarpur
+COM01363.32,Western Coalfields Limited,Sasti
+COM01363.33,Western Coalfields Limited,Pauni
+COM01363.34,Western Coalfields Limited,Sakhari
+COM01364.00,Western Range Project,
+COM01364.01,Western Range Project,Mount Tokadeh
+COM01364.02,Western Range Project,Mount Gangra
+COM01364.03,Western Range Project,Mount Yuelliton
+COM01365.00,Westside,
+COM01366.00,Wetar,
+COM01367.00,Wharf,
+COM01368.00,Whim Creek,
+COM01368.01,Whim Creek,Whim Creek
+COM01368.02,Whim Creek,Mons Cupri
+COM01369.00,Whitewood,
+COM01370.00,Wild Boar,
+COM01371.00,Wildcat Hills/Cottage Grove,
+COM01371.01,Wildcat Hills/Cottage Grove,Wildcat Hills
+COM01371.02,Wildcat Hills/Cottage Grove,Cottage Grove
+COM01371.03,Wildcat Hills/Cottage Grove,Willow Lake
+COM01372.00,Wilkie Creek,
+COM01373.00,Wilpinjong,
+COM01374.00,Wiluna,
+COM01374.01,Wiluna,Wiluna
+COM01374.02,Wiluna,Regent
+COM01374.03,Wiluna,Matilda
+COM01374.04,Wiluna,Lake Way
+COM01374.05,Wiluna,Galaxy
+COM01375.00,Windalco,
+COM01375.01,Windalco,Ewarton
+COM01375.02,Windalco,Kirkvine
+COM01376.00,Windsor,
+COM01377.00,Wodgina,
+COM01378.00,Worsley,
+COM01379.00,Wulagen,
+COM01380.00,Xiaoguan,
+COM01380.01,Xiaoguan,Xiaoguan
+COM01380.02,Xiaoguan,Xinmi
+COM01380.03,Xiaoguan,Gongyi
+COM01380.04,Xiaoguan,Dengfeng
+COM01381.00,Xiaoyi,
+COM01382.00,Xinghua Technology,
+COM01383.00,Xinji Mining Area,
+COM01383.01,Xinji Mining Area,Xinji No.1
+COM01383.02,Xinji Mining Area,Xinji No.2
+COM01383.03,Xinji Mining Area,Liuzhuang
+COM01383.04,Xinji Mining Area,Kouzidong
+COM01384.00,Xinjiang Jinbao,
+COM01385.00,Xuchang,
+COM01386.00,Yabulu,
+COM01387.00,Yakovlevskiy,
+COM01388.00,Yanacocha,
+COM01388.01,Yanacocha,La Quinua
+COM01388.02,Yanacocha,Yanacocha
+COM01388.03,Yanacocha,Carachugo
+COM01388.04,Yanacocha,Maqui Maqui
+COM01389.00,Yancoal International,
+COM01389.01,Yancoal International,Cameby Downs
+COM01389.02,Yancoal International,Premier
+COM01390.00,Yandi,
+COM01391.00,Yangcun,
+COM01392.00,Yangquan,
+COM01393.00,Yankuang metallurgic coke plant,
+COM01394.00,Yanzhou Shandong Area,
+COM01394.01,Yanzhou Shandong Area,Nantun
+COM01394.02,Yanzhou Shandong Area,Xinglongzhuang
+COM01394.03,Yanzhou Shandong Area,Baodian
+COM01394.04,Yanzhou Shandong Area,Dongtan
+COM01394.05,Yanzhou Shandong Area,Jining No. 2
+COM01394.06,Yanzhou Shandong Area,Jining No. 3
+COM01395.00,Yarrabee,
+COM01396.00,Yarwun,
+COM01397.00,Yatela,
+COM01398.00,Yauli,
+COM01398.01,Yauli,San Cristobal
+COM01398.02,Yauli,Carahuacra
+COM01398.03,Yauli,Carahuacra Norte Pit
+COM01398.04,Yauli,Andaychagua
+COM01398.05,Yauli,Ticlio
+COM01398.06,Yauli,Toldorumi
+COM01399.00,Yauricocha,
+COM01399.01,Yauricocha,Mina Central
+COM01399.02,Yauricocha,Esperanza
+COM01399.03,Yauricocha,Cachi-Cachi
+COM01399.04,Yauricocha,Mascota
+COM01399.05,Yauricocha,Cuye
+COM01399.06,Yauricocha,Cuerpos Pequeños
+COM01400.00,Yenakiieve Steel,
+COM01401.00,Yilgarn Project,
+COM01401.01,Yilgarn Project,Carina
+COM01401.02,Yilgarn Project,J4
+COM01401.03,Yilgarn Project,J5
+COM01401.04,Yilgarn Project,Bungalbin East
+COM01402.00,Yintai Inner Mongolia,
+COM01402.01,Yintai Inner Mongolia,Suancigou
+COM01402.02,Yintai Inner Mongolia,Nalinmiao No. 2 Mine
+COM01402.03,Yintai Inner Mongolia,Nalinmiao No. 1 Mine
+COM01402.04,Yintai Inner Mongolia,Hongjingta No. 1 Mine
+COM01402.05,Yintai Inner Mongolia,Kaida
+COM01402.06,Yintai Inner Mongolia,Dadijing
+COM01402.07,Yintai Inner Mongolia,Baoshan
+COM01402.08,Yintai Inner Mongolia,Tongda
+COM01402.09,Yintai Inner Mongolia,Chengyi
+COM01402.10,Yintai Inner Mongolia,Talahao
+COM01403.00,Yixingzhai,
+COM01404.00,Yubileyno-Snegirikhinsky,
+COM01405.00,Yueyang,
+COM01406.00,Yunnan Huaxi,
+COM01407.00,Yuzhkuzbassugol,
+COM01407.01,Yuzhkuzbassugol,Alardinskaya
+COM01407.02,Yuzhkuzbassugol,Essaulskaya
+COM01407.03,Yuzhkuzbassugol,Osinnikovskaya
+COM01407.04,Yuzhkuzbassugol,Uskovskaya
+COM01407.05,Yuzhkuzbassugol,Yerunakovskaya-VIII
+COM01408.00,Yuzhnaya,
+COM01409.00,Zafranal,
+COM01410.00,Zaldivar,
+COM01411.00,Zaporizhia Coke,
+COM01412.00,Zaporizhstal,
+COM01413.00,Zaporozhye Alumina Refinery,
+COM01414.00,Zaragoza steel plant,
+COM01415.00,Zarechnaya,
+COM01416.00,Zawar,
+COM01416.01,Zawar,Mochia
+COM01416.02,Zawar,Balaria
+COM01416.03,Zawar,Zawar Mala
+COM01416.04,Zawar,Baroi
+COM01417.00,Zenica steel plant,
+COM01418.00,Zeravshan,
+COM01418.01,Zeravshan,Jilau
+COM01418.02,Zeravshan,Taror
+COM01418.03,Zeravshan,Khirskhona
+COM01418.04,Zeravshan,Olympic mines
+COM01419.00,Zhaolou,
+COM01420.00,Zhengzhou Institute,
+COM01421.00,Zhezkazgan Annensky,
+COM01422.00,Zhezkazgan East and West,
+COM01422.01,Zhezkazgan East and West,Zhezkazgan West
+COM01422.02,Zhezkazgan East and West,Zhezkazgan East
+COM01423.00,Zhezkazgan North,
+COM01424.00,Zhezkazgan Smelter,
+COM01425.00,Zhezkazgan South and Stepnoy,
+COM01425.01,Zhezkazgan South and Stepnoy,Zhezkazgan South
+COM01425.02,Zhezkazgan South and Stepnoy,Zhezkazgan Stepnoy
+COM01426.00,Zhezkazgan Zhomart,
+COM01427.00,Zhongzhou Aluminum,
+COM01428.00,Zhunge’er Mines,
+COM01428.01,Zhunge’er Mines,Heidaigou
+COM01428.02,Zhunge’er Mines,Ha’erwusu
+COM01429.00,Zibulo,
+COM01430.00,Zijinshan,
+COM01431.00,Zincor,
+COM01432.00,Zinkgruvan,
+COM01433.00,Zondernaam,
+COM01434.00,Zululand Anthracite Collieries,
+COM01435.00,Zunyi,
+COM00693.04,La Caridad,La Caridad Processing
+COM00693.05,La Caridad,La Caridad Mine
+COM00726.03,Liliu,Liliu
+COM00744.03,Los Bronces,Los Bronces
+COM00748.04,Loulo - Gounkoto,Loulo
+COM00852.04,Mount Goldsworthy,Mount Goldsworthy
+COM00920.02,Northern Star Kalgoorlie Operations,Raleigh
+COM00987.04,Pingshuo,Pingshuo
+COM01016.04,PT Adaro Indonesia,Angsana
+COM01276.05,The Boliden Area,Boliden
+COM00070.02,Arvida,Arvida
+COM00250.02,Chibuluma South,Chibuluma South
+COM00397.02,Escondida,Escondida
+COM00597.02,Jimblebar,Jimblebar
+COM00608.02,Justice Energy,Justice Energy
+COM00684.02,Kupol,Kupol
+COM00701.02,Lalor,Lalor
+COM00745.02,Los Colorados,Los Colorados
+COM00786.02,Meadowbank Complex,Meadowbank
+COM00806.02,Middelburg/Wolvekrans,Middelburg/Wolvekrans
+COM00834.02,Mont Wright,Mont Wright
+COM00951.02,Paint Creek,Paint Creek
+COM00984.02,Pingdingshan,Pingdingshan
+COM01032.02,PT Insani Baraperkasa,PT Insani Baraperkasa
+COM01107.02,Safford,Safford
+COM01195.02,Simberi,Simberi
+COM00197.02,Candelaria,Ojos del Salado
+COM00670.01,Korshunov,Korshunovsky
+COM00670.02,Korshunov,Rudnogorsky
+COM00670.03,Korshunov,Tatyaninsky
+COM00678.03,Krasnoyarskkraiugol,Pereyaslovskiy
+COM00828.01,Moa Project,Moa Occidental
+COM00828.02,Moa Project,Moa Oriental
+COM00828.03,Moa Project,Yagrumaje Oeste
+COM00828.04,Moa Project,Limestone Mud
+COM00828.05,Moa Project,Camarioca Norte
+COM00828.06,Moa Project,Camarioca Sur
+COM00828.07,Moa Project,Playa la Vaca-Zona Septentrional II
+COM00828.08,Moa Project,La Delta
+COM00828.09,Moa Project,Cantarrana
+COM00828.10,Moa Project,Santa Teresita
+COM00914.05,North Eastern Coalfields,Ledo
