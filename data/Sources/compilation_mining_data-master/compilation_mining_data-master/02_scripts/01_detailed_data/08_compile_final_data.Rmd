@@ -1,0 +1,625 @@
+---
+title: "Compile Final Data"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+###### In this script, the final data output is prepared.
+###### 1. Add column facility_id to all remaining sheets
+###### 2. Prepare sheet_general_sub_sites by combining the sheets general and sub_sites
+###### 3. Select, rename, and arrange and round variables
+###### 4. Insert join id (called minerals_id) to sheet commodities
+###### 5. Export the final data in final format
+###### 6. Create table "structure", storing the structure of the database and explaining variables
+###### 7. Validation
+###### 8. Export final data in other formats
+
+### Read In data
+```{r , echo = FALSE, message = FALSE} 
+
+# clear R environment
+rm(list = ls())
+
+library(sf)
+library(tidyverse)
+library(DT)
+library(RSQLite)
+library(writexl)
+
+# read in production information
+detailed <- read_rds("./03_intermediate/01_detailed_data/gaps_filled.rds")
+
+# read in sheet_general
+sheet_general <- st_read("./03_intermediate/01_detailed_data/sheet_general/07a_general.gpkg", as_tibble = TRUE)
+sheet_sub_sites <- st_read("./03_intermediate/01_detailed_data/sheet_general/sub_sites.gpkg", as_tibble = TRUE)
+
+# read in source_ids, material_ids, unit_ids
+source_ids <- read_delim("./01_input/02_lists_and_concordance_tables/source_ids.csv", delim = ";", show_col_types = FALSE)
+material_ids <- read_delim("./01_input/02_lists_and_concordance_tables/material_ids.csv", delim = ";", show_col_types = FALSE)
+
+# read in final data structure
+structure <- read_csv("./01_input/02_lists_and_concordance_tables/01_detailed_data/final_data_structure.csv", show_col_types = FALSE)
+
+```
+
+<br>
+
+# 1. Add column facility_id to all remaining sheets
+```{r , echo = FALSE, message = FALSE}
+
+ids <- sheet_general %>%
+  select(facility_id, mine_fac) %>% 
+  st_drop_geometry() %>% 
+  bind_rows(sheet_sub_sites %>% 
+              select(facility_id, mine_fac, sub_site) %>% 
+              st_drop_geometry())
+
+ids_mine_fac_only <- sheet_general %>% 
+  select(facility_id, mine_fac) %>% 
+  st_drop_geometry()
+
+# for the sheets processing, transport, capacity_reserves, waste, other_info, it can be joined by mine_fac and sub_site
+for (sheet in c("processing", "transport", "capacity_reserves", "waste", "other_info")){
+  detailed[[sheet]] <- left_join(detailed[[sheet]], ids, by = c("mine_fac", "sub_site")) %>%
+    relocate(facility_id, .before = mine_fac)
+}
+
+# for the sheets minerals_ores_conce, commodities, coal, reserves, capacity it can be joined by mine_fac
+for (sheet in c("minerals_ores_conce", "commodities", "coal", "reserves", "capacity")){
+  detailed[[sheet]] <- left_join(detailed[[sheet]], ids_mine_fac_only, by = c("mine_fac")) %>%
+    relocate(facility_id, .before = mine_fac)
+}
+
+
+```
+
+<br>
+
+# 2. Prepare sheet_general_sub_sites by combining the sheets general and sub_sites
+```{r , echo = FALSE, message = FALSE}
+
+general_combined <- list(
+  sheet_general,
+  sheet_sub_sites)
+
+i = 1
+for(sheet_name in c("general", "sub_sites")) {
+  
+  detailed[[i]] <- general_combined[[i]] %>% 
+    # select cols/variables kept in final data only
+    select(structure %>% 
+             filter(sheet == sheet_name & final_keep_variable == "yes") %>% 
+             select(variable) %>% 
+             pull()) %>% 
+    # rename the cols/variables
+    rename_with( ~ (structure %>%
+                           filter(sheet == sheet_name & final_keep_variable == "yes") %>% 
+                           select(final_name_variable) %>% 
+                           pull())) %>% 
+    # relocate cols/variables in correct order 
+    relocate(structure %>%
+               filter(sheet == sheet_name & final_keep_variable == "yes") %>% 
+               arrange(order_cols) %>% 
+               select(final_name_variable) %>% 
+               pull()) %>% 
+    # arrange rows in correct order
+    arrange(across(all_of(structure %>%
+                            filter(sheet == sheet_name & final_keep_variable == "yes") %>% 
+                            filter(!(is.na(order_rows))) %>% 
+                            arrange(order_rows) %>% 
+                            select(final_name_variable) %>%
+                            pull()))
+            )
+  
+  i = i + 1
+}
+
+
+# fill columns country, GID_0, primary_commodity for sub-sites with the values of the parent facility
+detailed$sub_sites <- detailed$sub_sites %>% 
+  left_join(detailed$general %>% 
+              st_drop_geometry() %>% 
+              select(facility_name, country, GID_0, primary_commodity), 
+            by = "facility_name")
+
+
+# create sheet_general_sub_sites
+detailed$general_sub_sites <- bind_rows(detailed$general, detailed$sub_sites) %>% 
+  # rearrange
+  arrange("facility_id") %>% 
+  # relocate cols/variables in correct order 
+  relocate(structure %>%
+             filter(sheet == "general_sub_sites" & final_keep_variable == "yes") %>% 
+             arrange(order_cols) %>% 
+             select(final_name_variable) %>% 
+             pull())
+
+
+
+
+```
+
+<br>
+
+# 3. Select, rename, and arrange and round variables
+```{r , echo = FALSE, message = FALSE}
+
+#get indices of sheets in the list detailed which should be modified
+sheet_numbers <- match(
+  structure %>% 
+    filter(final_keep_sheet == "yes" & sheet != "general_sub_sites") %>% 
+    select(sheet) %>% 
+    unique() %>% 
+    pull(),
+  detailed %>% 
+    names())
+
+
+#loop over the selected sheets and convert according to final data structure
+for(sheet_nr in sheet_numbers){
+  
+  curr_sheet_name <- detailed[sheet_nr] %>% names()
+  detailed[[sheet_nr]] <- detailed[[sheet_nr]] %>% 
+    # select cols/variables kept in final data only
+    select(structure %>% 
+             filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+             select(variable) %>% 
+             pull()) %>% 
+    # rename the cols/variables
+    rename_with( ~ (structure %>%
+                           filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+                           select(final_name_variable) %>% 
+                           pull())) %>% 
+    # relocate cols/variables in correct order 
+    relocate(structure %>%
+               filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+               arrange(order_cols) %>% 
+               select(final_name_variable) %>% 
+               pull()) %>% 
+    # arrange rows in correct order
+    # for this, first insert temporary variable consisting of the first 8 characters of facility_id (excluding sub_sites)
+    arrange(across(all_of(structure %>%
+                            filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+                            filter(!(is.na(order_rows))) %>% 
+                            arrange(order_rows) %>% 
+                            select(final_name_variable) %>% 
+                            pull()))) %>%
+    mutate(temp_id = substr(facility_id, 1, 8)) %>%
+    arrange(temp_id) %>% 
+    select(-temp_id) %>%
+    # round if necessary (1. time)
+    mutate_at(structure %>% 
+                filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+                filter(round_cycle == 1) %>% 
+                select(final_name_variable) %>% 
+                pull(),
+              round, 
+              digits = (structure %>% 
+                          filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>%
+                          filter(round_cycle == 1) %>%
+                          select(round_digits) %>% 
+                          unique() %>% 
+                          as.numeric())
+              ) %>% 
+    # round if necessary (2. time)
+    mutate_at(structure %>% 
+              filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>% 
+              filter(round_cycle == 2) %>% 
+              select(final_name_variable) %>% 
+              pull(),
+            round, 
+            digits = (structure %>% 
+                        filter(sheet == curr_sheet_name & final_keep_variable == "yes") %>%
+                        filter(round_cycle == 2) %>%
+                        select(round_digits) %>% 
+                        unique() %>% 
+                        as.numeric())
+            ) %>% 
+    # replace unnecessary newlines
+    mutate(across(where(is.character), str_replace_all, "[\r\n]" , ""))
+
+  # create unique id corresponding to the row-number 
+  # not for table general, as there the facility_id is the primary key
+  if(curr_sheet_name != "general_sub_sites") {
+    detailed[[sheet_nr]] <- detailed[[sheet_nr]] %>% 
+      add_column(id = 1:nrow(detailed[[sheet_nr]]), .before = "facility_id")
+  }
+
+  print(c("Sheet", curr_sheet_name, "done"))
+}
+
+
+```
+
+<br>
+
+# 4. Insert join id (called id_minerals) to sheet commodities
+```{r , echo = FALSE, message = FALSE}
+
+commodities_joined <- left_join(
+  detailed$commodities,
+  detailed$minerals_ores_conce %>% 
+    filter((type %in% c("Ore processed", "Concentrate"))), # exclude where type_mining is "Ore mined" or "NM mineral"
+  by = c("facility_id", "material", "year", "mine_processing", "reporting_period"), 
+  suffix = c("_commodities", "_minerals")
+)
+
+
+detailed$commodities <- detailed$commodities %>% 
+  left_join(commodities_joined %>% 
+              select(id_commodities, id_minerals),
+            by = c("id" = "id_commodities"))
+
+```
+
+<br>
+
+# 5. Create tables source_ids, and material_ids
+```{r , echo = FALSE, message = FALSE}
+# source_ids
+source_ids <- source_ids %>% 
+  rename(sources = source, 
+         source_urls = source_url)
+
+
+# material_ids
+
+# table with material_ids
+material_ids_singular <- material_ids %>% 
+  filter(!(is.na(material_id))) %>%
+  select(material_id, material_name, material_category, material_category_2, material_id_agg, material_name_agg)
+
+
+# table with the aggregated material ids, which will be added to the material_ids table
+material_ids_agg <- material_ids %>% 
+  filter(!(is.na(material_id_agg))) %>% 
+  group_by(material_id_agg) %>% 
+  summarize(
+    material_id_agg = unique(material_id_agg),
+    material_name_agg = unique(material_name_agg),
+    material_category = "aggregate",
+    material_category_2 = paste(unique(material_category_2), "aggregate"),
+    materials_contained = paste(unique(material_id), collapse = "; ") %>% 
+      str_replace("; NA|NA ;|NA | NA|NA", "")
+    ) %>% 
+  rename(material_id = material_id_agg,
+         material_name = material_name_agg) 
+
+
+material_ids <- material_ids_singular %>% 
+  bind_rows(material_ids_agg)
+
+```
+
+<br>
+
+# 6. Create table structure which stores the structure of the database and explains variables
+```{r , echo = FALSE, message = FALSE}
+
+all_variables <- structure %>% 
+  select(final_name_sheet, final_name_variable, variable_name_string, description, supposed_type, example_entry, references_table) %>%
+  filter(!(is.na(description))) %>%
+  rename(table = final_name_sheet,
+         variable = final_name_variable,
+         example = example_entry,
+         type = supposed_type) %>% 
+  arrange(factor(table, levels = c("facilities", "coal", "minerals", "commodities", "processing",
+                                   "transport", "reserves", "capacity", "waste", "ownership", "material_ids", "source_ids")))
+
+
+```
+
+<br>
+
+# 7. Validation
+
+# 7.1 Validation: check for NA Values where they are allowed
+```{r , echo = FALSE, message = FALSE}
+na_tables <- list()
+
+#loop over the selected sheets and convert according to final data structure
+i = 1
+for(sheet_nr in sheet_numbers){
+  
+  curr_sheet_name <- detailed[sheet_nr] %>% names()
+  
+  complete_cases <- detailed[[sheet_nr]] %>% 
+    # select cols/variables where no na is allowed
+    select(structure %>%
+             filter(sheet == curr_sheet_name & na_allowed == "no") %>% 
+             select(final_name_variable) %>% 
+             pull()) %>% 
+    # check if an NA value exists in the remaining dataframe
+    complete.cases()
+  
+  if(length(unique(complete_cases)) == 1 & unique(complete_cases) == TRUE) {
+    print(paste0("Sheet ", curr_sheet_name, " is complete"))
+  } else {
+    print(paste0("Warning: Sheet ", curr_sheet_name, " is NOT complete and contains NA values where none are allowed!"))
+     na_tables[[i]] <- detailed[[sheet_nr]][complete_cases == FALSE,] %>% 
+           select(structure %>%
+             filter(sheet == curr_sheet_name & na_allowed == "no") %>% 
+             select(final_name_variable) %>% 
+             pull()) %>% 
+       left_join(detailed$general_sub_sites %>% select(facility_id, facility_name)) %>% 
+       relocate(facility_name, .after = facility_id)
+     i = i+1
+  }
+}
+
+# you have to manually check how many items the na_tables list has 
+# uncomment them to display data table on Rmd output
+# length(na_tables)
+# datatable(na_tables[[1]])
+# datatable(na_tables[[2]])
+# datatable(na_tables[[3]])
+# datatable(na_tables[[4]])
+# datatable(na_tables[[5]])
+# datatable(na_tables[[6]])
+
+```
+
+<br>
+
+# 7.2 Validation: Display graphical summaries to check for outliers/incorrect data
+```{r , echo = FALSE, message = FALSE}
+# 1. plot histogram value_tonnes for several tables
+# ggplot(data = detailed$minerals_ores_conce, aes(x = value_tonnes)) + 
+#   geom_histogram(bins = 100)
+# 
+# detailed$minerals_ores_conce %>% 
+#   left_join(detailed$general_sub_sites %>% select(facility_id, facility_name)) %>% 
+#   relocate(facility_name, .after = facility_id) %>% 
+#   arrange(value_tonnes %>% desc) %>% 
+#   head()
+
+```
+
+<br>
+
+# 7.3 Validation: validate with SQL schema provided by PGModeler
+```{r , echo = FALSE, message = FALSE}
+
+# still to do
+
+```
+
+<br>
+
+# 8. Export the final data in final format
+```{r , echo = FALSE, message = FALSE}
+
+# create the directory for storing final data
+dir.create("./04_output/01_detailed_data/08_final_data/final_format_txt/", showWarnings = FALSE, recursive = TRUE)
+dir.create("./04_output/01_detailed_data/08_final_data/final_format_csv/", showWarnings = FALSE, recursive = TRUE)
+
+# table general is separate, as it is exported as a geopackage (TXT)
+st_write(detailed$general_sub_sites %>% st_as_sf(), "./04_output/01_detailed_data/08_final_data/final_format_txt/facilities.gpkg", 
+          append = FALSE)
+
+# table general is separate, as it is exported as a geopackage (CSV)
+st_write(detailed$general_sub_sites %>% st_as_sf(), "./04_output/01_detailed_data/08_final_data/final_format_csv/facilities.gpkg", 
+          append = FALSE)
+
+#loop over rest of the sheets in detailed and export as TXT and CSV
+for(sheet_nr in sheet_numbers){
+  
+  #define current sheet name
+  curr_sheet_name <- detailed[sheet_nr] %>% names()
+  # print(curr_sheet_name)
+  # print(detailed[[sheet_nr]])
+  
+  #create output path
+  final_sheet_name <- structure %>% 
+    filter(sheet == curr_sheet_name) %>% 
+    select(final_name_sheet) %>% 
+    unique() %>% 
+    pull()
+  
+  path_txt <- paste0("./04_output/01_detailed_data/08_final_data/final_format_txt/", final_sheet_name, ".txt")
+  path_csv <- paste0("./04_output/01_detailed_data/08_final_data/final_format_csv/", final_sheet_name, ".csv")
+
+  #export txt
+  write_delim(detailed[[sheet_nr]], 
+              file = path_txt, 
+              na = "", 
+              delim = "\t")
+  
+  #export csv
+  write_csv(detailed[[sheet_nr]], 
+              file = path_csv, 
+              na = "")
+  
+
+}
+
+# export source_ids, material_ids as TXT files
+write_delim(source_ids, "./04_output/01_detailed_data/08_final_data/final_format_txt/source_ids.txt", na = "", delim = "\t")
+write_delim(material_ids, "./04_output/01_detailed_data/08_final_data/final_format_txt/material_ids.txt", na = "", delim = "\t")
+
+# export source_ids, material_ids as CSV files
+write_csv(source_ids, "./04_output/01_detailed_data/08_final_data/final_format_csv/source_ids.csv", na = "")
+write_csv(material_ids, "./04_output/01_detailed_data/08_final_data/final_format_csv/material_ids.csv", na = "")
+
+# export variable descriptions
+write_xlsx(all_variables, "./04_output/01_detailed_data/08_final_data/variables_descriptions.xlsx")
+
+```
+
+<br>
+
+# 9. Export final data in other formats
+```{r , echo = FALSE, message = FALSE}
+
+# create the directory for storing other formats
+dir.create("./04_output/01_detailed_data/08_final_data/other_formats/", showWarnings = FALSE, recursive = TRUE)
+
+write_rds(detailed, "./04_output/01_detailed_data/08_final_data/other_formats/detailed_final.rds")
+
+```
+
+<br>
+
+
+# 9.1 Export sheet_general, sheet_sub_sites separately
+```{r , echo = FALSE, message = FALSE} 
+
+# export sheet_general_sub_sites as TXT
+write_delim(detailed$general_sub_sites %>%
+            select(-geom),
+          "./04_output/01_detailed_data/08_final_data/other_formats/facilities.txt", na = "", delim = "\t")
+
+# export sheet_general_sub_sites as CSV
+write_csv(detailed$general_sub_sites %>%
+            select(-geom),
+          "./04_output/01_detailed_data/08_final_data/other_formats/facilities.csv", na = "")
+
+# test table general
+# general_test <- st_read("./04_output/01_detailed_data/08_final_data/final_format/facilities.gpkg")
+# 
+# general_test$geom
+# 
+# general_test
+
+```
+
+
+<br>
+
+
+# 9.2 Export all tables to single geopackage file 
+```{r , echo = FALSE, message = FALSE}
+
+# write table general to geopackage file (database)
+st_write(detailed$general_sub_sites %>% st_as_sf(),
+         dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg", 
+         layer = "facilities", append = FALSE)
+
+
+#loop over rest of the sheets in detailed and export to database
+for(sheet_nr in sheet_numbers){
+  
+  #define current sheet name
+  curr_sheet_name <- detailed[sheet_nr] %>% names()
+  # print(curr_sheet_name)
+  # print(detailed[[sheet_nr]])
+  
+  #create output path
+  final_sheet_name <- structure %>% 
+    filter(sheet == curr_sheet_name) %>% 
+    select(final_name_sheet) %>% 
+    unique() %>% 
+    pull()
+  
+  # add to database
+  st_write(detailed[[sheet_nr]],
+         dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg", 
+         layer = final_sheet_name, append = FALSE)
+  
+}
+
+
+# add source_ids, material_ids to database
+st_write(source_ids,
+       dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg", 
+       layer = "source_ids", append = FALSE)
+
+st_write(material_ids,
+       dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg", 
+       layer = "material_ids", append = FALSE)
+
+```
+
+
+# 9.3 Export all tables to single geopackage file, excluding facilities without coordinates
+```{r , echo = FALSE, message = FALSE}
+## data preparation: exclude facilities without coordinates, and filter all sheets accordingly
+fac_w_coord_list <- detailed$general_sub_sites %>% 
+  filter(!st_is_empty(geom)) %>% 
+  st_drop_geometry() %>% 
+  select(facility_id) %>% 
+  pull() %>% as.vector()
+
+
+# write table general to geopackage file (database)
+st_write(detailed$general_sub_sites %>% 
+           filter(facility_id %in% fac_w_coord_list),
+         dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg", 
+         layer = "facilities", append = FALSE)
+
+
+#loop over rest of the sheets in detailed and export to database
+for(sheet_nr in sheet_numbers){
+  
+  #define current sheet name
+  curr_sheet_name <- detailed[sheet_nr] %>% names()
+  
+  #create output path
+  final_sheet_name <- structure %>% 
+    filter(sheet == curr_sheet_name) %>% 
+    select(final_name_sheet) %>% 
+    unique() %>% 
+    pull()
+  
+  # create final table by filtering out facilities without coordinates
+  temp <- detailed[[sheet_nr]] %>% 
+    filter(facility_id %in% fac_w_coord_list)
+  
+  # add to database
+  st_write(temp,
+         dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg", 
+         layer = final_sheet_name, append = FALSE)
+  
+}
+
+
+# add source_ids, material_ids to database
+st_write(source_ids,
+       dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg", 
+       layer = "source_ids", append = FALSE)
+
+st_write(material_ids,
+       dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg", 
+       layer = "material_ids", append = FALSE)
+
+# checking / testing
+# 
+# st_layers("./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg")
+# st_layers("./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg")
+# 
+# test_old <- st_read(
+#   "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data.gpkg",
+#   layer = "facilities")
+# 
+# test <- st_read(
+#   "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_georef_only.gpkg",
+#   layer = "facilities")
+# 
+# test %>% st_geometry_type() %>% unique()
+# test %>% st_is_empty() %>% unique()
+
+```
+
+
+# 9.4 Export table facility to geopackage file, only including facilities with point geometries
+```{r , echo = FALSE, message = FALSE}
+
+points_only <- detailed$general_sub_sites %>% 
+  filter(!(geom %>% st_is_empty()),
+           geom %>% lengths == 2) %>% 
+  mutate(parent_facility_id = paste0(substr(facility_id, 1, 8), ".00")) %>% 
+  relocate(parent_facility_id, .after = facility_id) %>% 
+  #cast all geometries to type "MULTIPOINT"
+  st_cast() %>% 
+  #delete rows with duplicate coordinates (occurs when facility has one sub-site with coordinates)
+  filter(!duplicated(geom, fromLast = TRUE))
+
+
+st_write(points_only,
+         dsn = "./04_output/01_detailed_data/08_final_data/other_formats/mine_level_data_points_only.gpkg", 
+         layer = "facility",
+         append = FALSE)
+
+
+```

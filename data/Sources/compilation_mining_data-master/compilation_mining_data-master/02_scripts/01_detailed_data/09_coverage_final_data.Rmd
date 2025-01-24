@@ -1,0 +1,1603 @@
+---
+title: "Coverage of Final Data"
+output: 
+  html_document:
+    number_sections: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+> In this file, all coverages are calculated, based on the final data files
+
+Structure: 
+
+1. Read in data
+2. Prepare data for all coverage calculations
+3. Produce coverage data tables
+4. Produce coverage figures
+
+```{r setup, include=FALSE, error=TRUE}
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+knitr::opts_chunk$set(echo = TRUE)
+
+
+# install.packages(c("rgeos","rgdal"))
+# install.packages(c("rnaturalearth", "rnaturalearthdata"))
+# install.packages("ggpubr")
+# install.packages("ggsci")
+library(ggsci)
+library(tidyverse)
+library(sf)
+library(ggplot2)
+library(ggpubr)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+library(patchwork)
+library(knitr)
+library(kableExtra)
+library(gridExtra)
+library(rlang)
+library(scales)
+library(DT)
+library(viridis)
+library(writexl)
+
+# clear R environment
+rm(list = ls())
+
+```
+
+# Download and read data
+```{r , echo = FALSE, message = FALSE, results = "hide"} 
+# read final mine-level data
+general <- st_read("./04_output/01_detailed_data/08_final_data/final_format_csv/facilities.gpkg") %>% tibble()
+general_sf <- st_read("./04_output/01_detailed_data/08_final_data/final_format_csv/facilities.gpkg")
+
+detailed <- read_rds("./04_output/01_detailed_data/08_final_data/other_formats/detailed_final.rds")
+sheet_min <- detailed$minerals_ores_conce
+sheet_com <- detailed$commodities
+sheet_coal <- detailed$coal
+
+
+#read in converted data, as it is needed to get number of sources really used
+detailed_converted <- read_rds("./03_intermediate/01_detailed_data/all_tables_converted.rds") 
+
+
+# read functions needed
+source("./02_scripts/00_functions/lastfile.R")
+source("./02_scripts/00_functions/get_other_material_ids.R")
+
+
+
+
+# read in national accounts based on UNEP IRP (2022)
+download.file("https://zenodo.org/record/6618340/files/data_for_comparison_2022-05-24.csv?download=1", 
+              "./01_input/05_other_data/data_for_comparison_2022-05-24.csv")
+
+nat_acc <- read_delim(
+  "./01_input/05_other_data/data_for_comparison_2022-05-24.csv",
+  col_types = (cols(unit_id = "c")),
+  delim = ";"
+  ) %>%
+  select(-source)
+
+
+# get polygon data of the world's countries from naturalearth package
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+#read table material_ids and source_ids and facility_ids
+mat_ids <- read_csv("./04_output/01_detailed_data/08_final_data/final_format_csv/material_ids.csv", 
+                    show_col_types = FALSE)
+source_ids <- read_csv("./04_output/01_detailed_data/08_final_data/final_format_csv/source_ids.csv", 
+                       show_col_types = FALSE)
+fac_ids <- read_csv("./01_input/02_lists_and_concordance_tables/facility_ids.csv", 
+                    show_col_types = FALSE)
+
+```
+
+# Prepare data
+
+## data for coverage shares per material
+
+### Preparation of nat_acc
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# include GID column in nat_acc with the three-letter country code and rename
+nat_acc <- nat_acc %>% 
+  mutate(GID_0 = substr(alphanumiso, 1, 3)) %>% 
+  rename(material = material_id) %>% 
+  filter(!value == 0)
+
+# convert all coal-related material ids in nat_acc to F.coal 
+coal_ids <- aggregate_mat_ids("material_category_2", "coal & peat", mat_ids)
+coal_ids <- coal_ids[! coal_ids == "F.pea"] # delete peat
+coal_ids <- c(coal_ids, "F.stc") # add steam coal
+
+nat_acc <- nat_acc %>%
+  mutate(material = ifelse(
+    material %in% coal_ids,
+    "F.coal",
+    material
+  ))
+
+
+# convert all PGM related material ids
+pgm_ids <- aggregate_mat_ids("material_id_agg", "Me.pgm", mat_ids)
+nat_acc <- nat_acc %>%
+  mutate(material = ifelse(
+    material %in% pgm_ids,
+    "Me.pgm",
+    material
+  ))
+
+
+# convert all diamond related material ids 
+dia_ids <- aggregate_mat_ids("material_id_agg", "Nm.dia", mat_ids)
+nat_acc <- nat_acc %>%
+  mutate(material = ifelse(
+    material %in% dia_ids,
+    "Nm.dia",
+    material
+  ))
+
+
+# aggregate the production for the newly assigned material ids
+nat_acc <- nat_acc %>% 
+  group_by(GID_0, alphanumiso, material, year) %>% 
+  summarize(value = sum(value)) %>%
+  ungroup()
+
+```
+
+### Preparation of sheet Minerals (country)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# select relevant data only
+sheet_min <- sheet_min %>%
+  filter(!(value_tonnes %>% is.na())) %>%
+  filter(!(type %in% c("Ore processed"))) %>%
+  select(facility_id, year, material, value_tonnes)
+
+# get concentrate production of mines and years where only iron concentrate was produced
+con.fe_prod_only <- sheet_min %>%
+  filter(material %in% c("O.Fe", "Con.Fe")) %>%
+  group_by(facility_id, year) %>%
+  summarize(material = paste0(unique(material), collapse = ";"),
+            value_tonnes = sum(value_tonnes)) %>%
+  ungroup() %>%
+  filter(material == "Con.Fe") %>%
+  mutate(material = "O.Fe")
+
+
+# insert iron concentrate as iron ore, ONLY for mines and years where no iron ore production is reported
+sheet_min <- sheet_min %>%
+  filter(material != "Con.Fe") %>%
+  bind_rows(con.fe_prod_only)
+
+```
+
+### Preparation of sheet Commodities (country)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# select relevant data only
+sheet_com <- sheet_com %>%
+  filter(!(value_tonnes %>% is.na())) %>%
+  select(facility_id, year, commodity, value_tonnes) %>% 
+  rename(material = commodity)
+
+
+# adjust materials which represent a specific metal, but have other material_id
+# in order to have proper coverage for these metals
+
+# copper cathode to copper (i.e. Oth.cuca to Me.Cu)
+sheet_com <- sheet_com %>%
+  mutate(material = ifelse(
+    material == "Oth.cuca",
+    "Me.Cu",
+    material
+  ))
+
+# aggregate PGM metals to category PGM
+sheet_com <- sheet_com %>%
+  mutate(material = ifelse(
+    material %in% pgm_ids,
+    "Me.pgm",
+    material
+  ))
+
+
+# convert all diamond related material ids 
+sheet_com <- sheet_com %>%
+  mutate(material = ifelse(
+    material %in% dia_ids,
+    "Nm.dia",
+    material
+  ))
+
+
+# group by material, to aggregate production by materials that were renamed above
+sheet_com <- sheet_com %>% 
+  group_by(facility_id, year, material) %>% 
+  summarize(value_tonnes = sum(value_tonnes)) %>% 
+  ungroup()
+
+```
+
+### Preparation of sheet Coal (country)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# change all types of coal to F.coal
+sheet_coal <- sheet_coal %>% 
+  filter(type == "Coal mined") %>% 
+  mutate(material = "F.coal") %>% 
+  group_by(facility_id, year, type, material) %>% 
+  summarize(value_tonnes = sum(value_tonnes)) %>% 
+  ungroup() %>% 
+  select(-type)
+
+# aggregate production of sub-sites and allocate to parent facilities, as only those are linked to countries
+sheet_coal <- sheet_coal %>% 
+  mutate(facility_id = paste0(substr(facility_id, 1, 9), "00")) %>% 
+  group_by(facility_id, year, material) %>% 
+  summarize(value_tonnes = sum(value_tonnes))
+
+
+```
+
+### Preparation of comprehensive Coverage data file (country)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# join all production sheets together
+production <- bind_rows(sheet_min, sheet_com, sheet_coal)
+
+# include country ids
+production <- production %>%
+  left_join(general %>%
+              select(facility_id, country, GID_0),
+            by = "facility_id")
+
+# check if all mines are linked to countries
+# production %>% 
+#   filter(GID_0 %>% is.na()) %>%
+#   nrow() == 0
+
+# group by country
+prod_by_country <- production %>% 
+  group_by(GID_0, country, year, material) %>% 
+  summarize(value = sum(value_tonnes)) %>% 
+  ungroup()
+
+
+cov_by_country <- prod_by_country %>% 
+  left_join(nat_acc %>% 
+              select(GID_0, material, year, value),
+            by = c("GID_0", "material", "year"),
+            suffix = c("_det", "_nat")) 
+
+
+# data rows without allocation
+not_incl_country <- cov_by_country %>%
+  filter(
+    is.na(GID_0) |
+    is.na(material) |
+    is.na(value_nat)
+    ) %>%
+  mutate(cause = case_when(is.na(GID_0) ~ "Country not matched",
+                           is.na(material) ~ "Material not matched",
+                           is.na(value_nat) ~ "national data missing",
+                           TRUE ~ "Other")) %>% 
+  group_by(material, cause) %>%
+  summarise(n = n(), 
+            cause = unique(cause))
+
+# define sheet before cleaning rows without national data
+# this sheet will then be used to calculate global coverage
+cov_by_country_before_cleaning <- cov_by_country
+
+# calculate share and clean 
+cov_by_country <- cov_by_country %>% 
+  mutate(share = value_det / value_nat) %>%  #calculate share
+  filter(!( #clean
+    is.na(GID_0) |
+    is.na(material) |
+    is.na(value_nat) |
+    is.na(value_det) |
+    is.na(share)
+    )) %>% 
+  left_join(., mat_ids %>% select(material_id, material_name), #join material names
+            by = c("material" ="material_id")) %>% 
+  mutate(material_name = ifelse(material_name == "Coal (unspecified)", "Coal", material_name)) #rename coal entries
+
+
+```
+
+### Preparation of comprehensive Coverage data file (global)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# prepare global production of materials from national accounts
+nat_acc_global <- nat_acc %>% 
+  group_by(material, year) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
+
+cov_global <- cov_by_country_before_cleaning %>% 
+  group_by(year, material) %>% 
+  summarize(value = sum(value_det)) %>%
+  ungroup() %>% 
+  left_join(nat_acc_global,
+            by = c("material", "year"),
+            suffix = c("_det", "_nat"))
+
+
+# data rows without allocation for global coverage
+not_incl_global <- cov_global %>%
+  filter(
+    is.na(material) |
+    is.na(value_nat)
+    ) %>%
+  mutate(cause = case_when(is.na(material) ~ "Material not matched",
+                           is.na(value_nat) ~ "national data missing",
+                           TRUE ~ "Other")) %>% 
+  group_by(material, cause) %>%
+  summarise(n = n(), 
+            cause = unique(cause))
+
+
+# calculate share and clean
+cov_global <- cov_global %>% 
+  mutate(share = value_det / value_nat) %>%  #calculate share
+  filter(!( #clean
+    is.na(material) |
+    is.na(value_nat) |
+    is.na(value_det) |
+    is.na(share)
+    )) %>% 
+  left_join(., mat_ids %>% select(material_id, material_name), #join material names
+            by = c("material" ="material_id")) %>% 
+  mutate(material_name = ifelse(material_name == "Coal (unspecified)", "Coal", material_name)) #rename coal entries
+
+
+```
+
+### Preparation of comprehensive Coverage data file WITHOUT CHINA (global)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# prepare global production of materials from national accounts
+nat_acc_global_wo_china <- nat_acc %>% 
+  filter(GID_0 != "CHN") %>%
+  group_by(material, year) %>% 
+  summarize(value = sum(value)) %>% 
+  ungroup()
+
+cov_global_wo_china <- cov_by_country_before_cleaning %>%
+  filter(GID_0 != "CHN") %>%
+  group_by(year, material) %>% 
+  summarize(value = sum(value_det)) %>%
+  ungroup() %>% 
+  left_join(nat_acc_global_wo_china,
+            by = c("material", "year"),
+            suffix = c("_det", "_nat"))
+
+
+# calculate share and clean
+cov_global_wo_china <- cov_global_wo_china %>% 
+  mutate(share = value_det / value_nat) %>%  #calculate share
+  filter(!( #clean
+    is.na(material) |
+    is.na(value_nat) |
+    is.na(value_det) |
+    is.na(share)
+    )) %>% 
+  left_join(., mat_ids %>% select(material_id, material_name), #join material names
+            by = c("material" ="material_id")) %>% 
+  mutate(material_name = ifelse(material_name == "Coal (unspecified)", "Coal", material_name)) #rename coal entries
+
+# calculate difference between including and excluding china
+cov_difference <- cov_global %>% 
+  select(year, material, share) %>% 
+  left_join(cov_global_wo_china %>% 
+              select(year, material, share),
+            by = c("year", "material"),
+            suffix = c(".glo", ".chn")) %>% 
+  mutate(diff = share.glo-share.chn) %>% 
+  arrange(diff)
+
+```
+
+### Filter relevant timeframe only of coverage data
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+cov_by_country <- cov_by_country %>% 
+  filter(1999 < year & year < 2019)
+
+cov_global <- cov_global %>% 
+  filter(1999 < year & year < 2019)
+
+```
+
+## data for spatial coverage
+
+### clean spatial data
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# get only facilities, and only those that are georeferenced
+general_sf <- general_sf %>% 
+  filter(is.na(sub_site_name),
+         !(geom %>% st_is_empty()))
+
+# preparing the world map
+world <- world %>% 
+  filter(continent != "Antarctica")
+
+
+```
+
+# Produce coverage data tables
+
+## Coverage of table general (data tables)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+# load in the original sheets again
+sheet_min <- detailed$minerals_ores_conce
+sheet_com <- detailed$commodities
+sheet_coal <- detailed$coal
+
+
+# calculate nr of sources really used (as nrow of source_ids is inaccurate, some might not be used any more)
+unique_sources <- c()
+for(sheet_number in c(1:length(detailed_converted))){
+  temp_sources <- detailed_converted[[sheet_number]]$source_id %>%
+    unique()
+  not_incl <- setdiff(temp_sources, unique_sources)
+  unique_sources <- c(unique_sources, not_incl)
+}
+
+#calculate nr. of materials for which production was reported
+distinct_materials <- sheet_min %>% distinct(material) %>% 
+  bind_rows(sheet_com %>% distinct(commodity) %>% 
+              rename(material = commodity)) %>%
+  bind_rows(sheet_coal%>% distinct(material)) %>% 
+  rename(material_id = material) %>% 
+  left_join(mat_ids) %>% 
+  relocate(c(material_id, material_name), .after = material_category_2) %>% 
+  arrange(material_category)
+
+
+# set up tibble for data table output
+gen_cov <- tibble(Indicator = NA, Amount = NA) %>% 
+  filter(!is.na(Amount)) %>%
+  mutate(Indicator = as.character(Indicator), Amount = as.numeric(Amount))
+
+gen_cov <- gen_cov %>%
+  union(., tibble(
+    Indicator = "Number of countries",
+    Amount = general %>% distinct(country) %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of mines / processing facilities",
+    Amount = general %>% distinct(facility_name) %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities that are mines",
+    Amount = general %>% 
+      filter(sub_site_name %>% is.na(),
+             grepl("mine", facility_type, ignore.case = TRUE)) %>% 
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of materials (w/o processing)",
+    Amount = nrow(distinct_materials)
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of materials (w/o processing): Of which metal ores",
+    Amount = distinct_materials %>% 
+      filter(material_category_2 %in% c("metal ore")) %>% nrow() 
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of materials (w/o processing): Of which concentrates",
+    Amount = distinct_materials %>% 
+      filter(material_category_2 %in% c("ore concentrate")) %>% nrow() 
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of materials (w/o processing): Of which metals",
+    Amount = distinct_materials %>% 
+      filter(material_category_2 %in% c("metal")) %>% nrow() 
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of materials (w/o processing): Of which coal",
+    Amount = distinct_materials %>% 
+      filter(material_category_2 %in% c("coal & peat")) %>% nrow()  
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of years",
+    Amount = length(union(sheet_min$year, sheet_com$year))
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of grades",
+    Amount = sheet_com %>% filter(!is.na(grade_ppm)) %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of yields",
+    Amount = sheet_com %>% filter(!is.na(yield_ppm)) %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of recovery rates",
+    Amount = sheet_com %>% filter(!is.na(recovery_rate)) %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of sources",
+    Amount = source_ids %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of sources really used",
+    Amount = unique_sources %>% length()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities + sub-sites",
+    Amount = general %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities",
+    Amount = general %>% distinct(facility_name) %>% na.omit() %>% nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of sub-sites",
+    Amount = general  %>% 
+      filter(!is.na(sub_site_name)) %>% 
+      distinct(facility_name, sub_site_name) %>% 
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities with at least one coordinate",
+    Amount = sum(!(general %>% 
+      filter(is.na(sub_site_name)) %>%
+      st_as_sf() %>%
+      st_is_empty()))
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities with no coordinates",
+    Amount = general %>% 
+      filter(is.na(sub_site_name)) %>%
+      st_as_sf() %>%
+      st_is_empty() %>% 
+      sum()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities with POINT geometry",
+    Amount = general %>% 
+      filter(is.na(sub_site_name),
+             !(geom %>% st_is_empty()), 
+             geom %>% lengths() == 2) %>%
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities with MULTIPOINT geometry",
+    Amount = general %>% 
+      filter(is.na(sub_site_name),
+             !(geom %>% st_is_empty()), 
+             geom %>% lengths() > 2) %>%
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Total number of coordinates",
+    Amount = general %>% 
+      filter(sub_site_name %>% is.na()) %>% 
+      select(geom) %>%
+      pull() %>% 
+      lengths() %>% 
+      sum()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities of type Mine",
+    Amount = general %>%
+      filter(is.na(sub_site_name),
+             facility_type == "Mine") %>% 
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities of type Smelter",
+    Amount = general %>%
+      filter(is.na(sub_site_name),
+             facility_type == "Smelter") %>% 
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities of type Refinery",
+    Amount = general %>%
+      filter(is.na(sub_site_name),
+             facility_type == "Refinery") %>% 
+      nrow()
+  )) %>%
+  union(., tibble(
+    Indicator = "Number of facilities of type Other (mixed forms + company + region)",
+    Amount = general %>%
+      filter(is.na(sub_site_name),
+             !(facility_type %in% c("Mine", "Smelter", "Refinery"))) %>% 
+      nrow()
+  ))
+
+# table for Rmd output
+datatable(gen_cov, rownames = FALSE, caption = "General coverage final data")
+
+
+
+# number of mines/facilities by type
+nr_min_fac <- general %>%
+  group_by(facility_type) %>%
+  summarise(n = n())
+
+# table for Rmd output
+datatable(nr_min_fac, rownames = FALSE, caption = "Number of mines/facilities by type")
+
+
+
+# nr of materials per category
+nr_mat_by_cat <- sheet_min %>%
+  distinct(material) %>%
+  rename(material_id = material) %>%
+  union(.,
+        sheet_com %>%
+          distinct(commodity) %>%
+          rename(material_id = commodity)
+  ) %>%
+  filter(!is.na(material_id)) %>%
+  left_join(.,
+    mat_ids %>% select(material_category, material_category_2, material_id)
+  ) %>%
+  group_by(material_category, material_category_2) %>%
+  summarise(n = n())
+
+# table for Rmd output
+datatable(nr_mat_by_cat, rownames = FALSE, caption = "Number of materials per category")
+
+
+
+# nr of mines/facilities per country
+nr_min_fac_by_cou <- general %>%
+  filter(sub_site_name %>% is.na()) %>% 
+  group_by(country) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n))
+  
+# table for Rmd output
+datatable(nr_min_fac_by_cou, rownames = FALSE, caption = "Number of facilities per country")
+
+
+
+# nr of materials per country
+nr_mat_by_cou <- sheet_min %>%
+  distinct(facility_id, material) %>%
+  rename(material_id = material) %>%
+  union(.,
+        sheet_com %>%
+          distinct(facility_id, commodity) %>%
+          rename(material_id = commodity)
+        ) %>%
+  left_join(.,
+            general %>%
+              select(facility_id, country)
+            ) %>%
+  distinct(material_id, country) %>%
+  group_by(country) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n))
+
+# table for Rmd output
+datatable(nr_mat_by_cou, rownames = FALSE, caption = "Number of materials per country")
+
+
+
+# nr of mines per material (processing not included)
+nr_mine_by_mat <- sheet_min %>%
+  distinct(facility_id, material) %>%
+  rename(material_id = material) %>%
+  union(.,
+        sheet_com %>%
+          distinct(facility_id, commodity) %>%
+          rename(material_id = commodity)
+        ) %>%
+  distinct(material_id, facility_id) %>%
+  group_by(material_id) %>%
+  summarise(n = n()) %>%
+  arrange(desc(n))
+
+# table for Rmd output
+datatable(nr_mine_by_mat, rownames = FALSE, caption = "Number of mines per material")
+
+
+
+```
+
+## Coverage of Materials by country (data tables)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+# coverage table for markdown
+cov_by_country_table <- cov_by_country %>% 
+  mutate(share = percent(share, accuracy = 1)) %>%
+  select(-value_det, -value_nat) %>%
+  arrange(desc(year)) %>%
+  pivot_wider(., names_from = year, values_from = share) %>%
+  arrange(material) %>%
+  # insert national totals again in order to rank properly (couldn't be kept, because of pivot function)
+  left_join(., cov_by_country %>% filter(year == 2015) %>% select(country, value_nat)) %>%
+  arrange(material, desc(value_nat))
+
+
+# table for Rmd output
+datatable(cov_by_country_table, rownames = FALSE, caption = "Relative coverage by material and country")
+
+
+### get coverages above 100%
+
+# filter for shares >100%
+exc_cov <- cov_by_country %>%
+  filter(share > 1) %>%
+  mutate(share = percent(share, accuracy = 1)) %>%
+  mutate(
+    `Abs. diff larger than nat. value` = value_det - value_nat,
+    unit = "t") %>%
+  arrange(GID_0, material, year)
+
+# select "responsible" mines
+exc_cov_mines <- exc_cov %>%
+  select(GID_0, material, year) %>%
+  left_join(., 
+            production %>% select(GID_0, material, year, facility_id, value_tonnes)
+            ) %>%
+  arrange(GID_0, material, year, desc(value_tonnes)) %>% 
+  left_join(fac_ids %>% select(facility_id, mine_fac), by = "facility_id")
+
+
+# use tempory tibble and loop to get respective mines into one string
+  # (shorter options didn't work)
+
+temp_t <- tibble(GID_0 = "chr", material = "chr", year = 1, mines = "chr", mine_names = "chr") %>% 
+  filter(mines != "chr")
+
+for (i in 1:nrow(exc_cov)) {
+  
+  a <- exc_cov[i,] %>% select(GID_0, material, year)
+  
+  fac_id_str <- a %>%
+    left_join(exc_cov_mines) %>%
+    distinct(facility_id) %>%
+    pull() %>%
+    paste0(collapse = ", ")
+  
+  mine_name_str <- a %>%
+    left_join(exc_cov_mines) %>%
+    distinct(mine_fac) %>%
+    pull() %>%
+    paste0(collapse = ", ")
+  
+  temp_t <- temp_t %>%
+    union(., a %>% mutate(mines = fac_id_str,
+                          mine_names = mine_name_str))
+  
+}
+
+exc_cov <- exc_cov %>%
+  left_join(., temp_t)
+
+# table for Rmd output
+datatable(exc_cov, rownames = FALSE, caption = "Coverages which are >100% for sheets coal, minerals, commodities. ")
+
+
+# table for Rmd output with coverage > 120% only
+exc_cov_120 <- exc_cov %>% 
+  mutate(share2 = share %>% # convert share to numeric again 
+           substr(1, nchar(share)-1) %>%
+           str_replace_all(., fixed(" "), "") %>%
+           as.numeric()) %>% 
+  select(-share) %>% 
+  rename(share = share2) %>% 
+  relocate(share, .after = value_nat) %>% 
+  filter(share > 120) %>%
+  arrange(desc(share)) %>%
+  mutate(share = percent(share/100, accuracy = 1))
+
+
+datatable(exc_cov_120, rownames = FALSE, caption = "Coverages which are >120% for sheets coal, minerals, commodities. ")
+
+```
+
+## Coverage of Materials global (data tables)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+cov_global_table <- cov_global %>% 
+  mutate(share = percent(share, accuracy = 1)) %>%
+  select(-value_det, -value_nat) %>%
+  arrange(desc(year)) %>%
+  pivot_wider(., names_from = year, values_from = share) %>%
+  arrange(material) %>%
+  # insert national totals again in order to rank properly (couldn't be kept, because of pivot function)
+  left_join(., cov_global %>% filter(year == 2015) %>% select(material, value_nat)) %>%
+  arrange(material, desc(value_nat))
+
+# table for Rmd output
+datatable(cov_global_table, rownames = FALSE, caption = "Relative global coverage by material")
+
+
+# table for Rmd output
+datatable(cov_difference, rownames = FALSE, caption = "Difference between coverage share global and coverage share excluding China")
+
+```
+
+## Export data table with global and national coverages
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# export coverage table as csv and pdf (pdf is created in separate markdown file)
+cov_by_country_table_output <- cov_by_country %>%
+  mutate(share = round(share, digits = 2)) %>%
+  select(GID_0, year, material, material_name, share) %>%
+  arrange(year) %>% 
+  pivot_wider(., names_from = year, values_from = share) %>% 
+  arrange(GID_0)
+
+cov_global_table_output <- cov_global %>% 
+  mutate(share = round(share, digits = 2),
+         GID_0 = "Global") %>%
+  select(GID_0, year, material, material_name, share) %>%
+  arrange(year) %>% 
+  pivot_wider(., names_from = year, values_from = share)
+
+cov_table_output <- cov_global_table_output %>% 
+  bind_rows(cov_by_country_table_output) %>% 
+  mutate(across(everything(na_if(., Inf)))) %>% 
+  rename("Country" = GID_0,
+         "Material" = material,
+         "Material name" = material_name)
+  
+  
+
+# write csv
+write_csv(cov_table_output,
+          file = "./04_output/01_detailed_data/05_coverage/01_general/coverage.csv",
+          na = "")
+
+```
+
+## Export data table with all included materials by category
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+write_xlsx(distinct_materials %>% 
+             select(material_category, material_category_2, material_id, material_name) %>% 
+             arrange(desc(material_category), desc(material_category_2)),
+           "./04_output/01_detailed_data/05_coverage/01_general/materials_covered.xlsx")
+
+
+```
+
+
+## Statistics where coverage is > 100%
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+print("Nr of all coverage cases")
+nrow(cov_by_country)
+
+print("Nr of Cases where coverage is <= 100%: ")
+nrow(cov_by_country %>% filter(share <= 1))
+
+print("Nr of Cases where coverage is > 100%: ")
+nrow(cov_by_country %>% filter(share > 1.000000001))
+
+print("% of Cases where coverage is > 100%: ")
+nrow(cov_by_country %>% filter(share > 1)) / nrow(cov_by_country)
+
+print("Nr of Cases where coverage is > 105%: ")
+nrow(cov_by_country %>% filter(share > 1.05))
+
+print("% of Cases where coverage is > 105%: ")
+nrow(cov_by_country %>% filter(share > 1.05)) / nrow(cov_by_country)
+
+print("Nr of Cases where coverage is > 120%: ")
+nrow(cov_by_country %>% filter(share > 1.2))
+
+print("% of Cases where coverage is > 120%: ")
+nrow(cov_by_country %>% filter(share > 1.2)) / nrow(cov_by_country) 
+
+print("Nr of Cases where coverage is > 200%: ")
+nrow(cov_by_country %>% filter(share > 2))
+
+print("% of Cases where coverage is > 200%: ")
+nrow(cov_by_country %>% filter(share > 2)) / nrow(cov_by_country) 
+
+
+# histogram of coverage share
+ggplot(data = cov_by_country %>% 
+         filter(share < 2) %>% 
+         mutate(share = share * 100)) +
+  geom_histogram(mapping = aes(x = share), 
+                 fill = "steelblue",
+                 color = "black", 
+                 #alpha = 0.8, 
+                 binwidth = 4) +
+  theme_minimal() + 
+  xlab("Share of national production covered [%]") + 
+  ylab("Nr. of occurrences") + 
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    panel.grid.minor.x = element_blank(),
+    panel.spacing.x = unit(10, "mm"),
+    axis.text = element_text(size = 25),
+    axis.title = element_text(size = 30))
+
+dir.create("./04_output/01_detailed_data/05_coverage/01_general/national/", showWarnings = FALSE)
+
+ggsave("./04_output/01_detailed_data/05_coverage/01_general/national/coverage_hist.png", width = 16, height = 9, dpi = 300)
+ggsave("./04_output/01_detailed_data/05_coverage/01_general/national/coverage_hist.pdf", width = 16, height = 9)
+
+
+
+
+# histogram of coverage share by material
+ggplot(data = cov_by_country %>% 
+         filter(share < 2), 
+       groups = material_name) +
+  geom_histogram(mapping = aes(x = share, fill = material_name), 
+                 bins = 30,
+                 color = "black") + 
+  theme(legend.position = "right")
+
+# histogram of coverage share by country (30 bins)
+ggplot(data = cov_by_country %>% 
+         filter(share < 2), 
+       groups = country) +
+  geom_histogram(mapping = aes(x = share, fill = country), 
+                 bins = 30,
+                 color = "black") + 
+  theme(legend.position = "right")
+
+# histogram of coverage share by country (100 bins)
+ggplot(data = cov_by_country %>% 
+         filter(share < 2), 
+       groups = country) +
+  geom_histogram(mapping = aes(x = share, fill = country), 
+                 bins = 100,
+                 color = "black") + 
+  theme(legend.position = "right")
+
+# histogram of coverage share between 0.95 and 1.05
+ggplot(data = cov_by_country %>% 
+         filter(share > 0.98 & share < 1.02) %>% 
+         mutate(share = share * 100)) +
+  geom_histogram(mapping = aes(x = share), 
+                 fill = "steelblue",
+                 color = "black", 
+                 #alpha = 0.8, 
+                 binwidth = 0.05) +
+  theme_minimal() + 
+  xlab("Share of national production covered [%]") + 
+  ylab("Nr. of occurrences") + 
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    panel.grid.minor.x = element_blank(),
+    panel.spacing.x = unit(10, "mm"),
+    axis.text = element_text(size = 15),
+    axis.title = element_text(size = 20))
+  
+
+
+print("cases between 98 and 102%")
+print(cov_by_country %>% 
+        filter(share > 0.98 & share < 1.02) %>% 
+        nrow())
+
+print("cases between 98 and 102% [in percent]")
+print(cov_by_country %>% 
+        filter(share > 0.98 & share < 1.02) %>% 
+        nrow() / nrow(cov_by_country))
+
+print("cases exactly at 100%")
+print(cov_by_country %>% 
+        filter(share == 1) %>% 
+        nrow())
+
+print("cases exactly at 100% [in percent]")
+print(cov_by_country %>% 
+        filter(share == 1) %>% 
+        nrow() / nrow(cov_by_country))
+
+
+cov_by_country %>% 
+  filter(share == 1) %>% 
+  group_by(country, material) %>% 
+  summarize(n = n(),
+            years = paste(as.character(year), collapse = ",")) %>% 
+  arrange(desc(n))
+
+cov_by_country %>% 
+  filter(share > 0.90 & share < 1.10) %>% 
+  group_by(country, material) %>% 
+  summarize(n = n(),
+            years = paste(as.character(year), collapse = ",")) %>% 
+  arrange(desc(n)) %>%
+  print(n=50) #%>% 
+  #filter(country == "Chile")
+
+
+# cov_by_country %>% 
+#   filter(country == "Peru", material == "Me.Cu")
+  
+
+```
+
+## Data rows not included in coverage (data tables)
+```{r , echo = FALSE, message = FALSE, warning = FALSE}
+
+# table for Rmd output
+datatable(not_incl_country, rownames = FALSE, caption = "Number of data rows not included in coverage by country calculation")
+
+# table for Rmd output
+datatable(not_incl_global, rownames = FALSE, caption = "Number of data rows not included in global coverage calculation")
+
+```
+
+# Produce coverage figures
+
+## Coverage of table general (export figures)
+```{r , echo = FALSE, message = FALSE, warning = FALSE}
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/mines_per_country.pdf",
+    width = 16,
+    height = 8)
+
+# export figure for number of mines per country 
+ggplot(data = head(nr_min_fac_by_cou), aes(x = reorder(country, -n), y = n)) + 
+  geom_bar(stat = "identity", fill = "steelblue") + 
+  geom_text(aes(label = n), vjust = 1.6, color = "white", size = 3.5)+
+  labs(x = "Country", y = "No. of Mines")
+
+
+# export figure of number of mines per material
+nr_mine_by_mat_plot <- left_join(nr_mine_by_mat, select(mat_ids, material_id, material_name), by = "material_id")
+nr_mine_by_mat_plot$material_name <- coalesce(nr_mine_by_mat_plot$material_name, nr_mine_by_mat_plot$material_id)
+nr_mine_by_mat_plot <- nr_mine_by_mat_plot %>% mutate(material_name = replace(material_name, material_name == "F.stc", "Steam coal"))
+
+ggplot(data = head(nr_mine_by_mat_plot), aes(x = reorder(material_name, -n), y = n)) + 
+  geom_bar(stat = "identity", fill = "steelblue") + 
+  geom_text(aes(label = n), vjust = 1.6, color = "white", size = 3.5)+
+  labs(x = "Material", y = "No. of Mines") 
+
+dev.off()
+
+```
+
+## Global coverage (line charts)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+# select which materials should be displayed
+# cov_global$material_name %>% unique()
+# cov_global$material %>% unique()
+line_plot_materials <-  c("F.coal", "Me.Ag", "Me.Au","Me.Cu", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn", 
+                          "Me.Co",  "Me.Sn","Me.Pd", "Me.Pt", "Me.Rh", "O.Al", "O.Fe")
+line_plot_materials_important_comms <- c("F.coal", "O.Fe", "O.Al", "Me.Cu", "Me.Au", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn")
+
+cov_plot_materials <- filter(cov_global, material %in% line_plot_materials)
+cov_plot_materials_important_comms <- filter(cov_global, material %in% line_plot_materials_important_comms)
+
+# produce global plots
+# almost all commodities
+cov_plot_global <- ggplot(cov_plot_materials, aes(x=year, y=share, group=material_name)) +
+  geom_line(aes(color=material_name), size = 1)+
+#  geom_point(aes(color=material_name))+
+  theme(legend.position="top") + 
+  ylim(0, 1)
+
+# most important comms only
+cov_plot_global_important_comms <- ggplot(cov_plot_materials_important_comms, aes(x=year, y=share, group=material_name)) +
+  geom_line(aes(color = material_name), size = 1)+
+#  geom_point(aes(color=material_name))+
+  theme(legend.position="top") + 
+  ylim(0, 1)
+
+# create a line chart of the coverage of selected commodities and minerals groups only
+cov_plot_group1 <- filter(cov_global, material %in% c("Me.Ag", "Me.Au", "Me.Cu", "Me.Mo")) #gold, silver, copper, molybdenum
+cov_plot_group2 <- filter(cov_global, material %in% c("Me.Ni", "Me.Pb", "Me.Zn", "Me.Co")) #poly-metallic
+cov_plot_group3 <- filter(cov_global, material %in% c("Me.Pd", "Me.Pt", "Me.Rh", "Me.Sn", "Me.Te")) #PGM 
+cov_plot_group4 <- filter(cov_global, material %in% c("O.Fe", "O.Al")) #Ores
+cov_plot_group5 <- filter(cov_global, material == "F.coal") #Coal
+groups <- list(cov_plot_group1, cov_plot_group2, cov_plot_group3, cov_plot_group4, cov_plot_group5)
+
+plot_list <- list()
+
+i = 1
+for(group in groups) {
+  
+  p <- ggplot(group, aes(x=year, y=share, group=material_name)) +
+    geom_line(aes(color = material_name), size = 1) +
+#    geom_point(aes(color=material_name))+
+    theme(legend.position = "top") + 
+    ylim(0, 1)
+
+  plot_list[[i]] <- p
+  
+  i = i + 1
+}
+
+# specify path and export figures
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/global/coverage_global_linecharts.pdf",   
+    width = 16, 
+    height = 8)
+
+cov_plot_global
+cov_plot_global_important_comms
+plot_list
+
+dev.off()
+
+```
+
+## Global coverage (Heat map)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+## build heatmap of the coverage per country
+heatmap_mat_ids <- c("F.coal", "O.Fe", "O.Al", "Me.Cu", "Me.Au", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn") %>% 
+  rev()
+
+heatmap_mat_names <- tibble(material = heatmap_mat_ids) %>% 
+  left_join(cov_global %>% 
+              select(material, material_name) %>% 
+              distinct()) %>% 
+  select(material_name) %>% 
+  pull()
+
+# prepare data for heatmap
+heatmap_materials <- cov_global %>%
+  filter(material %in% heatmap_mat_ids) %>% 
+  select(year, share, material, material_name) %>%
+  mutate(share = round(share * 100))
+
+heatmap_materials$material_name <- factor(heatmap_materials$material_name, 
+                                          ordered = TRUE, 
+                                          levels = heatmap_mat_names)
+
+
+
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/global/coverage_global_heatmap.pdf",   
+    width = 16, 
+    height = 8)
+
+ggplot(heatmap_materials) +
+  geom_tile(aes(x = year, y = material_name, fill = share)) +
+  geom_text(aes(x = year, y = material_name, label = share)) +
+  scale_fill_gradient2(mid = "white", high = "steelblue")
+
+
+dev.off()
+
+```
+
+## Global coverage (area chart tiles)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+## build tile chart with 9 coverage figures
+area_plot_ids <- c("F.coal", "O.Fe", "O.Al", 
+                   "Me.Au", "Me.Cu", "Me.Mo",  
+                   "Me.Ni", "Me.Pb", "Me.Zn")
+
+area_plot_names <- tibble(material = area_plot_ids) %>% 
+  left_join(cov_global %>% 
+              select(material, material_name) %>% 
+              distinct()) %>% 
+  select(material_name) %>% 
+  pull()
+
+
+area_plot_data <- cov_global %>% 
+  filter(material %in% area_plot_ids) %>% 
+  mutate(across(material_name, factor, levels = area_plot_names))
+  
+
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/global/coverage_global_area.pdf",   
+    width = 16, 
+    height = 8)
+
+ggplot(area_plot_data, 
+       aes(x = year, y = share, group = material_name)) + 
+  geom_area(color = "steelblue", fill = "steelblue", alpha = 0.6) + 
+  scale_x_continuous(limits=c(2000, 2018), breaks = c(seq(2000, 2018, 5), 2018), expand = c(0, 0)) +
+  scale_y_continuous(limits=c(0, 1), breaks = seq(0, 1, 0.25), expand = c(0, 0)) +
+  ylab("Share of global production covered") + 
+  xlab("Year") + 
+  theme_minimal() + 
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    panel.grid.minor.x = element_blank(),
+    panel.spacing.x = unit(10, "mm"), 
+    plot.margin = margin(t = 3,
+                         b = 3,
+                         r = 8,
+                         l = 3,
+                         unit = "mm"),
+    strip.text = element_text(size = 15)
+      ) + 
+  facet_wrap(~ material_name)
+
+dev.off()
+
+```
+
+## Global coverage incl and EXCL CHINA (area chart tiles)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+## build tile chart with 9 coverage figures
+area_plot_ids <- c("F.coal", "O.Fe", "O.Al", 
+                   "Me.Au", "Me.Cu", "Me.Mo",  
+                   "Me.Ni", "Me.Pb", "Me.Zn")
+
+area_plot_names <- tibble(material = area_plot_ids) %>% 
+  left_join(cov_global %>% 
+              select(material, material_name) %>% 
+              distinct()) %>% 
+  select(material_name) %>% 
+  pull()
+
+area_plot_data <- cov_global %>% 
+  filter(material %in% area_plot_ids) %>% 
+  mutate(across(material_name, factor, levels = area_plot_names))
+
+area_plot_data_wo_china <- cov_global_wo_china %>% 
+  filter(material %in% area_plot_ids) %>% 
+  mutate(across(material_name, factor, levels = area_plot_names))
+  
+
+# define labels
+dat_text1 <- tibble(label = c("excl. China", rep("", length(area_plot_ids)-1)),
+                   material_name = factor(area_plot_names, levels = area_plot_names))
+
+dat_text2 <- tibble(label = c("Global", rep("", length(area_plot_ids)-1)),
+                   material_name = factor(area_plot_names, levels = area_plot_names))
+
+ggplot() + 
+  geom_area(data = area_plot_data_wo_china, 
+            mapping = aes(x = year, y = share, group = material_name), 
+            color = "black", 
+            fill = "#E64B35B2", 
+            alpha = 0.8, #0.4
+            size = 0.2) +
+  geom_area(data = area_plot_data, 
+            mapping = aes(x = year, y = share, group = material_name),
+            color = "black", 
+            fill = "#4DBBD5B2", 
+            alpha = 0.8, #0.4
+            size = 0.2) + 
+  scale_x_continuous(limits=c(2000, 2018), breaks = c(seq(2000, 2018, 5), 2018), expand = c(0, 0)) +
+  scale_y_continuous(limits=c(0, 1), breaks = seq(0, 1, 0.25), expand = c(0, 0)) +
+  ylab("Share of production covered") + 
+  xlab("Year") + 
+  theme_minimal() + 
+  theme(
+    panel.border = element_rect(fill = NA, color = "black"),
+    panel.grid.minor.x = element_blank(),
+    panel.spacing.x = unit(10, "mm"), 
+    plot.margin = margin(t = 3,
+                         b = 3,
+                         r = 8,
+                         l = 3,
+                         unit = "mm"),
+    strip.text = element_text(size = 17),
+    axis.title = element_text(size = 22),
+    axis.text = element_text(size = 11)
+      ) + 
+  facet_wrap(~ material_name, nrow = 4) + 
+  geom_text(data = dat_text1,
+            mapping = aes(x = 2012, y = 0.435, label = label),
+            size = 4) +
+  geom_text(data = dat_text2,
+            mapping = aes(x = 2011, y = 0.23, label = label),
+            size = 4)
+
+ggsave("./04_output/01_detailed_data/05_coverage/01_general/global/coverage_global_area_wo_china.png", width = 18, height = 9, dpi = 300)
+ggsave("./04_output/01_detailed_data/05_coverage/01_general/global/coverage_global_area_wo_china.pdf", width = 16, height = 8)
+
+```
+
+## National coverages (area chart tiles)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+countries <- c("USA", "AUS", "CHN", "BRA", "ZAF", "RUS", "CHL", "PER", "IDN", "IND")
+countries_names <- tibble(GID_0 = countries) %>% 
+  left_join(cov_by_country %>% 
+              select(GID_0, country) %>% 
+              distinct()) %>% 
+  select(country) %>% 
+  pull() %>% 
+  as.vector()
+
+#clean and filter for only the top commodities
+area_plot_nat_ids <-  c("F.coal", "O.Fe", "O.Al", "Me.Cu", "Me.Au", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn")
+area_plot_nat_names <- tibble(material = area_plot_nat_ids) %>% 
+  left_join(cov_global %>% 
+              select(material, material_name) %>% 
+              distinct()) %>% 
+  select(material_name) %>% 
+  pull()
+
+area_plot_nat_data <- cov_by_country %>% 
+  filter(GID_0 %in% countries) %>% 
+  filter(material %in% area_plot_nat_ids) %>% 
+  mutate(across(material_name, factor, levels = area_plot_nat_names),
+         share = ifelse(share > 1, 1, share))
+
+
+plot_list <- list()
+
+for (i in c(1:length(countries))) {
+  country <- countries[i]
+  country_name <- countries_names[i]
+  
+  p <- ggplot(area_plot_nat_data %>% filter(GID_0 == !!country), 
+         aes(x = year, y = share, group = material_name)) + 
+    geom_area(color = "steelblue", fill = "steelblue", alpha = 0.6) + 
+    scale_x_continuous(limits=c(2000, 2018), breaks = c(seq(2000, 2018, 5), 2018), expand = c(0, 0)) +
+    scale_y_continuous(limits=c(0, 1), breaks = seq(0, 1, 0.25), expand = c(0, 0)) +
+    ylab("Share of production covered") + 
+    xlab("Year") + 
+    ggtitle(country_name) +
+    theme_minimal() + 
+    theme(
+      panel.border = element_rect(fill = NA, color = "black"),
+      panel.grid.minor.x = element_blank(),
+      panel.spacing.x = unit(10, "mm"), 
+      plot.margin = margin(t = 3,
+                           b = 3,
+                           r = 8,
+                           l = 3,
+                           unit = "mm"),
+      strip.text = element_text(size = 15)
+        ) + 
+    facet_wrap(~ material_name)
+
+  plot_list[[i]] <- p
+  
+}
+
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/national/coverage_national_area_charts.pdf",   
+    width = 16, 
+    height = 8)
+
+plot_list
+
+dev.off()
+
+```
+
+## National coverage (line charts)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+#clean and filter for only the top commodities
+line_plot_materials_nat <-  c("F.coal", "Me.Au","Me.Cu", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn", 
+                          "Me.Co",  "Me.Pt", "O.Al", "O.Fe")
+
+cov_plot_national <- cov_by_country %>% 
+  filter(material %in% line_plot_materials_nat)
+
+countries <- c("USA", "AUS", "CHN", "BRA", "ZAF", "CHL", "PER", "IDN", "IND")
+countries_names <- tibble(GID_0 = countries) %>% 
+  left_join(cov_by_country %>% 
+              select(GID_0, country) %>% 
+              distinct()) %>% 
+  select(country) %>% 
+  pull() %>% 
+  as.vector()
+
+
+plot_list <- list()
+
+for (i in c(1:length(countries))) {
+  country <- countries[i]
+  country_name <- countries_names[i]
+
+  p <- ggplot(filter(cov_plot_national, GID_0 == !!country), aes(x=year, y=share, group=material_name)) +
+    ggtitle(paste0("Coverage ", country_name)) + 
+    geom_line(aes(color=material_name), size = 1.5)+
+    theme(legend.position="top") + 
+    ylim(0, 1)
+  
+  plot_list[[i]] <- p
+}
+
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/national/coverage_national_linecharts.pdf",   
+    width = 16, 
+    height = 8)
+
+plot_list
+
+dev.off()
+
+```
+
+## National coverages (Heat maps)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+## build heatmap of the coverage per country
+heatmap_nat_mat_ids <- c("F.coal", "O.Fe", "O.Al", "Me.Cu", "Me.Au", "Me.Mo", "Me.Ni", "Me.Pb", "Me.Zn") %>% 
+  rev()
+
+heatmap_nat_mat_names <- tibble(material = heatmap_nat_mat_ids) %>% 
+  left_join(cov_global %>% 
+              select(material, material_name) %>% 
+              distinct()) %>% 
+  select(material_name) %>% 
+  pull()
+
+# prepare data for heatmap
+heatmap_materials_nat <- cov_by_country %>%
+  filter(material %in% heatmap_nat_mat_ids) %>% 
+  select(year, share, material, material_name, GID_0, country) %>%
+  mutate(share = round(share, digits = 2))
+
+heatmap_materials_nat$material_name <- factor(heatmap_materials_nat$material_name, 
+                                          ordered = TRUE, 
+                                          levels = heatmap_nat_mat_names)
+
+countries_heatmap <- c("USA", "AUS", "CHN", "BRA", "ZAF", "CHL", "PER", "IDN", "IND")
+countries_names_heatmap <- tibble(GID_0 = countries) %>% 
+  left_join(cov_by_country %>% 
+              select(GID_0, country) %>% 
+              distinct()) %>% 
+  select(country) %>% 
+  pull() %>% 
+  as.vector()
+
+
+
+
+plot_list <- list()
+
+for (i in c(1:length(countries_heatmap))) {
+  country <- countries_heatmap[i]
+  country_name <- countries_names_heatmap[i]
+
+  p <- ggplot(heatmap_materials_nat %>% filter(GID_0 == !!country)) +
+    ggtitle(paste0("Coverage ", country_name)) + 
+    geom_tile(aes(x = year, y = material_name, fill = share)) +
+    geom_text(aes(x = year, y = material_name, label = share)) +
+    scale_fill_gradient2(low = "red", mid = "white", high = "steelblue")
+  
+  plot_list[[i]] <- p
+}
+
+pdf(file = "./04_output/01_detailed_data/05_coverage/01_general/national/coverage_national_heatmaps.pdf",   
+    width = 16, 
+    height = 8)
+
+plot_list
+
+dev.off()
+
+```
+
+
+## Spatial Coverage (Map)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+
+# include n in name of material
+general_sf_n <- general_sf %>% 
+  st_drop_geometry() %>% 
+  group_by(primary_commodity) %>% 
+  summarize(n = n())
+
+general_sf <- general_sf %>% 
+  left_join(general_sf_n, by = "primary_commodity") %>% 
+  mutate(primary_commodity_2 = paste0(primary_commodity, " (", as.character(n), ")")) %>% 
+  select(-primary_commodity, -n) %>% 
+  rename(primary_commodity = primary_commodity_2)
+
+# set order of materials as displayed in the legend
+general_prim_com_levels <- c("Coal", "Iron", "Aluminium", "Copper", "Gold", "Silver", "Nickel", "Zinc", "Other (poly)-metallic", "Other mine", "Processing")
+
+general_prim_com_levels <- tibble("primary_commodity" = general_prim_com_levels) %>% 
+  left_join(general_sf_n, by = "primary_commodity") %>% 
+  mutate(primary_commodity_2 = paste0(primary_commodity, " (", as.character(n), ")")) %>% 
+  select(primary_commodity_2) %>% 
+  pull()
+
+general_sf$primary_commodity <- factor(general_sf$primary_commodity, levels = general_prim_com_levels)
+
+# define custom colors for mines with specific primary commodities
+custom_fill <- c("#374341", "blue", "red3", "#DC7F64", "gold", "#dbe4eb", "violet", "green", "cyan", "white", "cornflowerblue")
+custom_colors <- c(rep("black", length(general_prim_com_levels)))
+custom_shapes <- c(rep(24, length(general_prim_com_levels)-1), 23) 
+custom_sizes <- c(rep(1.7, length(general_prim_com_levels)-1), 1.5) 
+
+# set projection
+target_crs <- "+proj=robin" # latlong, robin, moll, laea, merc, gall, wintri, natearth
+
+# Zoom: define border points bottom left and top right (as long/lat)
+disp_win_wgs84 <- st_sfc(st_point(c(-160, -57)), 
+                         st_point(c(200, 100)),
+                         crs = 4326)
+
+disp_win_trans <- st_transform(disp_win_wgs84, crs = target_crs)
+disp_win_coord <- st_coordinates(disp_win_trans)
+
+# for checking
+ggplot() + geom_sf(data = world) + geom_sf(data = disp_win_wgs84, color = "red")
+ggplot() + 
+  geom_sf(data = st_transform(world, crs = target_crs)) + 
+  geom_sf(data = disp_win_trans, color = "red") +
+  geom_sf(data = general_sf, size = 0.5, color = "blue") + 
+  geom_abline(intercept = disp_win_coord[,'Y'][1], color = "red", slope = 0) +
+  geom_abline(intercept = disp_win_coord[,'Y'][2], color = "red", slope = 0) + 
+  geom_vline(xintercept = disp_win_coord[,'X'][1], color = "red") +
+  geom_vline(xintercept = disp_win_coord[,'X'][2], color = "red")
+
+
+
+
+ggplot() +
+  geom_sf(data = st_transform(world, crs = target_crs),
+          color = "grey", 
+          fill = "gray96", 
+          size = 0.2) +
+  geom_sf(
+    data = general_sf, 
+    aes(shape = primary_commodity,
+        fill = primary_commodity,
+        color = primary_commodity,
+        size = primary_commodity),
+    stroke = 0.1, # set size of frame around icon
+    alpha = 1 # set transparency
+    ) + 
+  scale_shape_manual(values = custom_shapes, 
+                     name = "Processing facilities\nand mines per\nprimary commodity") +
+  scale_fill_manual(values = custom_fill,
+                    aesthetics = c("fill"),
+                    name = "Processing facilities\nand mines per\nprimary commodity") + 
+  scale_color_manual(values = custom_colors,
+                    aesthetics = c("color"),
+                    name = "Processing facilities\nand mines per\nprimary commodity") + 
+  scale_size_manual(values = custom_sizes, 
+                    name = "Processing facilities\nand mines per\nprimary commodity") +
+  theme_bw() +
+  coord_sf(datum = target_crs,
+           expand = FALSE, 
+           xlim = disp_win_coord[,'X'],
+           ylim = disp_win_coord[,'Y']
+           ) + 
+  guides(shape = guide_legend(override.aes = list(size = 4.5))) +
+  theme(legend.position = c(0.08,0.23),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 13),
+        legend.background = element_rect(fill = "gray96", color = "black", size = 0.3),
+        legend.key = element_rect(fill = "gray96"),
+        legend.key.size = unit(6, "mm"),
+        axis.text = element_blank(), 
+        axis.ticks = element_blank(),
+        panel.border = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank())
+
+
+
+ggsave("./04_output/01_detailed_data/05_coverage/03_spatial/mine-level_data_map_coordinates.pdf", width = 3508*1.4, height = 2480, units = "px")
+ggsave("./04_output/01_detailed_data/05_coverage/03_spatial/mine-level_data_map_coordinates.png", width = 3508*1.4, height = 2480, dpi = 300, units = "px")
+
+```
+
+
+## Coverage Coal only (Heat map)
+```{r , echo = FALSE, message = FALSE, warning = FALSE} 
+## build heatmap of the coverage per country
+heatmap_coal_countries <- c("CAN", "COL", "KAZ", "ZAF", "RUS", "IDN", "AUS", "IND", "USA", "CHN")
+
+heatmap_coal_data <- cov_by_country %>%
+  filter(material == "F.coal" & GID_0 %in% heatmap_coal_countries) %>% 
+  arrange(value_nat) %>%
+  select(GID_0, country, share, year) %>% 
+  mutate(share = round(share, digits = 2))
+
+heatmap_coal_data$ord_countries <- factor(heatmap_coal_data$GID_0, 
+                                          ordered = TRUE, 
+                                          levels = c("CAN", "COL", "KAZ", "ZAF", 
+                                                     "RUS", "IDN", "AUS", "IND", 
+                                                     "USA", "CHN"))
+
+ 
+pdf(file = "./04_output/01_detailed_data/05_coverage/02_coal/coal_coverage_heatmap.pdf",   
+    width = 16, 
+    height = 8)
+
+ggplot(heatmap_coal_data) +
+  geom_tile(aes(x = year, y = ord_countries, fill = share)) +
+  geom_text(aes(x = year, y = ord_countries, label = share)) +
+  scale_fill_gradient2(low = "red", mid = "white", high = "steelblue")
+
+
+dev.off()
+
+```
+
